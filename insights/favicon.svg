@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Africa 2060">
+  <rect width="64" height="64" rx="8" fill="#07131f"/>
+  <path d="M8 12h48v4H8z" fill="#c59a48"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="800" fill="#eee8dc">2060</text>
+</svg>

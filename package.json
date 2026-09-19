@@ -1,0 +1,19 @@
+{
+  "name": "africa2060-website",
+  "private": true,
+  "version": "1.8.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test test-backend.mjs",
+    "check": "node --check server.mjs && node --check backend/config.mjs && node --check backend/logger.mjs && node --check backend/repository.mjs",
+    "retention:dry-run": "node scripts/retention.mjs --dry-run",
+    "retention:apply": "node scripts/retention.mjs --apply",
+    "contract:check": "node scripts/validate-contract.mjs",
+    "preflight": "node scripts/preflight.mjs"
+  }
+}

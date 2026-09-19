@@ -1,0 +1,4 @@
+.env
+/data/*.ndjson
+node_modules/
+.DS_Store
