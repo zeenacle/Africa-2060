@@ -15,5 +15,9 @@
     "retention:apply": "node scripts/retention.mjs --apply",
     "contract:check": "node scripts/validate-contract.mjs",
     "preflight": "node scripts/preflight.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.116.0"
   }
 }
