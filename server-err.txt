@@ -1,0 +1,14 @@
+{"timestamp":"2026-09-23T00:25:24.037Z","level":"error","event":"persistence_failure","requestId":"c090255d-95a9-4374-a5bc-d8545c4942c2","error":"Supabase request failed (400)."}
+{"timestamp":"2026-09-23T01:26:02.602Z","level":"error","event":"submission.received","submissionId":"d6e6e893-31cc-45d4-9602-807649a6cee2","type":"investment","error":"Supabase request failed (400): {\"code\":\"PGRST204\",\"details\":null,\"hint\":null,\"message\":\"Could not find the 'createdAt' column of 'audit_events' in the schema cache\"}"}
+file:///C:/Users/Jude%20Elizabeth%20C/Downloads/Africa-2060/backend/repository.mjs:147
+      throw new Error(
+            ^
+
+Error: Supabase request failed (400): {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'attemptCount' column of 'email_deliveries' in the schema cache"}
+    at request (file:///C:/Users/Jude%20Elizabeth%20C/Downloads/Africa-2060/backend/repository.mjs:147:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.createEmailDelivery (file:///C:/Users/Jude%20Elizabeth%20C/Downloads/Africa-2060/backend/repository.mjs:198:7)
+    at async processEmails (file:///C:/Users/Jude%20Elizabeth%20C/Downloads/Africa-2060/server.mjs:301:5)
+    at async handleSubmission (file:///C:/Users/Jude%20Elizabeth%20C/Downloads/Africa-2060/server.mjs:410:23)
+
+Node.js v24.14.0
