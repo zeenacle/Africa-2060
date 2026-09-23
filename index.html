@@ -411,6 +411,21 @@ function formMarkup(kind) {
         return `<form class="institution-form" data-api="/api/partner-enquiries">${common}<label>Partner Type <sup>*</sup><select name="partner_type" required><option value="">Select</option><option>Investors</option><option>Corporate Partners</option><option>Sponsors & Foundations</option><option>Institutions</option></select></label><label>Area of Interest<input name="interest"></label><fieldset><legend>Contribution Area</legend>${['Capital', 'Markets', 'Expertise', 'Infrastructure', 'Credibility / Network', 'Knowledge'].map(x => `<label class="check"><input type="checkbox" name="contribution" value="${x}">${x}</label>`).join('')}</fieldset><label>Message <sup>*</sup><textarea name="message" rows="6" required></textarea></label><button class="solid-button" type="submit">Talk to Africa 2060 <span>↗</span></button></form>`;
     return `<form class="institution-form" data-api="/api/contact"><label>Name <sup>*</sup><input name="name" autocomplete="name" required></label><label>Email <sup>*</sup><input type="email" name="email" autocomplete="email" required></label><label>Organisation<input name="organisation" autocomplete="organization"></label><label>Country<input name="country" autocomplete="country-name"></label><label>Subject<input name="subject"></label><label>Message <sup>*</sup><textarea name="message" rows="6" required></textarea></label><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot"><button class="solid-button" type="submit">Send enquiry <span>↗</span></button></form>`;
 }
+function renderActionPage(key) {
+    const main = document.querySelector('#main');
+    if (!main) return;
+    const isPartner = key === 'partners';
+    const title = isPartner ? 'Partner with Africa 2060' : 'Contact Africa 2060';
+    const intro = isPartner ? 'INVESTORS · CORPORATIONS · SPONSORS & FOUNDATIONS · INSTITUTIONS' : 'START A CONVERSATION';
+    const body = isPartner
+        ? 'Help build the infrastructure, capital, markets and capability required to create founders, companies and long-term economic ownership across Africa.'
+        : 'For institutional enquiries, collaboration, founder-system questions and other conversations about the work of Africa 2060.';
+    const participation = isPartner
+        ? '<section class="route-section cream"><div class="route-grid"><div><p class="kicker dark-kicker">PARTICIPATION</p><h2>Build the conditions for ownership.</h2></div><div><p>Capital</p><p>Markets</p><p>Expertise</p><p>Infrastructure</p><p>Credibility / Network</p><p>Knowledge</p></div></div></section>'
+        : '';
+    main.innerHTML = `<section class="route-hero dark"><div class="route-meta"><span>${intro}</span><span>AFRICA 2060 · 2060 HORIZON</span></div><div class="route-number">2060</div><div class="route-copy"><p class="kicker">${intro}</p><h1>${title}</h1><div class="route-rule"></div><p>${body}</p></div></section>${participation}<section class="route-section cream"><div class="action-form-grid"><div><p class="kicker dark-kicker">${isPartner ? 'TALK TO AFRICA 2060' : 'SEND AN ENQUIRY'}</p><h2>${isPartner ? 'Tell us how you want to participate.' : 'Tell us what you want to discuss.'}</h2></div><div>${formMarkup(key)}</div></div></section>${ctaRail()}`;
+    document.title = `${title} — Africa 2060`;
+}
 function setupForms() { document.querySelectorAll('form[data-api]').forEach(form => form.addEventListener('submit', async (e) => { e.preventDefault(); const button = form.querySelector('button[type=submit]'); const original = button?.innerHTML || ''; const data = new FormData(form); const payload = {}; data.forEach((v, k) => { if (k === 'contribution') {
     const existing = payload[k];
     payload[k] = existing ? [...existing, String(v)] : [String(v)];
