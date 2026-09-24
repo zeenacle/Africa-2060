@@ -1,0 +1,299 @@
+import fs from 'node:fs';
+
+const css = fs.readFileSync('styles.css', 'utf8');
+
+const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Africa 2060 Knowledge Architecture: Living Curriculum, Trends & Foresight, Outcome Tracking, Forced Renewal, and the Global Fellows Network through 2060.">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Africa 2060">
+<meta property="og:title" content="Knowledge Architecture &amp; Insights — Africa 2060">
+<meta property="og:description" content="The work is designed to learn, renew and compound. Living curriculum, trends & foresight, outcome tracking, and institutional renewal.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Insights &amp; Foresight — Africa 2060">
+<meta name="twitter:description" content="Institutional learning and renewal architecture through 2060.">
+<meta name="theme-color" content="#040d16">
+<title>Insights &amp; Knowledge Architecture — Africa 2060</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBZnJpY2EgMjA2MCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA3MTMxZiIvPgogIDxwYXRoIGQ9Ik04IDEyaDQ4djRIOHoiIGZpbGw9IiNjNTlhNDgiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2VlZThkYyI+MjA2MDwvdGV4dD4KPC9zdmc+Cg==" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style id="a2060-inline-css">
+${css}
+</style>
+<link rel="preload" as="image" href="../images/lagos-dawn.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Knowledge Architecture & Insights — Africa 2060","description":"The Africa 2060 Knowledge Architecture: Living Curriculum, Trends & Foresight, Outcome Tracking, Forced Renewal, and the Global Fellows Network through 2060."}</script>
+</head>
+<body data-route="insights">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <a class="wordmark" href="../" aria-label="Africa 2060 home"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></a>
+  <nav aria-label="Primary navigation">
+    <a class="nav-link" href="../vision/">Vision</a>
+    <a class="nav-link" href="../system/">System</a>
+    <a class="nav-link" href="../founders/">Founders</a>
+    <a class="nav-link" href="../sectors/">Sectors</a>
+    <a class="nav-link" href="../innovation-lab/">Innovation Lab</a>
+    <a class="nav-link" href="../impact/">Impact</a>
+    <a class="nav-link active" href="./" aria-current="page">Insights</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+  <div class="nav-actions"><a class="nav-secondary" href="../contact/">Contact</a><a class="nav-cta" href="../partners/">Partner <span>↗</span></a></div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="../vision/">Vision</a>
+    <a href="../system/">System</a>
+    <a href="../founders/">Founders</a>
+    <a href="../sectors/">Sectors</a>
+    <a href="../innovation-lab/">Innovation Lab</a>
+    <a href="../impact/">Impact</a>
+    <a class="active" href="./">Insights</a>
+    <a class="mobile-partner" href="../partners/">Partner <span>↗</span></a>
+    <a href="../contact/">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO: MONUMENTAL INSIGHTS & KNOWLEDGE LAYER -->
+<section class="hero-v2" aria-labelledby="insights-hero-title">
+  <div class="hero-backdrop">
+    <img class="hero-v2-image" src="../images/lagos-dawn.webp" alt="Lagos industrial and maritime infrastructure at dawn" width="1376" height="784" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hero-v2-main-grid">
+    <div class="hero-v2-copy">
+      <div class="eyebrow-row"><span>07 / KNOWLEDGE ARCHITECTURE</span><span>INSTITUTIONAL FORESIGHT</span></div>
+      <h1 id="insights-hero-title" class="display">The work is designed to learn, renew <span class="serif">and compound.</span></h1>
+      <div class="hero-v2-sub">
+        <p>A 34-year institutional project cannot rely on static curricula or obsolete methods. Africa 2060 operates seven structural systems for continuous institutional learning, outcome tracking, and multi-decade relevance.</p>
+        <p>No speculative thought pieces or generic blogging. This page establishes our rigorous knowledge architecture and foresight framework.</p>
+      </div>
+      <div class="hero-v2-actions">
+        <a class="solid-button" href="#systems">Explore the 7 Knowledge Systems <span>↓</span></a>
+        <a class="line-link" href="#monographs">Institutional Monographs <span>↓</span></a>
+      </div>
+    </div>
+    <div class="hero-v2-number" aria-hidden="true">2060<span>FORESIGHT</span></div>
+  </div>
+  <div class="hero-meta-strip">
+    <span>SYSTEMS: 7 RELEVANCE ENGINES</span>
+    <span>METHODOLOGY: LIVING CURRICULUM</span>
+    <span>HORIZON: 2026—2060</span>
+    <span>STATUS: ACTIVE GOVERNANCE</span>
+  </div>
+</section>
+
+<!-- SECTION 02: THE 7 RELEVANCE ENGINES -->
+<section class="act act-cream" id="systems">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>SEVEN RELEVANCE SYSTEMS</span><span>SOURCE FRAMEWORK</span></div>
+      <h2 style="margin-top:34px">Systems for multi-decade <span class="serif">institutional adaptation.</span></h2>
+    </div>
+    <p>Identified in the approved Africa 2060 framework as the operational mechanisms ensuring our curriculum, company formation gating, and sector priorities remain ahead of global technological acceleration.</p>
+  </div>
+
+  <div class="stage-ledger-grid" style="margin-top:48px">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 01</span><span style="color:var(--ink-muted)">ADAPTIVE</span></div>
+        <h3 style="color:var(--ink)">Living Curriculum</h3>
+        <p style="color:var(--ink-soft)">Version-controlled curriculum that updates continuously as industrial evidence, automated tools, and market conditions change. Coursework is treated like production code with formal changelogs.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">STANDARD:</b> Continuous versioning against market reality</div>
+    </article>
+
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 02</span><span style="color:var(--ink-muted)">HORIZON</span></div>
+        <h3 style="color:var(--ink)">Trends &amp; Foresight</h3>
+        <p style="color:var(--ink-soft)">A formal system function for keeping the Initiative relevant through 2060. Monitors global supply shifts, climate transitions, demographics, and technological disruptions across Africa.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">HORIZON:</b> 2026—2060 Demographic &amp; Industrial Trends</div>
+    </article>
+
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 03</span><span style="color:var(--ink-muted)">VERIFICATION</span></div>
+        <h3 style="color:var(--ink)">Outcome Tracking</h3>
+        <p style="color:var(--ink-soft)">Continuous data capture on graduate survival rates, company formation balance sheets, cap table vesting, and capital deployment. Feeds directly back into curriculum and vertical decisions.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">DATA LOOP:</b> Outcomes inform curriculum and gating</div>
+    </article>
+
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 04</span><span style="color:var(--ink-muted)">GOVERNANCE</span></div>
+        <h3 style="color:var(--ink)">Forced-Renewal Rule</h3>
+        <p style="color:var(--ink-soft)">A mandatory institutional policy: any module, challenge brief, or sector branch that fails to produce viable enterprise formations over a 12-month cycle is automatically sunsetted or overhauled.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">RULE:</b> Zero tolerance for stagnant, academic coursework</div>
+    </article>
+
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 05</span><span style="color:var(--ink-muted)">PEDAGOGY</span></div>
+        <h3 style="color:var(--ink)">Alumni-as-Faculty</h3>
+        <p style="color:var(--ink-soft)">Founders who have successfully formed, funded, and scaled companies through Africa 2060 return to teach, review challenge prototypes, and sit on Venture Formation evaluation panels.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">FLYWHEEL:</b> Practitioners replace theoretical academics</div>
+    </article>
+
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+      <div>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">ENGINE 06</span><span style="color:var(--ink-muted)">NETWORK</span></div>
+        <h3 style="color:var(--ink)">Global Fellows Network</h3>
+        <p style="color:var(--ink-soft)">A formal network connecting African operating founders with diaspora engineers, international technical specialists, institutional off-takers, and multinational procurement directors.</p>
+      </div>
+      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">CONNECTIVITY:</b> Pan-African and diaspora integration</div>
+    </article>
+  </div>
+</section>
+
+<!-- SECTION 03: INSTITUTIONAL MONOGRAPHS -->
+<section class="act act-dark" id="monographs">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>INSTITUTIONAL MONOGRAPHS</span><span>DOCTRINE PAPERS</span></div>
+      <h2 style="margin-top:34px">Strategic perspectives on <span class="serif">African industrial sovereignty.</span></h2>
+    </div>
+    <p>Approved conceptual frameworks underpinning the Africa 2060 operating model:</p>
+  </div>
+
+  <div class="academy-tiers-grid" style="margin-top:40px">
+    <div class="academy-tier-card">
+      <span class="academy-tier-num">MONOGRAPH 01</span>
+      <h3>The Fallacy of Workforce Development</h3>
+      <p>Why twenty years of NGO employability programs failed to create structural African wealth, and why founder creation is the sole institutional remedy.</p>
+      <div class="academy-tier-list">
+        <span>· The missing corporate payroll ceiling</span>
+        <span>· Capital leakage through foreign subsidiaries</span>
+        <span>· Sovereign enterprise creation as national security</span>
+      </div>
+    </div>
+
+    <div class="academy-tier-card">
+      <span class="academy-tier-num">MONOGRAPH 02</span>
+      <h3>The Anti-Extractive Cap Table</h3>
+      <p>Examining predatory venture studio agreements across emerging markets and detailing Africa 2060’s strict 50% Founder / 20% Endowment / 30% Growth standard.</p>
+      <div class="academy-tier-list">
+        <span>· Eliminating founder dilution under 50%</span>
+        <span>· The perpetual endowment dividend cycle</span>
+        <span>· Legal protection under statutory jurisdictions</span>
+      </div>
+    </div>
+
+    <div class="academy-tier-card">
+      <span class="academy-tier-num">MONOGRAPH 03</span>
+      <h3>AI as Physical Multiplier</h3>
+      <p>Moving beyond chatbots and consumer software. How applied machine intelligence accelerates physical manufacturing, cold chain routing, and mineral processing.</p>
+      <div class="academy-tier-list">
+        <span>· Generative CAD in local fabrication</span>
+        <span>· Microgrid energy optimization models</span>
+        <span>· Automated AfCFTA customs compliance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04: CLOSING TRANSITION -->
+<section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
+  <div class="hero-backdrop">
+    <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide infrastructure at sunset" width="1376" height="784" loading="lazy" decoding="async">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grid-lines" aria-hidden="true"></div>
+  <div class="hero-v2-main-grid">
+    <div class="hero-v2-copy">
+      <div class="eyebrow-row"><span>INTELLECTUAL FOUNDATION</span><span>AFRICA 2060</span></div>
+      <h2 class="display" style="font-size:clamp(44px,6vw,92px)">Knowledge that powers <span class="serif">formation.</span></h2>
+      <div class="hero-v2-sub">
+        <p>The institutional knowledge layer feeds directly into the operating machine. Explore how this foresight guides founder training and company formation across 54 economies.</p>
+      </div>
+      <div class="hero-v2-actions" style="margin-top:36px">
+        <a class="solid-button" href="../system/">Inspect the Operating System <span>↗</span></a>
+        <a class="line-link" href="../vision/">Read Strategic Doctrine <span>↗</span></a>
+        <a class="solid-button" href="../partners/" style="background:var(--gold);color:var(--navy)">Partner with Africa 2060 <span>↗</span></a>
+      </div>
+    </div>
+    <div class="hero-v2-number" aria-hidden="true">2060<span>INSIGHTS</span></div>
+  </div>
+  <div class="hero-meta-strip">
+    <span>HORIZON: 2026—2060</span>
+    <span>CURRICULUM: LIVING &amp; VERSIONED</span>
+    <span>RENEWAL: 12-MONTH RULE</span>
+    <span>STATUS: ACTIVE KNOWLEDGE</span>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="../vision/">Vision</a>
+      <a href="../system/">System</a>
+      <a href="../founders/">Founders</a>
+      <a href="../sectors/">Sectors</a>
+      <a href="../innovation-lab/">Innovation Lab</a>
+      <a href="../impact/">Impact</a>
+      <a href="./">Insights</a>
+      <a href="../partners/">Partners</a>
+      <a href="../contact/">Contact</a>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
+    <span>ZEENACLE NETWORK GROUP</span>
+    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+function setupMenu() {
+  const menuToggle = document.querySelector('#menuToggle');
+  const mobileMenu = document.querySelector('#mobileMenu');
+  if (!menuToggle || !mobileMenu) return;
+  menuToggle.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+    mobileMenu.hidden = !open;
+    menuToggle.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('menu-open', open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.hidden = true;
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    });
+  });
+}
+
+try {
+  setupMenu();
+} catch (err) {
+  console.error('Insights page init error:', err);
+}
+</script>
+</body>
+</html>
+`;
+
+fs.writeFileSync('insights/index.html', html, 'utf8');
+console.log('Successfully wrote re-architected insights/index.html! Length:', html.length);
+

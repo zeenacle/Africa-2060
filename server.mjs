@@ -658,6 +658,21 @@ const server = http.createServer(async (req, res) => {
       });
       return res.end();
     }
+    if (url.pathname === "/invest" || url.pathname === "/invest/") {
+      res.writeHead(301, {
+        Location: "/partners/",
+        "Cache-Control": "no-cache",
+      });
+      return res.end();
+    }
+    const targetDir = safePath(url.pathname);
+    if (targetDir && fs.existsSync(targetDir) && fs.statSync(targetDir).isDirectory() && !url.pathname.endsWith("/")) {
+      res.writeHead(301, {
+        Location: url.pathname + "/" + (url.search || ""),
+        "Cache-Control": "no-cache",
+      });
+      return res.end();
+    }
     return serveStatic(req, res, url.pathname);
   } catch (e) {
     metrics.errors++;

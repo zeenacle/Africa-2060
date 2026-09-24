@@ -34,14 +34,14 @@ ${css}
 <body data-route="system">
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="top">
-  <a class="wordmark" href="../index.html" aria-label="Africa 2060 home"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></a>
+  <a class="wordmark" href="../" aria-label="Africa 2060 home"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></a>
   <nav aria-label="Primary navigation">
-    <a class="nav-link" href="../index.html#vision">Vision</a><a class="nav-link active" href="./" aria-current="page">System</a><a class="nav-link" href="../index.html#founders">Founders</a><a class="nav-link" href="../index.html#sectors">Sectors</a><a class="nav-link" href="../index.html#innovation-lab">Innovation Lab</a><a class="nav-link" href="../index.html#impact">Impact</a><a class="nav-link" href="../index.html#insights">Insights</a>
+    <a class="nav-link" href="../vision/">Vision</a><a class="nav-link active" href="./" aria-current="page">System</a><a class="nav-link" href="../founders/">Founders</a><a class="nav-link" href="../sectors/">Sectors</a><a class="nav-link" href="../innovation-lab/">Innovation Lab</a><a class="nav-link" href="../impact/">Impact</a><a class="nav-link" href="../insights/">Insights</a>
   </nav>
   <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
-  <div class="nav-actions"><a class="nav-secondary" href="../index.html#contact">Contact</a><a class="nav-cta" href="../index.html#partners">Partner <span>↗</span></a></div>
+  <div class="nav-actions"><a class="nav-secondary" href="../contact/">Contact</a><a class="nav-cta" href="../partners/">Partner <span>↗</span></a></div>
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="../index.html#vision">Vision</a><a class="active" href="./">System</a><a href="../index.html#founders">Founders</a><a href="../index.html#sectors">Sectors</a><a href="../index.html#innovation-lab">Innovation Lab</a><a href="../index.html#impact">Impact</a><a href="../index.html#insights">Insights</a><a class="mobile-partner" href="../index.html#partners">Partner <span>↗</span></a><a href="../index.html#contact">Contact</a>
+    <a href="../vision/">Vision</a><a class="active" href="./">System</a><a href="../founders/">Founders</a><a href="../sectors/">Sectors</a><a href="../innovation-lab/">Innovation Lab</a><a href="../impact/">Impact</a><a href="../insights/">Insights</a><a class="mobile-partner" href="../partners/">Partner <span>↗</span></a><a href="../contact/">Contact</a>
   </div>
 </header>
 
@@ -717,9 +717,9 @@ ${css}
         <p>The operating machine is built. The pipeline is open. Explore the founder pathways, examine the sector universe, or step forward as an institutional partner to build the companies that build Africa.</p>
       </div>
       <div class="hero-v2-actions" style="margin-top:36px">
-        <a class="solid-button" href="../index.html#founders">Explore Founder Tracks <span>↗</span></a>
-        <a class="line-link" href="../index.html#sectors">View Sector Universe <span>↗</span></a>
-        <a class="solid-button" href="../index.html#partners" style="background:var(--gold);color:var(--navy)">Partner with Africa 2060 <span>↗</span></a>
+        <a class="solid-button" href="../founders/">Explore Founder Tracks <span>↗</span></a>
+        <a class="line-link" href="../sectors/">View Sector Universe <span>↗</span></a>
+        <a class="solid-button" href="../partners/" style="background:var(--gold);color:var(--navy)">Partner with Africa 2060 <span>↗</span></a>
       </div>
     </div>
     <div class="hero-v2-number" aria-hidden="true">10M+<span>CONTINENTAL GOAL</span></div>
@@ -741,16 +741,16 @@ ${css}
       <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
     </div>
     <div class="footer-links">
-      <a href="../index.html">Home</a>
-      <a href="../index.html#vision">Vision</a>
+      <a href="../">Home</a>
+      <a href="../vision/">Vision</a>
       <a href="./">System</a>
-      <a href="../index.html#founders">Founders</a>
-      <a href="../index.html#sectors">Sectors</a>
-      <a href="../index.html#innovation-lab">Innovation Lab</a>
-      <a href="../index.html#impact">Impact</a>
-      <a href="../index.html#insights">Insights</a>
-      <a href="../index.html#partners">Partners</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="../founders/">Founders</a>
+      <a href="../sectors/">Sectors</a>
+      <a href="../innovation-lab/">Innovation Lab</a>
+      <a href="../impact/">Impact</a>
+      <a href="../insights/">Insights</a>
+      <a href="../partners/">Partners</a>
+      <a href="../contact/">Contact</a>
     </div>
   </div>
   <div class="footer-meta">
