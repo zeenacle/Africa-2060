@@ -185,7 +185,8 @@ function createSupabaseRepository() {
           request_id: record.requestId,
           idempotency_key: record.idempotencyKey || null,
           created_at: record.createdAt,
-          updated_at: record.updatedAt || record.createdAt || new Date().toISOString(),
+          updated_at:
+            record.updatedAt || record.createdAt || new Date().toISOString(),
         }),
       });
     },

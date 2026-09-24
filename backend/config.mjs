@@ -4,14 +4,12 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dotenvPath = path.join(ROOT, ".env");
-if (fs.existsSync(dotenvPath)) {
-  if (typeof process.loadEnvFile === "function") {
+if (process.env.NODE_ENV !== "test" && fs.existsSync(dotenvPath)) {
     try {
       process.loadEnvFile(dotenvPath);
     } catch {
       // ignore
     }
-  }
   try {
     const raw = fs.readFileSync(dotenvPath, "utf8");
     for (const line of raw.split(/\r?\n/)) {

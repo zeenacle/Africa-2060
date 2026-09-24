@@ -24,9 +24,9 @@ const validRoutes = [
   "system",
   "founders",
   "sectors",
+  "innovation-lab",
   "impact",
   "insights",
-  "invest",
   "partners",
   "contact",
 ];
@@ -138,6 +138,12 @@ const pages = {
     intro: "Complementary capability pathways, not rigid silos.",
     body: "Vocational — Make & Build develops founders who can physically produce, construct, repair, manufacture, install, grow, process and deliver tangible products and services. Technical — Engineer & Innovate develops founders who can design systems, build technology, create IP and solve complex technical problems. Operational — Organise & Scale develops founders who can organise people, capital, assets, supply chains, markets, customers, businesses and institutions.",
   },
+  'innovation-lab': {
+    eyebrow: "05 / INNOVATION LAB",
+    title: "Turn real African problems into structured founder challenges.",
+    intro: "Problem intelligence and innovation control centre.",
+    body: "The Innovation Lab scans African markets and institutions, validates real problems, structures challenge briefs, assigns challenges to Academy tiers and cross-track teams, reviews solutions and identifies projects with credible company-formation potential.",
+  },
   sectors: {
     eyebrow: "04 / SECTOR UNIVERSE",
     title: "Track → Sector → Sub-sector → Company Opportunity.",
@@ -146,13 +152,13 @@ const pages = {
     body: "Sectors can be added, merged, expanded, paused or retired as evidence changes. A sector becomes a Branch only when approved and supported by sufficient opportunity, capability and operating evidence. Initial Branches in the current framework are Real Estate & Hospitality (Active), Agritech (Launching), Healthtech (Planned), Edtech (Planned) and Fintech (Planned).",
   },
   impact: {
-    eyebrow: "05 / MEASURING THE SYSTEM",
+    eyebrow: "06 / MEASURING THE SYSTEM",
     title: "What the system is designed to measure.",
     intro: "System Scorecard — Targets & Ambitions (Not Current Figures).",
     body: "Founders Created · Teams Formed · Companies Created · Capital Mobilised & Revenue Generated. Supporting measures in the broader scorecard include Ownership Retained, Jobs Created and Reinvestment Recycled. Primary north star: founders created and the companies they build.",
   },
   insights: {
-    eyebrow: "06 / INSIGHTS",
+    eyebrow: "07 / INSIGHTS",
     title: "The work is designed to learn, renew and compound.",
     intro: "Living curriculum. Trends & foresight. Outcome tracking.",
     body: "The current framework identifies systems for long-term relevance, including AI Fluency as a Cross-Cutting Layer, a Living Curriculum, Trends & Foresight, a Forced-Renewal Rule, an Alumni-as-Faculty Flywheel, a Formal Global Fellows Network, a Venture Operating System and Outcome Tracking. No additional editorial claims are presented here until approved institutional insight material is published.",
@@ -166,10 +172,15 @@ function pageShell(key, content) {
   main.innerHTML = `<section class="route-hero dark"><div class="route-meta"><span>${p.eyebrow}</span><span>AFRICA 2060 · 2060 HORIZON</span></div><div class="route-number">${key === "vision" ? "10,000,000" : key === "impact" ? "TARGETS" : "2060"}</div><div class="route-copy"><p class="kicker">${p.intro}</p><h1>${p.title}</h1><div class="route-rule"></div><p>${p.body}</p></div></section>${content}`;
 }
 function ctaRail() {
-  return `<section class="route-cta cream"><p class="kicker dark-kicker">THE WORK AHEAD</p><h2>Choose a way to participate.</h2><div class="route-cta-links"><a href="${routeHref("founders")}">Explore founders <span>↗</span></a><a href="${routeHref("founders")}">Become a founder <span>↗</span></a><a href="${routeHref("invest")}">Invest <span>↗</span></a><a href="${routeHref("partners")}">Partner <span>↗</span></a><a href="${routeHref("contact")}">Contact <span>↗</span></a></div></section>`;
+  return `<section class="route-cta cream"><p class="kicker dark-kicker">THE WORK AHEAD</p><h2>Choose a way to participate.</h2><div class="route-cta-links"><a href="${routeHref("founders")}">Explore founders <span>↗</span></a><a href="${routeHref("founders")}">Become a founder <span>↗</span></a><a href="${routeHref("partners")}">Partner <span>↗</span></a><a href="${routeHref("contact")}">Contact <span>↗</span></a></div></section>`;
 }
 function renderRoute(key) {
-  if (key === "vision")
+  if (key === "innovation-lab")
+    pageShell(
+      key,
+      `<section class="route-section dark"><div class="stage-grid"><article><span>01</span><h2>IDENTIFY</h2><p>Scan real African problems and unmet needs across sectors, markets and institutions.</p></article><article><span>02</span><h2>VALIDATE</h2><p>Test whether a problem is real, specific and actionable before it enters the challenge pipeline.</p></article><article><span>03</span><h2>STRUCTURE</h2><p>Convert validated problems into challenge briefs with context, constraints, stakeholders and evaluation criteria.</p></article><article><span>04</span><h2>ASSIGN</h2><p>Connect challenges to the appropriate Academy tier, track, sector or cross-track founder team.</p></article><article><span>05</span><h2>REVIEW</h2><p>Assess solutions, prototypes and models and identify credible company-formation opportunities.</p></article><article><span>06</span><h2>FEED THE SYSTEM</h2><p>Return intelligence to curriculum and vertical decisions.</p></article></div></section>${ctaRail()}`,
+    );
+  else if (key === "vision")
     pageShell(
       key,
       `<section class="route-section cream"><div class="route-grid"><div><p class="kicker dark-kicker">THE STRATEGIC REFRAME</p><h2>From workforce development<br><em>to founder creation.</em></h2></div><div><p>Training individuals → Assembling companies</p><p>Employability → Ownership</p><p>Isolated skills → Complementary founder teams</p><p>Job seekers → Company builders</p></div></div></section>${ctaRail()}`,
@@ -343,7 +354,7 @@ function init() {
     const main = document.querySelector("#main");
     if (main)
       main.innerHTML =
-        '<section class="route-hero dark"><div class="route-copy"><p class="kicker">AFRICA 2060</p><h1>Page not found.</h1><p>Return to the Africa 2060 home page.</p><a class="solid-button" href="./index.html">Return home <span>↗</span></a></div></section>';
+        `<section class="route-hero dark"><div class="route-copy"><p class="kicker">AFRICA 2060</p><h1>Page not found.</h1><p>Return to the Africa 2060 home page.</p><a class="solid-button" href="${document.body.dataset.route ? '../index.html' : './index.html'}">Return home <span>↗</span></a></div></section>`;
   }
 }
 function renderHashRoute() {

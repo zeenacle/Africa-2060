@@ -1,0 +1,82 @@
+import fs from 'node:fs';
+
+const css = fs.readFileSync('styles.css', 'utf8');
+const appJs = fs.readFileSync('app.js', 'utf8');
+
+const routeMeta = {
+  contact: { title: 'Contact — Africa 2060', desc: 'Contact Africa 2060 for institutional inquiries, collaboration, and founder system discussions.' },
+  founders: { title: 'Founders — Africa 2060', desc: 'Three founder capability pathways: Vocational, Technical, and Operational.' },
+  impact: { title: 'Impact — Africa 2060', desc: 'System scorecard, metrics, and ambitions for the Africa 2060 initiative.' },
+  insights: { title: 'Insights — Africa 2060', desc: 'Living curriculum, trends, foresight, and outcome tracking across Africa 2060.' },
+  partners: { title: 'Partners — Africa 2060', desc: 'Partner with Africa 2060 across capital, markets, infrastructure, and expertise.' },
+  sectors: { title: 'Sectors — Africa 2060', desc: 'Strategic sector opportunity universe: Track to Sector to Sub-sector to Company.' },
+  system: { title: 'System — Africa 2060', desc: 'The 9-stage founder creation and company formation operating machine.' },
+  vision: { title: 'Vision — Africa 2060', desc: 'Building 10 million founders and economic opportunities across Africa by 2060.' },
+  invest: { title: 'Invest — Africa 2060', desc: 'Institutional capital and investment conversations for Africa 2060.' }
+};
+
+const routes = Object.keys(routeMeta);
+
+for (const r of routes) {
+  const filePath = `${r}/index.html`;
+  const meta = routeMeta[r];
+
+  const html = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="${meta.desc}">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Africa 2060">
+<meta property="og:title" content="${meta.title}">
+<meta property="og:description" content="${meta.desc}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${meta.title}">
+<meta name="twitter:description" content="${meta.desc}">
+<meta name="theme-color" content="#07131f">
+<title>${meta.title}</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBZnJpY2EgMjA2MCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA3MTMxZiIvPgogIDxwYXRoIGQ9Ik04IDEyaDQ4djRIOHoiIGZpbGw9IiNjNTlhNDgiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2VlZThkYyI+MjA2MDwvdGV4dD4KPC9zdmc+Cg==" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style id="a2060-inline-css">
+${css}
+</style>
+<link rel="preload" as="image" href="../images/mark.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"${meta.title}","description":"${meta.desc}"}</script>
+</head>
+<body data-page="route" data-route="${r}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <a class="wordmark" href="../index.html" aria-label="Africa 2060 home" data-nav-link><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></a>
+  <nav aria-label="Primary navigation">
+    <a class="nav-link" href="../index.html#vision">Vision</a><a class="nav-link" href="../index.html#system">System</a><a class="nav-link" href="../index.html#founders">Founders</a><a class="nav-link" href="../index.html#sectors">Sectors</a><a class="nav-link" href="../index.html#innovation-lab">Innovation Lab</a><a class="nav-link" href="../index.html#impact">Impact</a><a class="nav-link" href="../index.html#insights">Insights</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+  <div class="nav-actions"><a class="nav-secondary" href="../index.html#contact">Contact</a><a class="nav-cta" href="../index.html#partners">Partner <span>↗</span></a></div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="../index.html#vision">Vision</a><a href="../index.html#system">System</a><a href="../index.html#founders">Founders</a><a href="../index.html#sectors">Sectors</a><a href="../index.html#innovation-lab">Innovation Lab</a><a href="../index.html#impact">Impact</a><a href="../index.html#insights">Insights</a><a class="mobile-partner" href="../index.html#partners">Partner <span>↗</span></a><a href="../index.html#contact">Contact</a>
+  </div>
+</header>
+<main id="main"></main>
+<footer class="footer"><span>AFRICA 2060</span><span>Building Africa’s next generation of founders, companies and economic ownership.</span><span>ZEENACLE NETWORK GROUP</span><small>WORKING FRAMEWORK · OPEN GOVERNANCE &amp; IMPLEMENTATION ITEMS REMAIN</small></footer>
+<noscript><div class="noscript-message">JavaScript is required for this prototype's routed pages and forms. The institutional content remains source-grounded.</div></noscript>
+<script>
+"use strict";
+${appJs}
+</script>
+</body>
+</html>
+`;
+
+  fs.writeFileSync(filePath, html, 'utf8');
+  console.log(`Synchronized ${filePath}: ${html.length} bytes`);
+}
+
+console.log('All subroute HTML files synchronized successfully!');
+

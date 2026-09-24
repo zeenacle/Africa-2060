@@ -651,6 +651,13 @@ const server = http.createServer(async (req, res) => {
       return handleSubmission(req, res, "contact", id);
     if (req.method !== "GET" && req.method !== "HEAD")
       return json(res, 405, { message: "Method not allowed." }, id);
+    if (url.pathname === "/partner" || url.pathname === "/partner/") {
+      res.writeHead(301, {
+        Location: "/partners/",
+        "Cache-Control": "no-cache",
+      });
+      return res.end();
+    }
     return serveStatic(req, res, url.pathname);
   } catch (e) {
     metrics.errors++;
