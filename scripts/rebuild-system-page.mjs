@@ -84,39 +84,48 @@ ${css}
       <div class="eyebrow-row"><span>02 / INSTITUTIONAL BLUEPRINT</span><span>PARENT ARCHITECTURE</span></div>
       <h2 style="margin-top:34px">The institutional engine behind <span class="serif">African enterprise.</span></h2>
     </div>
-    <p>Africa 2060 is not a disconnected pilot project or theoretical incubator. It is an operating organ of Zeenacle Network Group, combining non-profit talent formation with commercial holding capability.</p>
+    <p>The model separates ownership, mission execution, governance, founder development and problem intelligence. Each layer has a distinct role while operating as one founder-creation system.</p>
   </div>
   <div class="split-editorial">
     <div class="split-photo-pane">
       <img src="../images/partners-table.webp" alt="Institutional leadership convening around the Africa 2060 governance table" width="1200" height="800" loading="lazy" decoding="async">
       <div class="split-photo-caption">
         <span>ZEENACLE NETWORK GROUP</span>
-        <span>CONTINENTAL INCUBATION &amp; VENTURE FORMATION</span>
+        <span>HOLDING COMPANY &amp; PARENT ARCHITECTURE</span>
       </div>
     </div>
     <div class="split-text-pane">
       <div class="architecture-diagram">
         <div class="architecture-root">
-          <small>PARENT HOLDING COMPANY</small>
+          <small>ORGANISATION &amp; HOLDING COMPANY</small>
           <h3>Zeenacle Network Group</h3>
-          <p>Continental enterprise formation, asset stewardship, and strategic governance across African markets.</p>
+          <p>Owns and oversees Zeenacle subsidiaries; receives the standing 20% parent-company equity allocation from organisations established under Africa 2060; deploys approved parent resources to support further organisation-building and continental programmes.</p>
         </div>
-        <div class="architecture-branches">
+        <div class="architecture-branches" style="grid-template-columns:1fr 1fr;gap:16px">
           <div class="architecture-node">
-            <small>NON-PROFIT ENGINE</small>
+            <small>INITIATIVE OF THE GROUP</small>
             <h4>Africa 2060</h4>
-            <p>Non-profit talent engine: founder creation, Academy tracks, Innovation Lab problem pipeline, and civic ecosystem.</p>
+            <p>Pursues the mission of raising 10M+ founders across Africa; provides the founder-creation architecture, strategic direction and Initiative operating model. (Not a separate holding company).</p>
           </div>
           <div class="architecture-node">
-            <small>VENTURE CAPITAL ARM</small>
-            <h4>Zeenacle Ventures</h4>
-            <p>Venture studio, co-investment syndicates, pre-seed capital allocation, and international growth syndication.</p>
+            <small>GOVERNANCE BODY</small>
+            <h4>Africa 2060 Senate</h4>
+            <p>Cross-sector group of professionals providing strategic oversight, protecting the mission, and ensuring discipline and accountability.</p>
           </div>
           <div class="architecture-node">
-            <small>ENTERPRISE PORTFOLIO</small>
-            <h4>Operating Companies</h4>
-            <p>Independent commercial companies incorporated with majority founder equity across 54 African economies.</p>
+            <small>FOUNDER ACADEMY</small>
+            <h4>Zeenacle Academy</h4>
+            <p>Principal founder-development engine training founders through a one-year, three-tier programme across three capability tracks.</p>
           </div>
+          <div class="architecture-node">
+            <small>PROBLEM INTELLIGENCE</small>
+            <h4>Innovation Lab</h4>
+            <p>Brain box of professionals, retirees and researchers identifying real-time problems and assigning structured projects to Academy cohorts.</p>
+          </div>
+        </div>
+        <div style="margin-top:20px;padding:18px;background:var(--navy-surface);border:1px solid var(--navy-border)">
+          <small style="font-size:10px;font-weight:700;letter-spacing:0.16em;color:var(--gold);display:block;margin-bottom:6px">CORE MANAGEMENT PRINCIPLE</small>
+          <p style="font-size:13.5px;color:#cbd5e1;line-height:1.55;margin:0">The Academy, Innovation Lab and Senate operate as connected functions rather than independent departments. The Lab supplies problems; the Academy develops people and solutions; the Senate governs the Initiative; and Zeenacle Network Group provides the parent-company structure for company establishment and reinvestment.</p>
         </div>
       </div>
     </div>
@@ -519,13 +528,13 @@ ${css}
 
     <div class="cap-table-card system-card">
       <div class="cap-table-pct">20%</div>
-      <h3>System Reinvestment Pool</h3>
-      <p>Held permanently by the non-profit Africa 2060 Foundation Endowment. Returns from this pool recycle 100% into future founder cohorts.</p>
+      <h3>Parent-Company Allocation</h3>
+      <p>Allocated and remitted to Zeenacle Network Group, the parent / holding company, to establish a long-term parent ownership base that supports continental programmes.</p>
       <ul>
-        <li>Zero private shareholder extraction from this pool</li>
-        <li>Dividends fund next-generation Academy fellows</li>
-        <li>Creates a perpetual, self-funding African capital reserve</li>
-        <li>Eliminates perpetual dependency on foreign donor grants</li>
+        <li>Establishes further enterprises and operating vehicles</li>
+        <li>Supports founder-development infrastructure and labs</li>
+        <li>Supports approved poverty-eradication programmes</li>
+        <li>Funds approved Africa-wide initiatives and events</li>
       </ul>
     </div>
 
@@ -627,7 +636,7 @@ ${css}
       <div class="eyebrow-row"><span>11 / REINVESTMENT FLYWHEEL</span><span>PERPETUAL CAPITAL</span></div>
       <h2 style="margin-top:34px">From foreign dependency to <span class="serif">sovereign self-funding.</span></h2>
     </div>
-    <p>The core economic breakthrough of Africa 2060 is perpetual capital recycling. When companies win, the system compounds, creating an expanding African endowment that funds the next generation.</p>
+    <p>Value created in the ecosystem should help create the next generation of founders, organisations and economic opportunities.</p>
   </div>
 
   <div class="flywheel-v2">
@@ -643,7 +652,7 @@ ${css}
       </div>
       <div class="flywheel-legend">
         <span>PERPETUAL REINVESTMENT FLYWHEEL</span>
-        <span>20% EQUITY RETURNS TO ENDOWMENT</span>
+        <span>20% PARENT-COMPANY EQUITY</span>
       </div>
     </div>
     <div>
@@ -652,10 +661,10 @@ ${css}
           <span>01 / Company Success</span><i>→</i><span>Enterprises scale, achieve profitability, pay dividends, or execute exits</span>
         </div>
         <div class="reframe-row">
-          <span>02 / 20% Recycling</span><i>→</i><span>System dividends return directly to the Africa 2060 Foundation Endowment</span>
+          <span>02 / 20% Parent Equity</span><i>→</i><span>20% equity remitted to Zeenacle Network Group, the parent holding company</span>
         </div>
         <div class="reframe-row">
-          <span>03 / Reinvestment</span><i>→</i><span>Endowment capital finances incoming cohorts, new labs, and equipment facilities</span>
+          <span>03 / 4 Reinvestment Uses</span><i>→</i><span>Establishes other enterprises, supports founder infrastructure, poverty programmes &amp; events</span>
         </div>
         <div class="reframe-row">
           <span>04 / Sovereign Growth</span><i>→</i><span>Removes permanent reliance on external aid, grants, and foreign philanthropy</span>
@@ -666,38 +675,35 @@ ${css}
 </section>
 
 <!-- LAYER 12: INSTITUTIONAL ARCHITECTURE & GOVERNANCE SENATE -->
-<section class="act act-cream" id="governance">
+<section class="act act-dark" id="governance">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>12 / INSTITUTIONAL ARCHITECTURE</span><span>GOVERNANCE SENATE</span></div>
-      <h2 style="margin-top:34px">Governance designed for <span class="serif">multi-decade integrity.</span></h2>
+      <h2 style="margin-top:34px">Strategic oversight and <span class="serif">mission protection.</span></h2>
     </div>
-    <p>A 34-year continental project requires governance that outlasts market fluctuations, political cycles, and individual founders. Africa 2060 is anchored by four independent oversight pillars.</p>
+    <p>The Africa 2060 Senate is the governing body of the Initiative. Its purpose is to protect the mission of raising 10M+ founders, provide strategic governance and ensure that the Initiative develops with discipline and accountability.</p>
   </div>
 
-  <div class="governance-pillars-grid">
-    <div class="governance-pillar-card">
-      <small>GOVERNANCE PILLAR 01</small>
-      <h3>The Governance Senate</h3>
-      <p>Custodians of the 2060 mandate, ensuring relentless fidelity to the non-negotiable principles of African founder ownership and equity sovereignty.</p>
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/ownership.webp" alt="Africa 2060 Senate members in governance deliberations" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>AFRICA 2060 SENATE</span>
+        <span>CROSS-SECTOR STRATEGIC GOVERNANCE</span>
+      </div>
     </div>
-
-    <div class="governance-pillar-card">
-      <small>GOVERNANCE PILLAR 02</small>
-      <h3>The Academic Council</h3>
-      <p>Continental educators, engineers, and industrialists governing curriculum standards, module accreditation, and the Living Curriculum renewal process.</p>
-    </div>
-
-    <div class="governance-pillar-card">
-      <small>GOVERNANCE PILLAR 03</small>
-      <h3>The Venture Committee</h3>
-      <p>Experienced venture partners and commercial operators reviewing company formation readiness, legal compliance, and seed tranche releases.</p>
-    </div>
-
-    <div class="governance-pillar-card">
-      <small>GOVERNANCE PILLAR 04</small>
-      <h3>Independent Audit &amp; Ethics</h3>
-      <p>External statutory auditors and ethics ombudsmen publishing transparent annual audits on founders trained, companies formed, and endowment returns.</p>
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:24px;color:var(--cream);margin-bottom:12px">Senate Core Responsibilities</h3>
+      <p style="font-size:14.5px;color:var(--navy-muted);line-height:1.6">Senators are cross-sector professionals spanning finance, investment, operations, human capital, innovation, and governance who govern the Initiative without replacing day-to-day Academy management.</p>
+      <div class="giving-list" style="margin-top:20px;border-top-color:var(--navy-border)">
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 01</b><span style="color:var(--navy-muted)">Protect the mission and strategic direction of Africa 2060.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 02</b><span style="color:var(--navy-muted)">Approve or oversee major Initiative policies and operating architecture.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 03</b><span style="color:var(--navy-muted)">Provide governance oversight over the Academy and Innovation Lab.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 04</b><span style="color:var(--navy-muted)">Review major company formation and investment decisions where required.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 05</b><span style="color:var(--navy-muted)">Protect the integrity of the parent-equity and reinvestment model.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 06</b><span style="color:var(--navy-muted)">Provide cross-sector expertise and strategic networks.</span></div>
+        <div class="giving-list-item" style="border-top-color:var(--navy-border)"><b style="color:var(--gold)">RESPONSIBILITY 07</b><span style="color:var(--navy-muted)">Hold Initiative leadership accountable for agreed objectives and outcomes.</span></div>
+      </div>
     </div>
   </div>
 </section>

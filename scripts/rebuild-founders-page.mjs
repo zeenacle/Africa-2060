@@ -212,8 +212,7 @@ ${css}
   </div>
 </section>
 
-<!-- SECTION 05: CLOSING TRANSITION -->
-<section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
+<!-- SECTION 05: ONE-YEAR ZEENACLE ACADEMY STRUCTURE -->
   <div class="hero-backdrop">
     <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide infrastructure at sunset" width="1376" height="784" loading="lazy" decoding="async">
   </div>

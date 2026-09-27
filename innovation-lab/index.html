@@ -2570,6 +2570,117 @@ button {
   }
 }
 
+/* ==========================================================================
+   INSTITUTIONAL BLUEPRINT & DESTINATION GATEWAYS
+   ========================================================================== */
+.blueprint-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+.blueprint-node {
+  background: var(--navy-surface);
+  border: 1px solid var(--navy-border);
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+.blueprint-node:hover {
+  background: var(--navy-elevated);
+}
+.blueprint-node b {
+  font-family: var(--display);
+  font-size: 17px;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.blueprint-node span {
+  font-size: 14px;
+  color: var(--navy-muted);
+  line-height: 1.5;
+}
+.blueprint-connector {
+  text-align: center;
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 0;
+}
+@media (max-width: 768px) {
+  .blueprint-node {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.destination-gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--darkline);
+  border: 1px solid var(--darkline);
+  margin-top: 48px;
+}
+.destination-gateway-card {
+  background: #ffffff;
+  padding: clamp(24px, 2.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition-fast);
+}
+.destination-gateway-card:hover {
+  background: #fbf9f4;
+}
+.destination-gateway-card small {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.destination-gateway-card h3 {
+  font-family: var(--display);
+  font-size: 21px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.destination-gateway-card p {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.destination-gateway-card .dest-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .destination-gateway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .destination-gateway-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 </style>
 <link rel="preload" as="image" href="../images/ai-team.webp">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Innovation Lab & Problem Intelligence — Africa 2060","description":"The Africa 2060 Innovation Lab: Continental problem intelligence, challenge structuring, and the problem-to-company pipeline."}</script>
@@ -2701,7 +2812,46 @@ button {
   </div>
 </section>
 
-<!-- SECTION 03: THE PROBLEM-TO-COMPANY CORRIDOR -->
+<!-- SECTION 03: LAB COMPOSITION & SEVEN CORE FUNCTIONS -->
+<section class="act act-cream" id="functions" style="background:#fbf9f4;border-top:1px solid var(--darkline)">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>LAB COMPOSITION &amp; MANDATE</span><span>CONTROL CENTRE</span></div>
+      <h2 style="margin-top:34px">The brain box of the Academy’s <span class="serif">real-time problem system.</span></h2>
+    </div>
+    <p>The Innovation Lab connects African problems to founder development by finding problems that can become meaningful practical projects for Academy participants.</p>
+  </div>
+
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/partners-table.webp" alt="Experienced practitioners and retirees convening to evaluate challenge briefs" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>LAB COMPOSITION</span>
+        <span>EXPERTS, RETIREES &amp; RESEARCHERS</span>
+      </div>
+    </div>
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:24px;color:var(--ink);margin-bottom:12px">Who Constitutes the Lab</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">The Lab draws upon professionals, experienced industry practitioners, retirees, researchers, entrepreneurs and other experts with ground-truth knowledge of real bottlenecks across African value chains.</p>
+      <div class="giving-list" style="margin-top:24px">
+        <div class="giving-list-item"><b>01 IDENTIFY</b><span>Real-time problems and unmet needs across Africa.</span></div>
+        <div class="giving-list-item"><b>02 VALIDATE</b><span>Filter and structure problems before participant assignment.</span></div>
+        <div class="giving-list-item"><b>03 CONVERT</b><span>Turn problems into briefs with clear objectives, constraints and outputs.</span></div>
+        <div class="giving-list-item"><b>04 MATCH</b><span>Route briefs to appropriate track, sector, or cross-track team.</span></div>
+        <div class="giving-list-item"><b>05 SUPERVISE</b><span>Connect participants with specialist mentors and sector practitioners.</span></div>
+        <div class="giving-list-item"><b>06 REVIEW</b><span>Evaluate completed projects and identify solutions for venture formation.</span></div>
+        <div class="giving-list-item"><b>07 FEED BACK</b><span>Channel live operational intelligence directly into Academy curriculum.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tracks-convergence" style="margin-top:40px;background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+    <span style="color:var(--gold)">THE INNOVATION LOOP</span>
+    <h3 style="font-size:clamp(18px,2vw,24px);color:var(--ink)">IDENTIFY → VALIDATE → ASSIGN → BUILD → TEST → REVIEW → DEVELOP FURTHER</h3>
+  </div>
+</section>
+
+<!-- SECTION 04: THE PROBLEM-TO-COMPANY CORRIDOR -->
 <section class="act act-dark" id="corridor">
   <div class="act-head">
     <div>

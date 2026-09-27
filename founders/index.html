@@ -2570,6 +2570,117 @@ button {
   }
 }
 
+/* ==========================================================================
+   INSTITUTIONAL BLUEPRINT & DESTINATION GATEWAYS
+   ========================================================================== */
+.blueprint-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+.blueprint-node {
+  background: var(--navy-surface);
+  border: 1px solid var(--navy-border);
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+.blueprint-node:hover {
+  background: var(--navy-elevated);
+}
+.blueprint-node b {
+  font-family: var(--display);
+  font-size: 17px;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.blueprint-node span {
+  font-size: 14px;
+  color: var(--navy-muted);
+  line-height: 1.5;
+}
+.blueprint-connector {
+  text-align: center;
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 0;
+}
+@media (max-width: 768px) {
+  .blueprint-node {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.destination-gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--darkline);
+  border: 1px solid var(--darkline);
+  margin-top: 48px;
+}
+.destination-gateway-card {
+  background: #ffffff;
+  padding: clamp(24px, 2.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition-fast);
+}
+.destination-gateway-card:hover {
+  background: #fbf9f4;
+}
+.destination-gateway-card small {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.destination-gateway-card h3 {
+  font-family: var(--display);
+  font-size: 21px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.destination-gateway-card p {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.destination-gateway-card .dest-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .destination-gateway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .destination-gateway-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 </style>
 <link rel="preload" as="image" href="../images/builders.webp">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Founder Formation Architecture — Africa 2060","description":"Three capability pathways. One company-creation system. Developing the makers, engineers and operators who build Africa."}</script>
@@ -2755,7 +2866,132 @@ button {
   </div>
 </section>
 
-<!-- SECTION 05: CLOSING TRANSITION -->
+<!-- SECTION 05: ONE-YEAR ZEENACLE ACADEMY STRUCTURE -->
+<section class="act act-cream" id="academy-tiers">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>ACADEMY CURRICULUM</span><span>ONE-YEAR PROGRAMME</span></div>
+      <h2 style="margin-top:34px">One-year founder development <span class="serif">structure.</span></h2>
+    </div>
+    <p>Zeenacle Academy is the principal founder-development engine of Africa 2060. Participants are trained, challenged and prepared to work in cross-track teams and develop solutions to real-time problems.</p>
+  </div>
+
+  <div class="academy-tiers-grid" style="margin-top:40px">
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num">MONTH 1–4 · SEPTEMBER–DECEMBER</span>
+      <h3 style="color:var(--ink)">Tier 1: Foundational Class</h3>
+      <p style="color:var(--ink-soft)">Establish the common foundation required for founder development and prepare participants for deeper capability development across commercial, macro, and technological literacy.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>Economic Architecture &amp; African Markets</span>
+        <span>Applied AI Fluency &amp; Automation</span>
+        <span>Commercial Accounting &amp; Legal Frameworks</span>
+      </div>
+    </div>
+
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num">MONTH 5–8 · JANUARY–APRIL</span>
+      <h3 style="color:var(--ink)">Tier 2: Capability &amp; Pathway</h3>
+      <p style="color:var(--ink-soft)">Develop deeper capability and establish the participant’s pathway through the relevant track and sector direction, with hands-on labs and technical mastery.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>Track-Specific Physical or Digital Labs</span>
+        <span>Domain Sector Immersion &amp; Supply Chains</span>
+        <span>Regulatory &amp; AfCFTA Trade Clearance</span>
+      </div>
+    </div>
+
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num">MONTH 8–11 · APRIL–JULY</span>
+      <h3 style="color:var(--ink)">Tier 3: Team Formation &amp; Innovation</h3>
+      <p style="color:var(--ink-soft)">Bring complementary capabilities together, work on innovation, and complete the final real-time problem project sourced directly from the Innovation Lab.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>Cross-Track Matchmaking &amp; Triads</span>
+        <span>Innovation Lab Real-Time Challenge</span>
+        <span>Company Formation &amp; Cap Table Charter</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:36px;padding:28px;background:#f6f2ea;border:1px solid var(--darkline)">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;color:var(--gold);margin-bottom:8px">THE REQUIRED FINAL PROJECT MECHANISM</div>
+    <h3 style="font-family:var(--display);font-size:22px;color:var(--ink);margin-bottom:12px">Real-Time African Problem Solution</h3>
+    <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6;margin:0">Participants are assigned a real-time African bottleneck identified and structured by the Innovation Lab. Cross-track teams apply their technical, vocational, and operational capabilities to produce a functional prototype, process, or business model assessed against an approved Academy rubric. Projects with credible viability enter formal company formation.</p>
+  </div>
+</section>
+
+<!-- SECTION 06: TRACK-SPECIFIC ADMISSIONS & SCREENING -->
+<section class="act act-dark" id="admissions">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>ADMISSIONS STANDARDS</span><span>SCREENING APPROACH</span></div>
+      <h2 style="margin-top:34px">Track-specific qualification and <span class="serif">screening.</span></h2>
+    </div>
+    <p>Admissions are not based on one universal qualification standard. Screening is specific to each track so that applicants enter through the pathway that matches their demonstrated capability.</p>
+  </div>
+
+  <div class="subsystem-grid" style="margin-top:40px">
+    <div class="subsystem-box">
+      <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.16em">CRITERION 01</span>
+      <h3 style="font-family:var(--display);font-size:20px;color:var(--cream);margin:12px 0 8px">Academic Qualification</h3>
+      <p style="font-size:14px;color:var(--navy-muted);line-height:1.6">Assesses relevance to the selected track and intended pathway across university and polytechnic backgrounds.</p>
+    </div>
+
+    <div class="subsystem-box">
+      <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.16em">CRITERION 02</span>
+      <h3 style="font-family:var(--display);font-size:20px;color:var(--cream);margin:12px 0 8px">Professional Certification</h3>
+      <p style="font-size:14px;color:var(--navy-muted);line-height:1.6">Supports entry into different tracks where demonstrated professional certifications prove applied competence.</p>
+    </div>
+
+    <div class="subsystem-box">
+      <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.16em">CRITERION 03</span>
+      <h3 style="font-family:var(--display);font-size:20px;color:var(--cream);margin:12px 0 8px">Practical Experience</h3>
+      <p style="font-size:14px;color:var(--navy-muted);line-height:1.6">Leverages documented industry experience and evidence of field competence where formal degrees are secondary.</p>
+    </div>
+
+    <div class="subsystem-box">
+      <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.16em">CRITERION 04</span>
+      <h3 style="font-family:var(--display);font-size:20px;color:var(--cream);margin:12px 0 8px">Portfolio &amp; Work Proof</h3>
+      <p style="font-size:14px;color:var(--navy-muted);line-height:1.6">Particularly relevant where practical, creative or technical capability is better demonstrated through physical or digital work.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:36px;padding:24px;border:1px solid var(--navy-border);background:var(--navy-surface)">
+    <small style="font-size:10px;font-weight:700;letter-spacing:0.18em;color:var(--gold);display:block;margin-bottom:6px">CONCRETE ADMISSIONS BENCHMARK</small>
+    <p style="font-size:14px;color:#cbd5e1;line-height:1.6;margin:0">A BSc holder in Accounting would ordinarily apply through the <strong>Operational Track</strong> because accounting aligns with business and financial operations. Entry to another track would require relevant additional certification, experience, portfolio evidence or another approved basis.</p>
+  </div>
+</section>
+
+<!-- SECTION 07: TRANSPARENT ACADEMY FEE STRUCTURE -->
+<section class="act act-cream" id="fees">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>COMMERCIAL TRANSPARENCY</span><span>FEE ARCHITECTURE</span></div>
+      <h2 style="margin-top:34px">One unified fee structure across <span class="serif">all three tracks.</span></h2>
+    </div>
+    <p>The current Academy fee is ₦500,000 per participant. The same structure applies across Vocational, Technical, and Operational pathways.</p>
+  </div>
+
+  <div class="cap-table-grid" style="margin-top:40px">
+    <div class="cap-table-card founder-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">₦400,000</div>
+      <h3 style="color:var(--ink)">Base Tuition Fee</h3>
+      <p style="color:var(--ink-soft)">Covers core faculty instruction, foundational curriculum, campus and digital LMS access, applied AI tool licenses, and masterclasses.</p>
+    </div>
+
+    <div class="cap-table-card system-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">₦100,000</div>
+      <h3 style="color:var(--ink)">Track / Sector Fee</h3>
+      <p style="color:var(--ink-soft)">Distinct from tuition and attached to the participant’s selected pathway: specialized workshop consumables, compute credits, and sector datasets.</p>
+    </div>
+
+    <div class="cap-table-card growth-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--gold)">₦500,000</div>
+      <h3 style="color:var(--ink)">Total Per Participant</h3>
+      <p style="color:var(--ink-soft)">Comprehensive investment covering the complete one-year development journey through final project and founder team matchmaking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 08: CLOSING TRANSITION -->
 <section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
   <div class="hero-backdrop">
     <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide infrastructure at sunset" width="1376" height="784" loading="lazy" decoding="async">

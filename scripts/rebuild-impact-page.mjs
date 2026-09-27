@@ -127,19 +127,55 @@ ${css}
           <span>02 / Company Formation</span><i>→</i><span>Matched triads incorporate equity-holding enterprises around verified problems</span>
         </div>
         <div class="reframe-row">
-          <span>03 / Economic Ownership</span><i>→</i><span>Founders retain 50% majority equity; 20% held by non-profit Foundation</span>
+          <span>03 / Economic Ownership</span><i>→</i><span>Founders retain 50% majority equity; 20% remitted to parent holding company</span>
         </div>
         <div class="reframe-row">
           <span>04 / Capital Compounding</span><i>→</i><span>Revenues, dividends and liquidity events generate sustainable cash flows</span>
         </div>
         <div class="reframe-row">
-          <span>05 / Reinvestment</span><i>→</i><span>20% returns recycle 100% into incoming cohorts, equipment labs and seed facilities</span>
+          <span>05 / Reinvestment</span><i>→</i><span>Parent resources recycled to build further organisations and infrastructure</span>
         </div>
         <div class="reframe-row">
           <span>06 / Institutional Sovereignty</span><i>→</i><span>Removes permanent reliance on external grants, creating self-funded African momentum</span>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SECTION 03: EQUITY & REINVESTMENT ARCHITECTURE -->
+<section class="act act-cream" id="reinvestment-architecture" style="background:#fbf9f4;border-top:1px solid var(--darkline)">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>PARENT EQUITY SPECIFICATION</span><span>ZEENACLE NETWORK GROUP</span></div>
+      <h2 style="margin-top:34px">The 20% parent-company <span class="serif">equity principle.</span></h2>
+    </div>
+    <p>The standing operating principle is that every established organisation under the Africa 2060 Initiative remits 20% equity to Zeenacle Network Group, the parent / holding company.</p>
+  </div>
+
+  <div class="cap-table-grid" style="margin-top:40px">
+    <div class="cap-table-card founder-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">20%</div>
+      <h3 style="color:var(--ink)">Parent-Company Allocation</h3>
+      <p style="color:var(--ink-soft)">Allocated and remitted to Zeenacle Network Group to create a long-term parent ownership base that supports further organisation-building and approved continental programmes.</p>
+    </div>
+
+    <div class="cap-table-card system-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">4 Uses</div>
+      <h3 style="color:var(--ink)">Approved Reinvestment Uses</h3>
+      <p style="color:var(--ink-soft)">1. Establish other organisations.<br>2. Support founder infrastructure.<br>3. Support poverty-eradication programmes.<br>4. Fund approved Africa-wide initiatives.</p>
+    </div>
+
+    <div class="cap-table-card growth-card" style="background:#fff;border:1px solid var(--darkline)">
+      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--gold)">80%</div>
+      <h3 style="color:var(--ink)">Remaining Enterprise Equity</h3>
+      <p style="color:var(--ink-soft)">Structured for founders, operating partners, external investors, employees and other stakeholders according to the entity's approved financing structure.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:36px;padding:28px;background:#f6f2ea;border:1px solid var(--darkline);text-align:center">
+    <small style="font-size:11px;font-weight:700;letter-spacing:0.18em;color:var(--gold);display:block;margin-bottom:8px">THE STANDING REINVESTMENT PRINCIPLE</small>
+    <blockquote style="font-family:var(--display);font-size:clamp(18px,2vw,24px);color:var(--ink);margin:0;font-style:italic">"Value created in the ecosystem should help create the next generation of founders, organisations and economic opportunities."</blockquote>
   </div>
 </section>
 

@@ -13,13 +13,13 @@ const html = `<!doctype html>
 <meta name="color-scheme" content="dark light">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Africa 2060">
-<meta property="og:title" content="Africa 2060 — Founder Creation and Company Formation System">
-<meta property="og:description" content="A founder creation and company formation system designed to create 10 million founders and economic opportunities across Africa by 2060.">
+<meta property="og:title" content="Africa 2060 — Build the Companies that Build Africa">
+<meta property="og:description" content="A founder creation and company formation system designed to create 10,000,000+ founders across Africa by 2060.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Africa 2060 — Founder Creation and Company Formation System">
-<meta name="twitter:description" content="A founder creation and company formation system designed to create 10 million founders and economic opportunities across Africa by 2060.">
+<meta name="twitter:title" content="Africa 2060 — Build the Companies that Build Africa">
+<meta name="twitter:description" content="10,000,000+ founders across Africa by 2060. The continental venture creation machine.">
 <meta name="theme-color" content="#040d16">
-<title>Africa 2060 — Founder Creation and Company Formation System</title>
+<title>Africa 2060 — Build the Companies that Build Africa</title>
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBZnJpY2EgMjA2MCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzA3MTMxZiIvPgogIDxwYXRoIGQ9Ik04IDEyaDQ4djRIOHoiIGZpbGw9IiNjNTlhNDgiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMSIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2VlZThkYyI+MjA2MDwvdGV4dD4KPC9zdmc+Cg==" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@ ${css}
 <main id="main">
 <div class="home-v2">
 
-<!-- 01: MONUMENTAL HERO -->
+<!-- 01 — HERO: MONUMENTAL AMBITION -->
 <section class="hero-v2" aria-labelledby="hero-title">
   <div class="hero-backdrop">
     <img class="hero-v2-image" src="./images/lagos-dawn.webp" alt="Lagos industrial and maritime infrastructure at dawn" width="1376" height="784" fetchpriority="high" decoding="async">
@@ -92,11 +92,11 @@ ${css}
   </div>
 </section>
 
-<!-- 02: THE STRATEGIC SHIFT (VISION OVERVIEW) -->
-<section class="act act-cream" id="vision-overview">
+<!-- 02 — THE SHIFT: WORKFORCE TO FOUNDER CREATION -->
+<section class="act act-cream" id="shift">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>02 / THE STRATEGIC SHIFT</span><span>VISION OVERVIEW</span></div>
+      <div class="eyebrow-row"><span>02 / THE SHIFT</span><span>STRATEGIC REFRAME</span></div>
       <h2 style="margin-top:34px">Move from workforce development to <span class="serif">founder creation.</span></h2>
     </div>
     <p>Employment remains a valued outcome; ownership is the target. The system measures impact primarily in founders created: people trained, matched into teams, and seeded into real, equity-holding companies.</p>
@@ -116,113 +116,128 @@ ${css}
         <div class="reframe-row"><span>Job seekers</span><i>→</i><span>Company builders</span></div>
         <div class="reframe-row"><span>Isolated skills</span><i>→</i><span>Complementary co-founding teams</span></div>
       </div>
+      <div class="pipeline-flow" style="margin-top:28px;grid-template-columns:repeat(4,1fr)">
+        <div class="pipeline-node" style="background:#fff;border-color:var(--darkline)"><small>01</small><strong style="color:var(--ink)">WORKFORCE</strong></div>
+        <div class="pipeline-node" style="background:#fff;border-color:var(--darkline)"><small>02</small><strong style="color:var(--ink)">FOUNDER</strong></div>
+        <div class="pipeline-node" style="background:#fff;border-color:var(--darkline)"><small>03</small><strong style="color:var(--ink)">COMPANY</strong></div>
+        <div class="pipeline-node" style="background:#fff;border-color:var(--darkline)"><small>04</small><strong style="color:var(--gold)">OWNERSHIP</strong></div>
+      </div>
       <div style="margin-top:36px">
-        <a class="solid-button" href="./vision/">Read the Vision Doctrine <span>↗</span></a>
+        <a class="solid-button" href="./vision/">Explore the Vision <span>↗</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 03: THE SYSTEM — OVERVIEW -->
-<section class="act act-dark" id="system-overview">
+<!-- 03 — THE SYSTEM: OPERATING LOGIC -->
+<section class="act act-dark" id="system">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>03 / THE OPERATING SYSTEM</span><span>SYSTEM OVERVIEW</span></div>
-      <h2 style="margin-top:34px">Nine stages. One <span class="serif">production machine.</span></h2>
+      <div class="eyebrow-row"><span>03 / THE SYSTEM</span><span>OPERATING LOGIC</span></div>
+      <h2 style="margin-top:34px">Nine stages. One <span class="serif">venture creation machine.</span></h2>
     </div>
-    <p>Africa 2060 works backwards from company opportunities: Strategic Industry → Company Opportunities → Founder Roles Required → Skills Required → Training → Matching → Company Formation → Funding → Scale → Reinvestment → More Founders.</p>
+    <p>Africa 2060 works backwards from verified market demand to founder formation, resourcing, and scale.</p>
   </div>
 
   <div class="pipeline-flow" style="margin-top:36px">
-    <div class="pipeline-node"><small>01</small><strong>SCAN &amp; PROBLEM</strong></div>
-    <div class="pipeline-node"><small>02</small><strong>RECRUIT &amp; SCREEN</strong></div>
-    <div class="pipeline-node"><small>03</small><strong>TRAIN &amp; FOUNDATION</strong></div>
-    <div class="pipeline-node"><small>04</small><strong>APPLY &amp; CHALLENGE</strong></div>
-    <div class="pipeline-node"><small>05</small><strong>MATCH &amp; TEAMS</strong></div>
-    <div class="pipeline-node"><small>06</small><strong>FORM &amp; LEGAL</strong></div>
+    <div class="pipeline-node"><small>01</small><strong>PROBLEM</strong></div>
+    <div class="pipeline-node"><small>02</small><strong>TRAIN</strong></div>
+    <div class="pipeline-node"><small>03</small><strong>APPLY</strong></div>
+    <div class="pipeline-node"><small>04</small><strong>MATCH</strong></div>
+    <div class="pipeline-node"><small>05</small><strong>FORM</strong></div>
+    <div class="pipeline-node"><small>06</small><strong>FUND</strong></div>
   </div>
-  <div class="pipeline-flow" style="margin-top:12px">
-    <div class="pipeline-node"><small>07</small><strong>FUND &amp; RESOURCE</strong></div>
-    <div class="pipeline-node"><small>08</small><strong>SCALE &amp; VOS</strong></div>
-    <div class="pipeline-node"><small>09</small><strong>REINVEST &amp; COMPOUND</strong></div>
+  <div class="pipeline-flow" style="margin-top:12px;grid-template-columns:repeat(3,1fr)">
+    <div class="pipeline-node"><small>07</small><strong>SCALE</strong></div>
+    <div class="pipeline-node"><small>08</small><strong>REINVEST</strong></div>
+    <div class="pipeline-node"><small>09</small><strong>MORE FOUNDERS</strong></div>
   </div>
 
   <div style="margin-top:44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding:28px 0;border-top:1px solid var(--navy-border)">
-    <p style="margin:0;max-width:620px;font-size:15px;color:#aebbc1;line-height:1.6">The complete operating architecture connects the 3-Tier Academy, Innovation Lab challenge pipeline, 50/20/30 cap table governance, and the Venture Operating System across 54 African economies.</p>
-    <a class="solid-button" href="./system/">Explore the Full Operating Architecture <span>↗</span></a>
+    <p style="margin:0;max-width:620px;font-size:15px;color:#aebbc1;line-height:1.6">The complete operating architecture connects the 3-Tier Zeenacle Academy, Innovation Lab challenge pipeline, 50/20/30 cap table governance, and the Venture Operating System across 54 African economies.</p>
+    <a class="solid-button" href="./system/">Explore the System <span>↗</span></a>
   </div>
 </section>
 
-<!-- 04: FOUNDERS — OVERVIEW -->
-<section class="act act-cream" id="founders-overview">
+<!-- 04 — FOUNDERS: THREE CAPABILITY PATHWAYS -->
+<section class="act act-cream" id="founders">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>04 / FOUNDER FORMATION</span><span>THREE TRACKS</span></div>
+      <div class="eyebrow-row"><span>04 / FOUNDER PATHWAYS</span><span>THREE DISCIPLINES</span></div>
       <h2 style="margin-top:34px">Three complementary pathways. <span class="serif">One co-founding unit.</span></h2>
     </div>
-    <p>Africa 2060 develops three distinct founder archetypes and systematically unites them into balanced co-founding triads to eliminate the single-discipline vulnerability that causes 90% of early venture failures.</p>
+    <p>Africa 2060 develops three distinct founder archetypes and systematically unites them into balanced co-founding triads to eliminate the single-discipline vulnerability that causes venture failure.</p>
   </div>
 
-  <div class="hierarchy-cards" style="margin-top:40px">
-    <div class="hierarchy-card" style="background:#fff;border:1px solid var(--darkline);padding:clamp(24px,3vw,38px)">
-      <div class="track-code" style="color:var(--rust)">TRACK 01 / VOCATIONAL</div>
-      <h3 style="font-family:var(--display);font-size:clamp(22px,2.2vw,30px);margin:14px 0 10px;color:var(--ink)">Make &amp; Build</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">Founders who physically produce, construct, repair, manufacture, install, grow, process and deliver tangible physical products and infrastructure.</p>
-      <small style="display:block;margin-top:18px;font-size:11px;font-weight:700;letter-spacing:0.14em;color:var(--gold)">7 PHYSICAL SECTORS</small>
+  <div class="academy-tiers-grid" style="margin-top:40px">
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num" style="color:var(--rust)">PATHWAY 01 / VOCATIONAL</span>
+      <h3 style="color:var(--ink)">Make &amp; Build</h3>
+      <p style="color:var(--ink-soft)">Founders who physically produce, construct, repair, manufacture, install, grow, process and deliver tangible physical products and infrastructure.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>7 Physical Sectors</span>
+        <span>Construction · Manufacturing · Agriculture · Energy</span>
+      </div>
     </div>
 
-    <div class="hierarchy-card" style="background:#fff;border:1px solid var(--darkline);padding:clamp(24px,3vw,38px)">
-      <div class="track-code" style="color:#2a6f97">TRACK 02 / TECHNICAL</div>
-      <h3 style="font-family:var(--display);font-size:clamp(22px,2.2vw,30px);margin:14px 0 10px;color:var(--ink)">Engineer &amp; Innovate</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">Founders who design software, build hardware, architect systems, create proprietary intellectual property and solve complex technical challenges.</p>
-      <small style="display:block;margin-top:18px;font-size:11px;font-weight:700;letter-spacing:0.14em;color:var(--gold)">8 TECHNICAL SECTORS</small>
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num" style="color:#2a6f97">PATHWAY 02 / TECHNICAL</span>
+      <h3 style="color:var(--ink)">Engineer &amp; Innovate</h3>
+      <p style="color:var(--ink-soft)">Founders who design software, build hardware, architect systems, create proprietary intellectual property and solve complex technical challenges.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>8 Technical Sectors</span>
+        <span>Technology · AI &amp; Robotics · Software · Data Engineering</span>
+      </div>
     </div>
 
-    <div class="hierarchy-card" style="background:#fff;border:1px solid var(--darkline);padding:clamp(24px,3vw,38px)">
-      <div class="track-code" style="color:var(--green)">TRACK 03 / OPERATIONAL</div>
-      <h3 style="font-family:var(--display);font-size:clamp(22px,2.2vw,30px);margin:14px 0 10px;color:var(--ink)">Organise &amp; Scale</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">Founders who organize capital, people, physical assets, supply chains, compliance, distribution channels, and commercial enterprise scale.</p>
-      <small style="display:block;margin-top:18px;font-size:11px;font-weight:700;letter-spacing:0.14em;color:var(--gold)">7 OPERATIONAL SECTORS</small>
+    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+      <span class="academy-tier-num" style="color:var(--green)">PATHWAY 03 / OPERATIONAL</span>
+      <h3 style="color:var(--ink)">Organise &amp; Scale</h3>
+      <p style="color:var(--ink-soft)">Founders who organize capital, people, physical assets, supply chains, compliance, distribution channels, and commercial enterprise scale.</p>
+      <div class="academy-tier-list" style="color:var(--ink-muted)">
+        <span>7 Operational Sectors</span>
+        <span>Banking &amp; Finance · Logistics · Commerce · Corporate Operations</span>
+      </div>
     </div>
   </div>
 
   <div style="margin-top:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding:24px 0;border-top:1px solid var(--darkline)">
-    <strong style="font-family:var(--display);font-size:16px;color:var(--ink)">THE CONVERGENCE PRINCIPLE: 1 Maker + 1 Engineer + 1 Operator = 1 Resilient African Company</strong>
-    <a class="solid-button" href="./founders/">Explore Founder Pathways <span>↗</span></a>
+    <strong style="font-family:var(--display);font-size:16px;color:var(--ink)">THE CONVERGENCE PRINCIPLE: 1 Maker + 1 Engineer + 1 Operator = 1 Resilient African Enterprise</strong>
+    <a class="solid-button" href="./founders/">Explore the Founder Pathways <span>↗</span></a>
   </div>
 </section>
 
-<!-- 05: THE OPPORTUNITY UNIVERSE (SECTORS OVERVIEW) -->
-<section class="act act-dark" id="sectors-overview">
+<!-- 05 — INDUSTRIES: THE OPPORTUNITY UNIVERSE -->
+<section class="act act-dark" id="sectors">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>05 / SECTOR UNIVERSE</span><span>INDUSTRIAL OPPORTUNITY</span></div>
+      <div class="eyebrow-row"><span>05 / INDUSTRIAL ATLAS</span><span>ECONOMIC OPPORTUNITY</span></div>
       <h2 style="margin-top:34px">Track → Sector → Sub-sector → <span class="serif">Company Opportunity.</span></h2>
     </div>
     <p>A strategic universe, not a commitment to launch every sector immediately. Africa 2060 identifies the economic systems and value chains within which enduring companies can be built.</p>
   </div>
 
-  <div class="hierarchy-strip">
-    <div class="hierarchy-row"><span>Track</span><i>→</i><span>Foundational capability profile (Vocational, Technical, Operational)</span></div>
-    <div class="hierarchy-row"><span>Sector</span><i>→</i><span>Major economic domain (e.g. Agriculture, Energy, Construction, Healthtech)</span></div>
-    <div class="hierarchy-row"><span>Sub-sector</span><i>→</i><span>Focused value chain segment (e.g. Cold Chain, Solar Irrigation, Generic APIs)</span></div>
-    <div class="hierarchy-row"><span>Company Opportunity</span><i>→</i><span>Specific, validated commercial enterprise ready for a founding team</span></div>
+  <div class="reframe-grid" style="margin-top:36px">
+    <div class="reframe-row"><span>Track</span><i>→</i><span>Foundational capability profile (Vocational, Technical, Operational)</span></div>
+    <div class="reframe-row"><span>Sector</span><i>→</i><span>Major economic domain (e.g. Agriculture, Energy, Construction, Healthtech)</span></div>
+    <div class="reframe-row"><span>Sub-sector</span><i>→</i><span>Focused value chain segment (e.g. Cold Chain, Solar Irrigation, Generic APIs)</span></div>
+    <div class="reframe-row"><span>Company Opportunity</span><i>→</i><span>Specific, validated commercial enterprise ready for a founding team</span></div>
   </div>
 
   <div style="margin-top:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding:28px 0;border-top:1px solid var(--navy-border)">
     <p style="margin:0;max-width:620px;font-size:15px;color:#aebbc1;line-height:1.6">Explore the full 22-sector industrial atlas, sub-sector value chains, dynamic branch architecture, and commercial company opportunities.</p>
-    <a class="solid-button" href="./sectors/">Explore the African Industrial Atlas <span>↗</span></a>
+    <a class="solid-button" href="./sectors/">Explore the Sectors <span>↗</span></a>
   </div>
 </section>
 
-<!-- 06: INNOVATION LAB — OVERVIEW -->
-<section class="act act-cream" id="lab-overview">
+<!-- 06 — INNOVATION LAB: PROBLEM INTELLIGENCE -->
+<section class="act act-cream" id="innovation-lab">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>06 / PROBLEM INTELLIGENCE</span><span>INNOVATION LAB OVERVIEW</span></div>
       <h2 style="margin-top:34px">The problem-intelligence layer of <span class="serif">the system.</span></h2>
     </div>
-    <p>The Innovation Lab scans African markets and institutions, validates real problems, and converts them into structured founder challenge briefs that feed the Academy and company formation pipeline.</p>
+    <p>The Innovation Lab connects African problems to founder development by finding unmet needs that can become meaningful practical projects for Academy participants.</p>
   </div>
 
   <div class="split-editorial">
@@ -230,7 +245,7 @@ ${css}
       <img src="./images/ai-team.webp" alt="African researchers and engineers analyzing data and market intelligence in the Innovation Lab" width="1200" height="800" loading="lazy" decoding="async">
       <div class="split-photo-caption">
         <span>THE INNOVATION LAB</span>
-        <span>PROBLEM INTELLIGENCE &amp; VALIDATION</span>
+        <span>BRAIN BOX &amp; CONTROL CENTRE</span>
       </div>
     </div>
     <div class="split-text-pane">
@@ -238,7 +253,9 @@ ${css}
         <div class="reframe-row"><span>01 / IDENTIFY</span><i>→</i><span>Scan real African unmet needs across sectors and institutions</span></div>
         <div class="reframe-row"><span>02 / VALIDATE</span><i>→</i><span>Verify market depth, customer pain and commercial willingness to pay</span></div>
         <div class="reframe-row"><span>03 / STRUCTURE</span><i>→</i><span>Convert data into challenge briefs with constraints and evaluation criteria</span></div>
-        <div class="reframe-row"><span>04 / FEED SYSTEM</span><i>→</i><span>Deploy challenges into Academy cohorts and channel insights back to curriculum</span></div>
+        <div class="reframe-row"><span>04 / ASSIGN</span><i>→</i><span>Match briefs to Academy participants and cross-track founder teams</span></div>
+        <div class="reframe-row"><span>05 / REVIEW</span><i>→</i><span>Assess completed projects against rigorous commercial standards</span></div>
+        <div class="reframe-row"><span>06 / FEED SYSTEM</span><i>→</i><span>Move validated solutions into company formation and feed insights to curriculum</span></div>
       </div>
       <div style="margin-top:36px">
         <a class="solid-button" href="./innovation-lab/">Enter the Innovation Lab <span>↗</span></a>
@@ -247,14 +264,14 @@ ${css}
   </div>
 </section>
 
-<!-- 07: OWNERSHIP / COMPOUNDING (IMPACT OVERVIEW) -->
-<section class="act act-dark" id="impact-overview">
+<!-- 07 — OWNERSHIP / COMPOUNDING: THE IMPACT MODEL -->
+<section class="act act-dark" id="impact">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>07 / ECONOMIC COMPOUNDING</span><span>IMPACT FLYWHEEL</span></div>
+      <div class="eyebrow-row"><span>07 / ECONOMIC COMPOUNDING</span><span>THE FLYWHEEL</span></div>
       <h2 style="margin-top:34px">A self-sustaining economic <span class="serif">compounding model.</span></h2>
     </div>
-    <p>System targets and ambitions — not current figures. The intended outcome chain is founders created → teams formed → companies created → capital and revenue generated → ownership retained → reinvestment recycled.</p>
+    <p>Value created in the ecosystem helps create the next generation of founders, organisations and economic opportunities.</p>
   </div>
 
   <div class="flywheel-v2">
@@ -274,20 +291,21 @@ ${css}
       </div>
     </div>
     <div>
-      <div class="scorecard-v2">
-        <div class="score-row"><b>01</b><strong>Founders created</strong><span>Capability becomes ownership potential across strategic industries.</span></div>
-        <div class="score-row"><b>02</b><strong>Teams formed</strong><span>Complementary capabilities converge around verified problems.</span></div>
-        <div class="score-row"><b>03</b><strong>Companies created</strong><span>Solutions structured into equity-holding enterprise organisations.</span></div>
-        <div class="score-row"><b>04</b><strong>Reinvestment</strong><span>20% system dividends recycle into future founder generations.</span></div>
+      <div class="reframe-grid">
+        <div class="reframe-row"><span>Founders</span><i>→</i><span>Capability develops across vocational, technical and operational tracks</span></div>
+        <div class="reframe-row"><span>Companies</span><i>→</i><span>Triads converge to solve real problems and form enterprise vehicles</span></div>
+        <div class="reframe-row"><span>Ownership</span><i>→</i><span>Founders hold 50% majority equity with 4-year vesting</span></div>
+        <div class="reframe-row"><span>Reinvestment</span><i>→</i><span>20% equity remitted to Zeenacle Network Group to fund future cohorts</span></div>
+        <div class="reframe-row"><span>More Founders</span><i>→</i><span>Endowment dividends create continuous continental scale</span></div>
       </div>
       <div style="margin-top:36px">
-        <a class="solid-button" href="./impact/">Explore the Impact Model <span>↗</span></a>
+        <a class="solid-button" href="./impact/">See the Impact Model <span>↗</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 08: 2060 MONUMENTAL AMBITION -->
+<!-- 08 — 2060: THE CONTINENTAL HORIZON -->
 <section class="hero-v2 act-monument" id="horizon" style="min-height:85vh;border-top:1px solid var(--navy-border)">
   <div class="hero-backdrop">
     <img class="hero-v2-image" src="./images/city-wide-2.webp" alt="African citywide infrastructure and industrial landscape at twilight" width="1376" height="784" loading="lazy" decoding="async">
@@ -300,6 +318,7 @@ ${css}
       <h2 class="display" style="font-size:clamp(44px,6vw,92px)">10,000,000+ Founders. <span class="serif">By 2060.</span></h2>
       <div class="hero-v2-sub">
         <p>A 34-year institutional project across 54 African economies. Economic sovereignty is not proclaimed. It is built company by company, founder by founder, balance sheet by balance sheet.</p>
+        <p>By 2060, Africa will be home to over 2.5 billion people. The Africa 2060 Initiative is timed to convert this demographic surge into the largest enterprise-building generation in human history.</p>
       </div>
       <div class="hero-v2-actions" style="margin-top:36px">
         <a class="solid-button" href="./system/">Explore Operating System <span>↗</span></a>
@@ -316,37 +335,144 @@ ${css}
   </div>
 </section>
 
-<!-- 09: FINAL INSTITUTIONAL NAVIGATION / BUILD WITH AFRICA 2060 -->
+<!-- 09 — INSTITUTIONAL ARCHITECTURE -->
+<section class="act act-dark" id="architecture">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>09 / INSTITUTIONAL ARCHITECTURE</span><span>GOVERNANCE &amp; STRUCTURE</span></div>
+      <h2 style="margin-top:34px">Separated ownership, governance, <span class="serif">capability and intelligence.</span></h2>
+    </div>
+    <p>The model separates ownership, mission execution, governance, founder development and problem intelligence. Each layer has a distinct role while operating as one founder-creation system.</p>
+  </div>
+
+  <div class="blueprint-stack">
+    <div class="blueprint-node">
+      <b>Zeenacle Network Group</b>
+      <span>Parent organisation and holding company. Owns and oversees subsidiaries, receives standing 20% parent-company equity allocation, and deploys approved parent resources to support continental programmes.</span>
+    </div>
+    <div class="blueprint-connector">↓</div>
+    <div class="blueprint-node">
+      <b>Africa 2060</b>
+      <span>Initiative and mission platform within Zeenacle Network Group. Pursues the mission of raising 10M+ founders across Africa and provides the founder-creation architecture and strategic direction.</span>
+    </div>
+    <div class="blueprint-connector">↓</div>
+    <div class="blueprint-node">
+      <b>Africa 2060 Senate</b>
+      <span>Cross-sector governing body of the Initiative. Protects the mission, provides strategic oversight and accountability, and preserves the integrity of the parent-equity and reinvestment model.</span>
+    </div>
+    <div class="blueprint-connector">↓</div>
+    <div class="blueprint-node">
+      <b>Zeenacle Academy</b>
+      <span>Principal founder-development engine of Africa 2060. Trains founders through a one-year, three-tier programme across three capability tracks (Vocational, Technical, Operational).</span>
+    </div>
+    <div class="blueprint-connector">↓</div>
+    <div class="blueprint-node">
+      <b>Innovation Lab</b>
+      <span>Problem intelligence and control centre. Experienced practitioners, retirees, and researchers identifying real-time African problems and assigning structured project briefs to Academy cohorts.</span>
+    </div>
+    <div class="blueprint-connector">↓</div>
+    <div class="blueprint-node">
+      <b>Founder Teams &amp; Companies</b>
+      <span>Commercial operating vehicles formed by converged founder triads to solve validated problems, create economic value, and expand economic ownership across Africa.</span>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;text-align:center">
+    <a class="solid-button" href="./system/#blueprint">Inspect the Full Institutional Blueprint <span>↗</span></a>
+  </div>
+</section>
+
+<!-- 10 — FINAL TRANSITION & INSTITUTIONAL GATEWAY -->
 <section class="act act-cream" id="participate">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>09 / PARTICIPATE</span><span>BUILD WITH AFRICA 2060</span></div>
-      <h2 style="margin-top:34px">Step into the <span class="serif">institution.</span></h2>
+      <div class="eyebrow-row"><span>10 / DESTINATIONS</span><span>EXPLORE THE INSTITUTION</span></div>
+      <h2 style="margin-top:34px">Step into Africa 2060. <span class="serif">Nine substantive destinations.</span></h2>
     </div>
-    <p>Whether you are an aspiring founder ready to build, an institutional partner deploying capital and procurement, or a researcher aligning on problem discovery, Africa 2060 provides structured pathways to participate.</p>
+    <p>Africa 2060 is not a single landing page. Explore our dedicated institutional environments to understand why we exist, how the system operates, who we build, and how to participate.</p>
   </div>
 
-  <div class="academy-tiers-grid" style="margin-top:40px">
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
-      <span class="academy-tier-num">FOR FOUNDERS</span>
-      <h3 style="color:var(--ink)">Become a Builder</h3>
-      <p style="color:var(--ink-soft)">Enter one of the three capability tracks, master applied AI tools, solve real African problems, and form an equity-holding operating company.</p>
-      <div style="margin-top:24px"><a class="solid-button" href="./founders/">Explore Founder Tracks <span>↗</span></a></div>
-    </div>
+  <div class="destination-gateway-grid">
+    <a class="destination-gateway-card" href="./vision/">
+      <div>
+        <small>DESTINATION 01</small>
+        <h3>Vision &amp; Doctrine</h3>
+        <p>The strategic reframe from workforce preparation to founder creation, company formation, and majority economic ownership.</p>
+      </div>
+      <span class="dest-link">Explore Vision <span>↗</span></span>
+    </a>
 
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
-      <span class="academy-tier-num">FOR INSTITUTIONS</span>
-      <h3 style="color:var(--ink)">Partner with Us</h3>
-      <p style="color:var(--ink-soft)">Back the next generation of African builders through capital, procurement markets, technical expertise, and pan-African infrastructure.</p>
-      <div style="margin-top:24px"><a class="solid-button" href="./partners/">Institutional Gateway <span>↗</span></a></div>
-    </div>
+    <a class="destination-gateway-card" href="./system/">
+      <div>
+        <small>DESTINATION 02</small>
+        <h3>Operating Machine</h3>
+        <p>The 13-layer architectural blueprint, 9-stage operational ledger, cap table governance, and Venture Operating System.</p>
+      </div>
+      <span class="dest-link">Inspect System <span>↗</span></span>
+    </a>
 
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
-      <span class="academy-tier-num">DIRECT CONTACT</span>
-      <h3 style="color:var(--ink)">Secretariat Desk</h3>
-      <p style="color:var(--ink-soft)">Connect with the Africa 2060 Secretariat for general inquiries, media communications, governance alignment, and academic partnerships.</p>
-      <div style="margin-top:24px"><a class="solid-button" href="./contact/">Contact Secretariat <span>↗</span></a></div>
-    </div>
+    <a class="destination-gateway-card" href="./founders/">
+      <div>
+        <small>DESTINATION 03</small>
+        <h3>Founder Pathways</h3>
+        <p>The three distinct disciplines (Vocational, Technical, Operational), horizontal AI layer, and the Convergence Triad formula.</p>
+      </div>
+      <span class="dest-link">Explore Founders <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./sectors/">
+      <div>
+        <small>DESTINATION 04</small>
+        <h3>Industrial Atlas</h3>
+        <p>The 4-tier opportunity hierarchy, 22 strategic economic sectors, sub-sector value chains, and validated venture opportunities.</p>
+      </div>
+      <span class="dest-link">Explore Sectors <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./innovation-lab/">
+      <div>
+        <small>DESTINATION 05</small>
+        <h3>Innovation Lab</h3>
+        <p>The problem intelligence engine, 6-stage challenge pipeline, problem-to-company corridor, and real-time African challenge briefs.</p>
+      </div>
+      <span class="dest-link">Enter the Lab <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./impact/">
+      <div>
+        <small>DESTINATION 06</small>
+        <h3>Impact &amp; Compounding</h3>
+        <p>The perpetual 6-stage economic compounding loop, 20% parent-company equity remittance, and the 5-vector systemic scorecard.</p>
+      </div>
+      <span class="dest-link">See Impact Model <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./insights/">
+      <div>
+        <small>DESTINATION 07</small>
+        <h3>Insights &amp; Foresight</h3>
+        <p>The institutional knowledge architecture, Living Curriculum, Forced-Renewal rule, and strategic economic monographs.</p>
+      </div>
+      <span class="dest-link">Read Insights <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./partners/">
+      <div>
+        <small>DESTINATION 08</small>
+        <h3>Partner Gateway</h3>
+        <p>Institutional participation for investors, corporate partners, sponsors, and foundations with direct intake enquiry pathway.</p>
+      </div>
+      <span class="dest-link">Partner Gateway <span>↗</span></span>
+    </a>
+
+    <a class="destination-gateway-card" href="./contact/">
+      <div>
+        <small>DESTINATION 09</small>
+        <h3>Contact Secretariat</h3>
+        <p>Connect directly with the Africa 2060 Secretariat across 4 operational desks with audited cryptographic logging.</p>
+      </div>
+      <span class="dest-link">Contact Secretariat <span>↗</span></span>
+    </a>
   </div>
 </section>
 
@@ -411,5 +537,4 @@ try {
 `;
 
 fs.writeFileSync('index.html', html, 'utf8');
-console.log('Successfully wrote streamlined overview index.html! Size:', html.length);
-
+console.log('Successfully wrote rebuilt 10-part overview index.html! Size:', html.length);

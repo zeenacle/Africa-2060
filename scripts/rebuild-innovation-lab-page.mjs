@@ -158,7 +158,46 @@ ${css}
   </div>
 </section>
 
-<!-- SECTION 03: THE PROBLEM-TO-COMPANY CORRIDOR -->
+<!-- SECTION 03: LAB COMPOSITION & SEVEN CORE FUNCTIONS -->
+<section class="act act-cream" id="functions" style="background:#fbf9f4;border-top:1px solid var(--darkline)">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>LAB COMPOSITION &amp; MANDATE</span><span>CONTROL CENTRE</span></div>
+      <h2 style="margin-top:34px">The brain box of the Academy’s <span class="serif">real-time problem system.</span></h2>
+    </div>
+    <p>The Innovation Lab connects African problems to founder development by finding problems that can become meaningful practical projects for Academy participants.</p>
+  </div>
+
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/partners-table.webp" alt="Experienced practitioners and retirees convening to evaluate challenge briefs" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>LAB COMPOSITION</span>
+        <span>EXPERTS, RETIREES &amp; RESEARCHERS</span>
+      </div>
+    </div>
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:24px;color:var(--ink);margin-bottom:12px">Who Constitutes the Lab</h3>
+      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">The Lab draws upon professionals, experienced industry practitioners, retirees, researchers, entrepreneurs and other experts with ground-truth knowledge of real bottlenecks across African value chains.</p>
+      <div class="giving-list" style="margin-top:24px">
+        <div class="giving-list-item"><b>01 IDENTIFY</b><span>Real-time problems and unmet needs across Africa.</span></div>
+        <div class="giving-list-item"><b>02 VALIDATE</b><span>Filter and structure problems before participant assignment.</span></div>
+        <div class="giving-list-item"><b>03 CONVERT</b><span>Turn problems into briefs with clear objectives, constraints and outputs.</span></div>
+        <div class="giving-list-item"><b>04 MATCH</b><span>Route briefs to appropriate track, sector, or cross-track team.</span></div>
+        <div class="giving-list-item"><b>05 SUPERVISE</b><span>Connect participants with specialist mentors and sector practitioners.</span></div>
+        <div class="giving-list-item"><b>06 REVIEW</b><span>Evaluate completed projects and identify solutions for venture formation.</span></div>
+        <div class="giving-list-item"><b>07 FEED BACK</b><span>Channel live operational intelligence directly into Academy curriculum.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tracks-convergence" style="margin-top:40px;background:#fff;border:1px solid var(--darkline);color:var(--ink)">
+    <span style="color:var(--gold)">THE INNOVATION LOOP</span>
+    <h3 style="font-size:clamp(18px,2vw,24px);color:var(--ink)">IDENTIFY → VALIDATE → ASSIGN → BUILD → TEST → REVIEW → DEVELOP FURTHER</h3>
+  </div>
+</section>
+
+<!-- SECTION 04: THE PROBLEM-TO-COMPANY CORRIDOR -->
 <section class="act act-dark" id="corridor">
   <div class="act-head">
     <div>

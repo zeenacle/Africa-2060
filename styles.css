@@ -2545,3 +2545,114 @@ button {
     gap: 6px;
   }
 }
+
+/* ==========================================================================
+   INSTITUTIONAL BLUEPRINT & DESTINATION GATEWAYS
+   ========================================================================== */
+.blueprint-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+.blueprint-node {
+  background: var(--navy-surface);
+  border: 1px solid var(--navy-border);
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+.blueprint-node:hover {
+  background: var(--navy-elevated);
+}
+.blueprint-node b {
+  font-family: var(--display);
+  font-size: 17px;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.blueprint-node span {
+  font-size: 14px;
+  color: var(--navy-muted);
+  line-height: 1.5;
+}
+.blueprint-connector {
+  text-align: center;
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 0;
+}
+@media (max-width: 768px) {
+  .blueprint-node {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.destination-gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--darkline);
+  border: 1px solid var(--darkline);
+  margin-top: 48px;
+}
+.destination-gateway-card {
+  background: #ffffff;
+  padding: clamp(24px, 2.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition-fast);
+}
+.destination-gateway-card:hover {
+  background: #fbf9f4;
+}
+.destination-gateway-card small {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.destination-gateway-card h3 {
+  font-family: var(--display);
+  font-size: 21px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.destination-gateway-card p {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.destination-gateway-card .dest-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .destination-gateway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .destination-gateway-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
