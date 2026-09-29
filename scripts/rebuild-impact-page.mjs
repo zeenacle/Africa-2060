@@ -28,7 +28,7 @@ const html = `<!doctype html>
 <style id="a2060-inline-css">
 ${css}
 </style>
-<link rel="preload" as="image" href="../images/city-wide-2.webp">
+<link rel="preload" as="image" href="../images/founder-ecosystem.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Economic Compounding Model & Impact — Africa 2060","description":"The Africa 2060 Economic Compounding Model: Measuring founder creation, company formation, retained ownership, and perpetual reinvestment through 2060."}</script>
 </head>
 <body data-route="impact">
@@ -64,7 +64,7 @@ ${css}
 <!-- HERO: MONUMENTAL IMPACT & FLYWHEEL -->
 <section class="hero-v2" aria-labelledby="impact-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide industrial infrastructure at twilight" width="1376" height="784" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/founder-ecosystem.png" alt="The interlocking founder ecosystem and continental enterprise compounding network" width="1376" height="784" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -144,7 +144,7 @@ ${css}
 </section>
 
 <!-- SECTION 03: EQUITY & REINVESTMENT ARCHITECTURE -->
-<section class="act act-cream" id="reinvestment-architecture" style="background:#fbf9f4;border-top:1px solid var(--darkline)">
+<section class="act act-dark" id="reinvestment-architecture">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>PARENT EQUITY SPECIFICATION</span><span>ZEENACLE NETWORK GROUP</span></div>
@@ -153,34 +153,39 @@ ${css}
     <p>The standing operating principle is that every established organisation under the Africa 2060 Initiative remits 20% equity to Zeenacle Network Group, the parent / holding company.</p>
   </div>
 
-  <div class="cap-table-grid" style="margin-top:40px">
-    <div class="cap-table-card founder-card" style="background:#fff;border:1px solid var(--darkline)">
-      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">20%</div>
-      <h3 style="color:var(--ink)">Parent-Company Allocation</h3>
-      <p style="color:var(--ink-soft)">Allocated and remitted to Zeenacle Network Group to create a long-term parent ownership base that supports further organisation-building and approved continental programmes.</p>
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/ownership.png" alt="Institutional executives in an economic ownership boardroom" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>SOVEREIGN BALANCE SHEETS</span>
+        <span>20% REINVESTMENT FLOWING TO CONTINENTAL INFRASTRUCTURE</span>
+      </div>
     </div>
+    <div class="split-text-pane">
+      <div class="cap-table-grid" style="grid-template-columns:1fr;gap:16px">
+        <div class="cap-table-card founder-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <div class="cap-table-pct" style="font-size:36px;color:var(--gold)">20%</div>
+          <h3 style="color:#fff">Parent-Company Allocation</h3>
+          <p style="color:var(--white-muted)">Allocated and remitted to Zeenacle Network Group to create a long-term parent ownership base that supports further organisation-building and approved continental programmes.</p>
+        </div>
 
-    <div class="cap-table-card system-card" style="background:#fff;border:1px solid var(--darkline)">
-      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--ink)">4 Uses</div>
-      <h3 style="color:var(--ink)">Approved Reinvestment Uses</h3>
-      <p style="color:var(--ink-soft)">1. Establish other organisations.<br>2. Support founder infrastructure.<br>3. Support poverty-eradication programmes.<br>4. Fund approved Africa-wide initiatives.</p>
-    </div>
-
-    <div class="cap-table-card growth-card" style="background:#fff;border:1px solid var(--darkline)">
-      <div class="cap-table-pct" style="font-size:clamp(32px,3.5vw,48px);color:var(--gold)">80%</div>
-      <h3 style="color:var(--ink)">Remaining Enterprise Equity</h3>
-      <p style="color:var(--ink-soft)">Structured for founders, operating partners, external investors, employees and other stakeholders according to the entity's approved financing structure.</p>
+        <div class="cap-table-card system-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <div class="cap-table-pct" style="font-size:36px;color:var(--gold)">4 Dedicated Uses</div>
+          <h3 style="color:#fff">Approved Reinvestment Uses</h3>
+          <p style="color:var(--white-muted)">1. Establish incoming cohort enterprises.<br>2. Fund regional maker &amp; lab infrastructure.<br>3. Support poverty-eradication programmes.<br>4. Fund approved Africa-wide strategic initiatives.</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="margin-top:36px;padding:28px;background:#f6f2ea;border:1px solid var(--darkline);text-align:center">
+  <div style="margin-top:36px;padding:28px;background:var(--navy-surface);border:1px solid var(--navy-border);text-align:center">
     <small style="font-size:11px;font-weight:700;letter-spacing:0.18em;color:var(--gold);display:block;margin-bottom:8px">THE STANDING REINVESTMENT PRINCIPLE</small>
-    <blockquote style="font-family:var(--display);font-size:clamp(18px,2vw,24px);color:var(--ink);margin:0;font-style:italic">"Value created in the ecosystem should help create the next generation of founders, organisations and economic opportunities."</blockquote>
+    <blockquote style="font-family:var(--display);font-size:clamp(18px,2vw,24px);color:#fff;margin:0;font-style:italic">"Value created in the ecosystem should help create the next generation of founders, organisations and economic opportunities."</blockquote>
   </div>
 </section>
 
-<!-- SECTION 03: THE 5-VECTOR SCORECARD -->
-<section class="act act-dark" id="scorecard">
+<!-- SECTION 04: THE 5-VECTOR SCORECARD -->
+<section class="act act-cream" id="scorecard">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>SYSTEM SCORECARD SPECIFICATION</span><span>VERIFIED OUTCOMES</span></div>
@@ -190,80 +195,66 @@ ${css}
   </div>
 
   <div class="stage-ledger-grid" style="margin-top:48px">
-    <article class="stage-card-deep">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
-        <div class="stage-card-deep-top"><span>VECTOR 01</span><span>TALENT</span></div>
-        <h3>Founders Created</h3>
-        <p>Primary north star. Measured by individuals trained, tested against real-world challenge briefs, matched into co-founding teams, and vested with statutory enterprise equity.</p>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">VECTOR 01</span><span style="color:var(--ink-muted)">TALENT</span></div>
+        <h3 style="color:var(--ink)">Founders Created</h3>
+        <p style="color:var(--ink-soft)">Primary north star. Measured by individuals trained, tested against real-world challenge briefs, matched into co-founding teams, and vested with statutory enterprise equity.</p>
       </div>
-      <div class="stage-card-deep-foot"><span>LONG-TERM TARGET:</span> 10,000,000+ Founders by 2060</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">TARGET:</b> 10,000,000+ Founders by 2060</div>
     </article>
 
-    <article class="stage-card-deep">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
-        <div class="stage-card-deep-top"><span>VECTOR 02</span><span>CONVERGENCE</span></div>
-        <h3>Teams Formed</h3>
-        <p>Balanced, equity-aligned triads uniting 1 Vocational Maker, 1 Technical Engineer, and 1 Operational Leader with signed shareholder charters and clean cap tables.</p>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">VECTOR 02</span><span style="color:var(--ink-muted)">CONVERGENCE</span></div>
+        <h3 style="color:var(--ink)">Teams Formed</h3>
+        <p style="color:var(--ink-soft)">Balanced, equity-aligned triads uniting 1 Vocational Maker, 1 Technical Engineer, and 1 Operational Leader with signed shareholder charters and clean cap tables.</p>
       </div>
-      <div class="stage-card-deep-foot"><span>METRIC:</span> Multi-disciplinary Co-Founding Units</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">METRIC:</b> 3,300,000+ Co-Founding Units</div>
     </article>
 
-    <article class="stage-card-deep">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
-        <div class="stage-card-deep-top"><span>VECTOR 03</span><span>ENTERPRISE</span></div>
-        <h3>Companies Created</h3>
-        <p>Independent, commercial operating companies legally incorporated under statutory African jurisdictions and primed for cross-border AfCFTA trade corridors.</p>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">VECTOR 03</span><span style="color:var(--ink-muted)">ENTERPRISE</span></div>
+        <h3 style="color:var(--ink)">Companies Created</h3>
+        <p style="color:var(--ink-soft)">Independent, commercial operating companies legally incorporated under statutory African jurisdictions and primed for cross-border AfCFTA trade corridors.</p>
       </div>
-      <div class="stage-card-deep-foot"><span>LONG-TERM TARGET:</span> 1,000,000+ Enterprises Formed</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">TARGET:</b> 1,000,000+ Enterprises Formed</div>
     </article>
 
-    <article class="stage-card-deep">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
-        <div class="stage-card-deep-top"><span>VECTOR 04</span><span>CAPITAL</span></div>
-        <h3>Capital Mobilised</h3>
-        <p>Pre-seed financing, asset equipment leasing lines, working capital facilities, and customer revenues generated by operating enterprises in strategic verticals.</p>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">VECTOR 04</span><span style="color:var(--ink-muted)">CAPITAL</span></div>
+        <h3 style="color:var(--ink)">Capital Mobilised</h3>
+        <p style="color:var(--ink-soft)">Pre-seed financing, asset equipment leasing lines, working capital facilities, and customer revenues generated by operating enterprises in strategic verticals.</p>
       </div>
-      <div class="stage-card-deep-foot"><span>METRIC:</span> Commercial Revenues &amp; Co-Investment</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">METRIC:</b> Commercial Revenues &amp; Co-Investment</div>
     </article>
 
-    <article class="stage-card-deep">
+    <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
-        <div class="stage-card-deep-top"><span>VECTOR 05</span><span>ENDOWMENT</span></div>
-        <h3>Reinvestment Recycled</h3>
-        <p>Dividends, licensing fees, and liquidity proceeds returned to the Africa 2060 Foundation Endowment to fund incoming cohorts, research labs, and regional fabrication hubs.</p>
+        <div class="stage-card-deep-top"><span style="color:var(--gold)">VECTOR 05</span><span style="color:var(--ink-muted)">ENDOWMENT</span></div>
+        <h3 style="color:var(--ink)">Reinvestment Recycled</h3>
+        <p style="color:var(--ink-soft)">Dividends, licensing fees, and liquidity proceeds returned to the Africa 2060 Foundation Endowment to fund incoming cohorts, research labs, and regional fabrication hubs.</p>
       </div>
-      <div class="stage-card-deep-foot"><span>METRIC:</span> 20% Equity Compounding Dividend</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">METRIC:</b> 20% Equity Compounding Dividend</div>
     </article>
   </div>
 </section>
 
-<!-- SECTION 04: CLOSING MONUMENT -->
-<section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
-  <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/ownership.webp" alt="Founders in ownership boardroom" width="1200" height="800" loading="lazy" decoding="async">
-  </div>
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-grid-lines" aria-hidden="true"></div>
-  <div class="hero-v2-main-grid">
-    <div class="hero-v2-copy">
+<!-- SECTION 05: TRANSITION -->
+<section class="act act-dark" style="border-top:1px solid var(--navy-border)">
+  <div class="act-head" style="margin-bottom:32px">
+    <div>
       <div class="eyebrow-row"><span>PARTICIPATE IN THE FLYWHEEL</span><span>AFRICA 2060</span></div>
-      <h2 class="display" style="font-size:clamp(44px,6vw,92px)">Back the economic <span class="serif">flywheel.</span></h2>
-      <div class="hero-v2-sub">
-        <p>Institutional capital, procurement partnerships, and sovereign alignment accelerate the compounding cycle. Explore partnership pathways or inspect the operating machinery.</p>
-      </div>
-      <div class="hero-v2-actions" style="margin-top:36px">
-        <a class="solid-button" href="../partners/">Partner with the Flywheel <span>↗</span></a>
-        <a class="line-link" href="../system/">Inspect the Operating System <span>↗</span></a>
-        <a class="solid-button" href="../insights/" style="background:var(--gold);color:var(--navy)">Read Foresight &amp; Insights <span>↗</span></a>
-      </div>
+      <h2 style="margin-top:34px">Back the economic <span class="serif">flywheel.</span></h2>
     </div>
-    <div class="hero-v2-number" aria-hidden="true">2060<span>IMPACT</span></div>
+    <p>Institutional capital, procurement partnerships, and sovereign alignment accelerate the compounding cycle. Explore partnership pathways or inspect the operating machinery.</p>
   </div>
-  <div class="hero-meta-strip">
-    <span>HORIZON: 2026—2060</span>
-    <span>FLYWEEL: ACTIVE ARCHITECTURE</span>
-    <span>ENDOWMENT: 20% RECYCLED</span>
-    <span>SOVEREIGN CAPITAL</span>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <a class="solid-button" href="../partners/">Partner with the Flywheel <span>↗</span></a>
+    <a class="line-link" href="../system/">Inspect the Operating System <span>↗</span></a>
+    <a class="solid-button" href="../insights/" style="background:var(--gold);color:var(--navy)">Read Foresight &amp; Insights <span>↗</span></a>
   </div>
 </section>
 
@@ -272,41 +263,52 @@ ${css}
 <footer class="footer">
   <div class="footer-top">
     <div>
-      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
-      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+      <div class="footer-brand"><img src="../images/mark.webp" alt="" width="32" height="32" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p class="footer-desc">An initiative of Zeenacle Network Group. Moving from workforce development to founder creation, company building and economic ownership across Africa by 2060.</p>
+      <div class="footer-coords"><span>HQ: LAGOS, NIGERIA</span><span>PAN-AFRICAN DEPLOYMENT</span><span>2026—2060</span></div>
     </div>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="../vision/">Vision</a>
-      <a href="../system/">System</a>
-      <a href="../founders/">Founders</a>
-      <a href="../sectors/">Sectors</a>
-      <a href="../innovation-lab/">Innovation Lab</a>
-      <a href="./">Impact</a>
-      <a href="../insights/">Insights</a>
-      <a href="../partners/">Partners</a>
-      <a href="../contact/">Contact</a>
+    <div class="footer-col">
+      <div class="footer-col-title">Framework</div>
+      <ul class="footer-links">
+        <li><a href="../vision/">Strategic Doctrine</a></li>
+        <li><a href="../system/">Operating System</a></li>
+        <li><a href="../founders/">Founder Pathways</a></li>
+        <li><a href="../sectors/">Sector Universe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Engines</div>
+      <ul class="footer-links">
+        <li><a href="../innovation-lab/">Innovation Lab</a></li>
+        <li><a href="./" aria-current="page">Impact Scorecard</a></li>
+        <li><a href="../insights/">Knowledge &amp; Foresight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Participation</div>
+      <ul class="footer-links">
+        <li><a href="../partners/">Partner Gateway</a></li>
+        <li><a href="../contact/">Secretariat</a></li>
+        <li><a href="#top">Back to Top ↑</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-meta">
-    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
-    <span>ZEENACLE NETWORK GROUP</span>
-    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  <div class="footer-bottom">
+    <div>© 2026 Africa 2060 Initiative. A Zeenacle Network Group operating framework. All rights reserved.</div>
+    <div class="footer-legal"><a href="../contact/">Secretariat Desk</a><span>·</span><a href="../partners/">Institutional Gateway</a></div>
   </div>
 </footer>
 
 <script>
-"use strict";
-
 function setupMenu() {
-  const menuToggle = document.querySelector('#menuToggle');
-  const mobileMenu = document.querySelector('#mobileMenu');
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (!menuToggle || !mobileMenu) return;
   menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    mobileMenu.hidden = !open;
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
+    const open = !mobileMenu.hidden;
+    mobileMenu.hidden = open;
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    document.body.classList.toggle('menu-open', !open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
@@ -316,7 +318,6 @@ function setupMenu() {
     });
   });
 }
-
 try {
   setupMenu();
 } catch (err) {
@@ -329,4 +330,3 @@ try {
 
 fs.writeFileSync('impact/index.html', html, 'utf8');
 console.log('Successfully wrote re-architected impact/index.html! Length:', html.length);
-

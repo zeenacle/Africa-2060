@@ -28,7 +28,7 @@ const html = `<!doctype html>
 <style id="a2060-inline-css">
 ${css}
 </style>
-<link rel="preload" as="image" href="../images/lagos-dawn.webp">
+<link rel="preload" as="image" href="../images/system.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Operating Machine — Africa 2060","description":"The 9-stage founder creation and company formation operating machine designed to build 10 million African founders and economic ownership by 2060."}</script>
 </head>
 <body data-route="system">
@@ -50,7 +50,7 @@ ${css}
 <!-- LAYER 01: MONUMENTAL OPENING STATEMENT & OPERATING DOCTRINE -->
 <section class="hero-v2" id="doctrine" aria-labelledby="system-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/lagos-dawn.webp" alt="Lagos industrial and maritime infrastructure at dawn" width="1376" height="784" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/system.png" alt="Africa 2060 Operating System blueprint and industrial control architecture" width="1376" height="784" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -88,7 +88,7 @@ ${css}
   </div>
   <div class="split-editorial">
     <div class="split-photo-pane">
-      <img src="../images/partners-table.webp" alt="Institutional leadership convening around the Africa 2060 governance table" width="1200" height="800" loading="lazy" decoding="async">
+      <img src="../images/founder-ecosystem.png" alt="The interlocking founder ecosystem and institutional parent architecture" width="1200" height="800" loading="lazy" decoding="async">
       <div class="split-photo-caption">
         <span>ZEENACLE NETWORK GROUP</span>
         <span>HOLDING COMPANY &amp; PARENT ARCHITECTURE</span>

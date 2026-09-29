@@ -28,7 +28,7 @@ const html = `<!doctype html>
 <style id="a2060-inline-css">
 ${css}
 </style>
-<link rel="preload" as="image" href="../images/lagos-dawn.webp">
+<link rel="preload" as="image" href="../images/city-wide.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Contact — Africa 2060","description":"Connect with the Africa 2060 Institutional Secretariat for general inquiries and institutional communications."}</script>
 </head>
 <body data-route="contact">
@@ -50,7 +50,7 @@ ${css}
 <!-- HERO: MONUMENTAL CONTACT SECTION -->
 <section class="hero-v2" aria-labelledby="contact-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/lagos-dawn.webp" alt="Lagos skyline at dawn representing the operational base of Africa 2060" width="1376" height="784" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/city-wide.png" alt="Pan-African urban landscape representing the administrative operational base of Africa 2060" width="1376" height="784" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -132,7 +132,7 @@ ${css}
 </section>
 
 <!-- SECTION 03: OPERATIONAL DESKS -->
-<section class="act act-cream" style="border-top:1px solid rgba(6,17,27,0.08);background:#fbf9f4">
+<section class="act act-dark" style="border-top:1px solid var(--navy-border)">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>STRUCTURED ROUTING</span><span>OPERATIONAL DESKS</span></div>
@@ -141,39 +141,42 @@ ${css}
     <p>Incoming communications are triaged and routed directly to specialized desks within the Africa 2060 Secretariat to ensure domain accuracy and accountable response times.</p>
   </div>
 
-  <div class="governance-pillars-grid">
-    <div class="governance-pillar-card">
-      <small style="color:var(--gold);display:block;margin-bottom:8px">DESK 01</small>
-      <h3 style="font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:12px">Academic & Research</h3>
-      <p style="font-size:13.5px;color:var(--ink-soft);line-height:1.6">Collaborations with universities, technical colleges, research institutes, and independent scholars studying African economic architecture, industrial development, and founder formation models.</p>
-      <div style="margin-top:16px;font-size:12px;color:var(--ink-muted);font-weight:600">INQUIRIES: CURRICULUM · DATASETS · CASE STUDIES</div>
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/boardroom.png" alt="Secretariat officers and executives reviewing inbound institutional inquiries" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>SECRETARIAT REVIEW ROOM</span>
+        <span>FORMAL TRIAGE &amp; 48-HOUR DISPATCH PROTOCOL</span>
+      </div>
     </div>
+    <div class="split-text-pane">
+      <div class="cap-table-grid" style="grid-template-columns:1fr;gap:14px">
+        <div class="cap-table-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <small style="color:var(--gold);font-weight:700;letter-spacing:0.16em">DESK 01 · ACADEMIC &amp; RESEARCH</small>
+          <p style="font-size:13.5px;color:var(--white-muted);line-height:1.6;margin:8px 0 0">Collaborations with universities, technical colleges, research institutes, and independent scholars studying African economic architecture, industrial development, and founder formation models.</p>
+        </div>
 
-    <div class="governance-pillar-card">
-      <small style="color:var(--gold);display:block;margin-bottom:8px">DESK 02</small>
-      <h3 style="font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:12px">Policy & Continental Bodies</h3>
-      <p style="font-size:13.5px;color:var(--ink-soft);line-height:1.6">Liaison with public sector leadership, AfCFTA working groups, regional economic communities, and regulatory authorities on cross-border economic integration and industrial policy alignment.</p>
-      <div style="margin-top:16px;font-size:12px;color:var(--ink-muted);font-weight:600">INQUIRIES: AfCFTA · POLICY BRIEFS · GOV DIALOGUE</div>
-    </div>
+        <div class="cap-table-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <small style="color:var(--gold);font-weight:700;letter-spacing:0.16em">DESK 02 · POLICY &amp; CONTINENTAL BODIES</small>
+          <p style="font-size:13.5px;color:var(--white-muted);line-height:1.6;margin:8px 0 0">Liaison with public sector leadership, AfCFTA working groups, regional economic communities, and regulatory authorities on cross-border economic integration and industrial policy alignment.</p>
+        </div>
 
-    <div class="governance-pillar-card">
-      <small style="color:var(--gold);display:block;margin-bottom:8px">DESK 03</small>
-      <h3 style="font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:12px">Media & Verification</h3>
-      <p style="font-size:13.5px;color:var(--ink-soft);line-height:1.6">Official institutional statements, executive interviews, press background briefings, and fact-checking for journalists covering continental economic development and African venture creation.</p>
-      <div style="margin-top:16px;font-size:12px;color:var(--ink-muted);font-weight:600">INQUIRIES: PRESS ACCREDITATION · FACT-CHECKS · ASSETS</div>
-    </div>
+        <div class="cap-table-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <small style="color:var(--gold);font-weight:700;letter-spacing:0.16em">DESK 03 · MEDIA &amp; VERIFICATION</small>
+          <p style="font-size:13.5px;color:var(--white-muted);line-height:1.6;margin:8px 0 0">Official institutional statements, executive interviews, press background briefings, and fact-checking for journalists covering continental economic development and African venture creation.</p>
+        </div>
 
-    <div class="governance-pillar-card">
-      <small style="color:var(--gold);display:block;margin-bottom:8px">DESK 04</small>
-      <h3 style="font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:12px">Secretariat & Governance</h3>
-      <p style="font-size:13.5px;color:var(--ink-soft);line-height:1.6">Direct administrative coordination with the Zeenacle Network Group governance board, audit review requests, compliance validation, and pan-African institutional partnerships.</p>
-      <div style="margin-top:16px;font-size:12px;color:var(--ink-muted);font-weight:600">INQUIRIES: GOVERNANCE · COMPLIANCE · AUDIT LOGS</div>
+        <div class="cap-table-card" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+          <small style="color:var(--gold);font-weight:700;letter-spacing:0.16em">DESK 04 · SECRETARIAT &amp; GOVERNANCE</small>
+          <p style="font-size:13.5px;color:var(--white-muted);line-height:1.6;margin:8px 0 0">Direct administrative coordination with the Zeenacle Network Group governance board, audit review requests, compliance validation, and pan-African institutional partnerships.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SECTION 04: TRANSMISSION PROTOCOLS & INTEGRITY STANDARDS -->
-<section class="act act-dark">
+<section class="act act-cream" style="border-top:1px solid var(--darkline)">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>INSTITUTIONAL INTEGRITY</span><span>TRANSMISSION PROTOCOLS</span></div>
@@ -183,28 +186,28 @@ ${css}
   </div>
 
   <div class="subsystem-grid" style="margin-top:48px">
-    <div class="subsystem-box">
+    <div class="subsystem-box" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.18em">PROTOCOL 01</span>
-      <h3 style="font-family:var(--display);font-size:22px;color:var(--cream);margin:14px 0 10px">48-Hour Response SLA</h3>
-      <p style="font-size:14px;color:var(--navy-muted);line-height:1.65">Every non-spam inquiry is reviewed by an assigned desk officer and provided with an initial formal response or dispatch acknowledgment within two business days.</p>
+      <h3 style="font-family:var(--display);font-size:22px;color:var(--ink);margin:14px 0 10px">48-Hour Response SLA</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.65">Every non-spam inquiry is reviewed by an assigned desk officer and provided with an initial formal response or dispatch acknowledgment within two business days.</p>
     </div>
 
-    <div class="subsystem-box">
+    <div class="subsystem-box" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.18em">PROTOCOL 02</span>
-      <h3 style="font-family:var(--display);font-size:22px;color:var(--cream);margin:14px 0 10px">Tamper-Evident Audit Logging</h3>
-      <p style="font-size:14px;color:var(--navy-muted);line-height:1.65">Inbound transmissions are assigned immutable UUIDs and logged into the Africa 2060 audit trail with cryptographic timestamps to ensure transparency and accountability.</p>
+      <h3 style="font-family:var(--display);font-size:22px;color:var(--ink);margin:14px 0 10px">Tamper-Evident Audit Logging</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.65">Inbound transmissions are assigned immutable UUIDs and logged into the Africa 2060 audit trail with cryptographic timestamps to ensure transparency and accountability.</p>
     </div>
 
-    <div class="subsystem-box">
+    <div class="subsystem-box" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.18em">PROTOCOL 03</span>
-      <h3 style="font-family:var(--display);font-size:22px;color:var(--cream);margin:14px 0 10px">Strict Non-Commercial Privacy</h3>
-      <p style="font-size:14px;color:var(--navy-muted);line-height:1.65">Institutional contact data is never commercialized, resold, or shared with third-party advertising brokers. Data is held solely for institutional coordination.</p>
+      <h3 style="font-family:var(--display);font-size:22px;color:var(--ink);margin:14px 0 10px">Strict Non-Commercial Privacy</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.65">Institutional contact data is never commercialized, resold, or shared with third-party advertising brokers. Data is held solely for institutional coordination.</p>
     </div>
 
-    <div class="subsystem-box">
+    <div class="subsystem-box" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <span style="font-size:11px;font-weight:700;color:var(--gold);letter-spacing:0.18em">PROTOCOL 04</span>
-      <h3 style="font-family:var(--display);font-size:22px;color:var(--cream);margin:14px 0 10px">Dedicated Partner Pathways</h3>
-      <p style="font-size:14px;color:var(--navy-muted);line-height:1.65">Capital deployment, venture backing, and corporate partnership inquiries are separated from general contact and routed to the <a href="../partners/" style="color:var(--gold);text-decoration:underline">Partner Gateway</a>.</p>
+      <h3 style="font-family:var(--display);font-size:22px;color:var(--ink);margin:14px 0 10px">Dedicated Partner Pathways</h3>
+      <p style="font-size:14px;color:var(--ink-soft);line-height:1.65">Capital deployment, venture backing, and corporate partnership inquiries are separated from general contact and routed to the <a href="../partners/" style="color:var(--gold);text-decoration:underline">Partner Gateway</a>.</p>
     </div>
   </div>
 </section>
@@ -214,41 +217,52 @@ ${css}
 <footer class="footer">
   <div class="footer-top">
     <div>
-      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
-      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+      <div class="footer-brand"><img src="../images/mark.webp" alt="" width="32" height="32" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p class="footer-desc">An initiative of Zeenacle Network Group. Moving from workforce development to founder creation, company building and economic ownership across Africa by 2060.</p>
+      <div class="footer-coords"><span>HQ: LAGOS, NIGERIA</span><span>PAN-AFRICAN DEPLOYMENT</span><span>2026—2060</span></div>
     </div>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="../vision/">Vision</a>
-      <a href="../system/">System</a>
-      <a href="../founders/">Founders</a>
-      <a href="../sectors/">Sectors</a>
-      <a href="../innovation-lab/">Innovation Lab</a>
-      <a href="../impact/">Impact</a>
-      <a href="../insights/">Insights</a>
-      <a href="../partners/">Partners</a>
-      <a href="./">Contact</a>
+    <div class="footer-col">
+      <div class="footer-col-title">Framework</div>
+      <ul class="footer-links">
+        <li><a href="../vision/">Strategic Doctrine</a></li>
+        <li><a href="../system/">Operating System</a></li>
+        <li><a href="../founders/">Founder Pathways</a></li>
+        <li><a href="../sectors/">Sector Universe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Engines</div>
+      <ul class="footer-links">
+        <li><a href="../innovation-lab/">Innovation Lab</a></li>
+        <li><a href="../impact/">Impact Scorecard</a></li>
+        <li><a href="../insights/">Knowledge &amp; Foresight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Participation</div>
+      <ul class="footer-links">
+        <li><a href="../partners/">Partner Gateway</a></li>
+        <li><a href="./" aria-current="page">Secretariat</a></li>
+        <li><a href="#top">Back to Top ↑</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-meta">
-    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
-    <span>ZEENACLE NETWORK GROUP</span>
-    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  <div class="footer-bottom">
+    <div>© 2026 Africa 2060 Initiative. A Zeenacle Network Group operating framework. All rights reserved.</div>
+    <div class="footer-legal"><a href="./">Secretariat Desk</a><span>·</span><a href="../partners/">Institutional Gateway</a></div>
   </div>
 </footer>
 
 <script>
-"use strict";
-
 function setupMenu() {
-  const menuToggle = document.querySelector('#menuToggle');
-  const mobileMenu = document.querySelector('#mobileMenu');
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (!menuToggle || !mobileMenu) return;
   menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    mobileMenu.hidden = !open;
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
+    const open = !mobileMenu.hidden;
+    mobileMenu.hidden = open;
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    document.body.classList.toggle('menu-open', !open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
@@ -326,4 +340,3 @@ try {
 
 fs.writeFileSync('contact/index.html', html, 'utf8');
 console.log('Successfully wrote re-architected contact/index.html! Length:', html.length);
-

@@ -2570,8 +2570,119 @@ button {
   }
 }
 
+/* ==========================================================================
+   INSTITUTIONAL BLUEPRINT & DESTINATION GATEWAYS
+   ========================================================================== */
+.blueprint-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+.blueprint-node {
+  background: var(--navy-surface);
+  border: 1px solid var(--navy-border);
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+.blueprint-node:hover {
+  background: var(--navy-elevated);
+}
+.blueprint-node b {
+  font-family: var(--display);
+  font-size: 17px;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.blueprint-node span {
+  font-size: 14px;
+  color: var(--navy-muted);
+  line-height: 1.5;
+}
+.blueprint-connector {
+  text-align: center;
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 0;
+}
+@media (max-width: 768px) {
+  .blueprint-node {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.destination-gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--darkline);
+  border: 1px solid var(--darkline);
+  margin-top: 48px;
+}
+.destination-gateway-card {
+  background: #ffffff;
+  padding: clamp(24px, 2.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition-fast);
+}
+.destination-gateway-card:hover {
+  background: #fbf9f4;
+}
+.destination-gateway-card small {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.destination-gateway-card h3 {
+  font-family: var(--display);
+  font-size: 21px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.destination-gateway-card p {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.destination-gateway-card .dest-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .destination-gateway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .destination-gateway-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 </style>
-<link rel="preload" as="image" href="../images/partners-table.webp">
+<link rel="preload" as="image" href="../images/partners.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Partnership Gateway — Africa 2060","description":"Africa 2060 brings together Investors, Corporate Partners, Sponsors & Foundations and Institutions around founder creation and company building."}</script>
 </head>
 <body data-route="partners">
@@ -2579,12 +2690,26 @@ button {
 <header class="nav" id="top">
   <a class="wordmark" href="../" aria-label="Africa 2060 home"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></a>
   <nav aria-label="Primary navigation">
-    <a class="nav-link" href="../vision/">Vision</a><a class="nav-link" href="../system/">System</a><a class="nav-link" href="../founders/">Founders</a><a class="nav-link" href="../sectors/">Sectors</a><a class="nav-link" href="../innovation-lab/">Innovation Lab</a><a class="nav-link" href="../impact/">Impact</a><a class="nav-link" href="../insights/">Insights</a>
+    <a class="nav-link" href="../vision/">Vision</a>
+    <a class="nav-link" href="../system/">System</a>
+    <a class="nav-link" href="../founders/">Founders</a>
+    <a class="nav-link" href="../sectors/">Sectors</a>
+    <a class="nav-link" href="../innovation-lab/">Innovation Lab</a>
+    <a class="nav-link" href="../impact/">Impact</a>
+    <a class="nav-link" href="../insights/">Insights</a>
   </nav>
   <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
   <div class="nav-actions"><a class="nav-secondary" href="../contact/">Contact</a><a class="nav-cta active" href="./" aria-current="page">Partner <span>↗</span></a></div>
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="../vision/">Vision</a><a href="../system/">System</a><a href="../founders/">Founders</a><a href="../sectors/">Sectors</a><a href="../innovation-lab/">Innovation Lab</a><a href="../impact/">Impact</a><a href="../insights/">Insights</a><a class="mobile-partner active" href="./">Partner <span>↗</span></a><a href="../contact/">Contact</a>
+    <a href="../vision/">Vision</a>
+    <a href="../system/">System</a>
+    <a href="../founders/">Founders</a>
+    <a href="../sectors/">Sectors</a>
+    <a href="../innovation-lab/">Innovation Lab</a>
+    <a href="../impact/">Impact</a>
+    <a href="../insights/">Insights</a>
+    <a class="mobile-partner active" href="./">Partner <span>↗</span></a>
+    <a href="../contact/">Contact</a>
   </div>
 </header>
 
@@ -2593,7 +2718,7 @@ button {
 <!-- HERO: MONUMENTAL PARTNERSHIP GATEWAY -->
 <section class="hero-v2" aria-labelledby="partner-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/partners-table.webp" alt="Institutional partners convening around Africa 2060 governance" width="1200" height="800" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/partners.png" alt="Bilateral institutional leadership convening around the Africa 2060 partnership summit table" width="1200" height="800" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -2607,7 +2732,7 @@ button {
       </div>
       <div class="hero-v2-actions">
         <a class="solid-button" href="#enquiry">Submit Partnership Enquiry <span>↓</span></a>
-        <a class="line-link" href="#pathways">Explore Contribution Pathways <span>↓</span></a>
+        <a class="line-link" href="#classifications">Inspect Partner Classifications <span>↓</span></a>
       </div>
     </div>
     <div class="hero-v2-number" aria-hidden="true">TABLE<span>INSTITUTIONAL</span></div>
@@ -2620,7 +2745,102 @@ button {
   </div>
 </section>
 
-<!-- SECTION 02: APPROVED CONTRIBUTION PATHWAYS & INTAKE FORM -->
+<!-- SECTION 02: THE 4 PARTNER CLASSIFICATIONS -->
+<section class="act act-cream" id="classifications">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>STRUCTURED PARTICIPATION</span><span>FOUR CLASSIFICATIONS</span></div>
+      <h2 style="margin-top:34px">Four institutional <span class="serif">alignment categories.</span></h2>
+    </div>
+    <p>Africa 2060 structures formal alliances across four distinct institutional categories to deploy capital, market access, and industrial assets directly into African operating enterprises.</p>
+  </div>
+
+  <div class="monograph-grid" style="margin-top:40px">
+    <article class="monograph-card">
+      <div class="monograph-card-top">
+        <span>01 · CAPITAL &amp; SYNDICATES</span>
+        <span>INVESTORS</span>
+      </div>
+      <h3>Institutional Investors &amp; Family Offices</h3>
+      <p>Co-investing growth capital alongside Zeenacle Network Group into vetted operating enterprises. Participating in milestone seed syndicates and the 30% growth equity reserve.</p>
+      <div class="monograph-card-foot">
+        <span>INSTRUMENTS: EQUITY, DEBT, LEASING</span>
+        <span>GOVERNANCE: SENATE REPORTED</span>
+      </div>
+    </article>
+
+    <article class="monograph-card">
+      <div class="monograph-card-top">
+        <span>02 · OFF-TAKE &amp; SUPPLY CHAINS</span>
+        <span>CORPORATES</span>
+      </div>
+      <h3>Corporate &amp; Industrial Conglomerates</h3>
+      <p>Providing commercial off-take agreements, opening corporate procurement pipelines, and integrating African operating enterprises into multinational distribution networks.</p>
+      <div class="monograph-card-foot">
+        <span>VALUE: COMMERCIAL OFF-TAKE</span>
+        <span>ACCESS: 54 MARKETS</span>
+      </div>
+    </article>
+
+    <article class="monograph-card">
+      <div class="monograph-card-top">
+        <span>03 · ENDOWMENTS &amp; DFIS</span>
+        <span>SPONSORS</span>
+      </div>
+      <h3>Sponsors, Foundations &amp; DFIs</h3>
+      <p>Providing catalytic grants to the Africa 2060 Foundation Endowment to fund needs-blind Academy fellowships, shared fabrication facilities, and regional Innovation Lab hubs.</p>
+      <div class="monograph-card-foot">
+        <span>FOCUS: ENDOWMENTS &amp; FELLOWSHIPS</span>
+        <span>HORIZON: MULTI-DECADE</span>
+      </div>
+    </article>
+
+    <article class="monograph-card">
+      <div class="monograph-card-top">
+        <span>04 · POLICY &amp; STANDARDS</span>
+        <span>INSTITUTIONS</span>
+      </div>
+      <h3>Universities &amp; Sovereign Agencies</h3>
+      <p>Collaborating on applied research, curriculum verification, AfCFTA regulatory harmonisation, technical standards certification, and longitudinal demographic tracking.</p>
+      <div class="monograph-card-foot">
+        <span>SCOPE: REGULATORY &amp; ACADEMIC</span>
+        <span>OUTPUT: STANDARDS &amp; RESEARCH</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SECTION 03: PARTNERSHIP GOVERNANCE & COUNCIL -->
+<section class="act act-dark" id="governance-council">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>FIDUCIARY INTEGRITY</span><span>GOVERNANCE COUNCIL</span></div>
+      <h2 style="margin-top:34px">Sovereign partnership, <span class="serif">strict transparency.</span></h2>
+    </div>
+    <p>Every partnership is governed under strict transparency standards verified by the Africa 2060 Governance Senate. Zero speculative grants; all resources flow directly into productive enterprise assets.</p>
+  </div>
+
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/partners-table.png" alt="High-level multilateral partnership negotiation and governance council" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>PARTNERSHIP GOVERNANCE COUNCIL</span>
+        <span>TRANSPARENT FIDUCIARY AUDITING &amp; REPORTING</span>
+      </div>
+    </div>
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:24px;color:#fff;margin-bottom:12px">Principles of Collaboration</h3>
+      <p style="font-size:14.5px;color:var(--white-soft);line-height:1.6">We do not accept passive charitable donations. We build bilateral operating partnerships where capital, technical expertise, and commercial markets directly strengthen African founders.</p>
+      <div class="giving-list" style="margin-top:24px">
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">DIRECT DEPLOYMENT</b><span style="color:var(--white-muted)">Resources fund physical equipment, working capital, and cohort training.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">LOCAL OWNERSHIP</b><span style="color:var(--white-muted)">Founders retain 50% majority equity; partners receive clean statutory returns.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">LONGITUDINAL AUDITING</b><span style="color:var(--white-muted)">Continuous outcome reporting on enterprise survival, employment, and taxes.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04: APPROVED CONTRIBUTION PATHWAYS & INTAKE FORM -->
 <section class="act act-cream" id="enquiry">
   <div class="act-head">
     <div>
@@ -2706,41 +2926,52 @@ button {
 <footer class="footer">
   <div class="footer-top">
     <div>
-      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
-      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+      <div class="footer-brand"><img src="../images/mark.webp" alt="" width="32" height="32" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p class="footer-desc">An initiative of Zeenacle Network Group. Moving from workforce development to founder creation, company building and economic ownership across Africa by 2060.</p>
+      <div class="footer-coords"><span>HQ: LAGOS, NIGERIA</span><span>PAN-AFRICAN DEPLOYMENT</span><span>2026—2060</span></div>
     </div>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="../vision/">Vision</a>
-      <a href="../system/">System</a>
-      <a href="../founders/">Founders</a>
-      <a href="../sectors/">Sectors</a>
-      <a href="../innovation-lab/">Innovation Lab</a>
-      <a href="../impact/">Impact</a>
-      <a href="../insights/">Insights</a>
-      <a href="./">Partners</a>
-      <a href="../contact/">Contact</a>
+    <div class="footer-col">
+      <div class="footer-col-title">Framework</div>
+      <ul class="footer-links">
+        <li><a href="../vision/">Strategic Doctrine</a></li>
+        <li><a href="../system/">Operating System</a></li>
+        <li><a href="../founders/">Founder Pathways</a></li>
+        <li><a href="../sectors/">Sector Universe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Engines</div>
+      <ul class="footer-links">
+        <li><a href="../innovation-lab/">Innovation Lab</a></li>
+        <li><a href="../impact/">Impact Scorecard</a></li>
+        <li><a href="../insights/">Knowledge &amp; Foresight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Participation</div>
+      <ul class="footer-links">
+        <li><a href="./" aria-current="page">Partner Gateway</a></li>
+        <li><a href="../contact/">Secretariat</a></li>
+        <li><a href="#top">Back to Top ↑</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-meta">
-    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
-    <span>ZEENACLE NETWORK GROUP</span>
-    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  <div class="footer-bottom">
+    <div>© 2026 Africa 2060 Initiative. A Zeenacle Network Group operating framework. All rights reserved.</div>
+    <div class="footer-legal"><a href="../contact/">Secretariat Desk</a><span>·</span><a href="./">Institutional Gateway</a></div>
   </div>
 </footer>
 
 <script>
-"use strict";
-
 function setupMenu() {
-  const menuToggle = document.querySelector('#menuToggle');
-  const mobileMenu = document.querySelector('#mobileMenu');
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (!menuToggle || !mobileMenu) return;
   menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    mobileMenu.hidden = !open;
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
+    const open = !mobileMenu.hidden;
+    mobileMenu.hidden = open;
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    document.body.classList.toggle('menu-open', !open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {

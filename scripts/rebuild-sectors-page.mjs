@@ -28,7 +28,7 @@ const html = `<!doctype html>
 <style id="a2060-inline-css">
 ${css}
 </style>
-<link rel="preload" as="image" href="../images/city-wide-2.webp">
+<link rel="preload" as="image" href="../images/company-map.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"African Industrial Atlas & Sector Universe — Africa 2060","description":"Track → Sector → Sub-sector → Company Opportunity. A strategic opportunity universe for company formation across strategic African industries."}</script>
 </head>
 <body data-route="sectors">
@@ -64,7 +64,7 @@ ${css}
 <!-- HERO: MONUMENTAL INDUSTRIAL ATLAS -->
 <section class="hero-v2" aria-labelledby="sectors-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide industrial infrastructure, energy corridors and modern industrial landscape" width="1376" height="784" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/company-map.png" alt="African Continental Industrial Atlas and company footprint map across 54 economies" width="1376" height="784" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -95,7 +95,7 @@ ${css}
 <section class="act act-cream" id="hierarchy">
   <div class="act-head">
     <div>
-      <div class="eyebrow-row"><span>THE OPPORTUNITY HIERARCHY</span><span>STRUCTURAL ARCHITECTURE</span></div>
+      <div class="eyebrow-row"><span>THE OPPORTUNITY HIERARCHY</span><span>STRUCTURAL TAXONOMY</span></div>
       <h2 style="margin-top:34px">From broad capability to <span class="serif">specific enterprise.</span></h2>
     </div>
     <p>Africa 2060 does not teach isolated technical skills. It works systematically through a 4-level taxonomy that connects individual talent to concrete enterprise formation.</p>
@@ -117,8 +117,73 @@ ${css}
   </div>
 </section>
 
-<!-- SECTION 03: THE 22-SECTOR INDUSTRIAL ATLAS -->
-<section class="act act-dark" id="atlas">
+<!-- SECTION 03: STRATEGIC INDUSTRIAL DEEP-DIVES -->
+<section class="act act-dark" id="deep-dives">
+  <div class="act-head">
+    <div>
+      <div class="eyebrow-row"><span>PRIORITY INDUSTRIAL ANCHORS</span><span>PRODUCTION CORRIDORS</span></div>
+      <h2 style="margin-top:34px">Strategic focus on <span class="serif">vital economic sectors.</span></h2>
+    </div>
+    <p>Africa 2060 prioritizes sectors that manufacture physical assets, secure critical supply chains, and build sovereign continental infrastructure.</p>
+  </div>
+
+  <div class="split-editorial" style="margin-top:40px">
+    <div class="split-photo-pane">
+      <img src="../images/agriculture.png" alt="Modern mechanized agricultural harvesting and agro-processing facility" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>STRATEGIC ANCHOR · AGRICULTURE &amp; AGRO-PROCESSING</span>
+        <span>FOOD SECURITY, COLD CHAIN &amp; COMMODITY VALUE ADDITION</span>
+      </div>
+    </div>
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:clamp(22px,2.2vw,32px);color:#fff;margin-bottom:14px">Agriculture &amp; Agro-Industrial Processing</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--white-soft);margin-bottom:20px">
+        Africa possesses 60% of the world's uncultivated arable land, yet imports tens of billions of dollars in processed staple foods annually. Africa 2060 deploys founding triads to capture value at every link:
+      </p>
+      <div class="reframe-grid">
+        <div class="reframe-row">
+          <span>Decentralized Cold-Chain</span><i>→</i><span>Solar-powered refrigeration hubs at farm gates to eliminate 40% post-harvest rot</span>
+        </div>
+        <div class="reframe-row">
+          <span>Value-Added Processing</span><i>→</i><span>Indigenous cassava, cocoa, grain, and oilseed milling and commercial packaging</span>
+        </div>
+        <div class="reframe-row">
+          <span>Intelligent Input Distribution</span><i>→</i><span>Soil chemistry testing kits, biological pest management, and drip irrigation rails</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-editorial" style="margin-top:48px">
+    <div class="split-text-pane">
+      <h3 style="font-family:var(--display);font-size:clamp(22px,2.2vw,32px);color:#fff;margin-bottom:14px">Industrial Fabrication, Energy &amp; Power Systems</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--white-soft);margin-bottom:20px">
+        Industrialization requires reliable power and domestic component manufacturing. Rather than importing finished electrical switchgear and structural steel, Africa 2060 founds enterprises producing the building blocks:
+      </p>
+      <div class="reframe-grid">
+        <div class="reframe-row">
+          <span>Commercial Clean Microgrids</span><i>→</i><span>Modular solar and biomass systems powering industrial clusters and agro-processing parks</span>
+        </div>
+        <div class="reframe-row">
+          <span>Precision Component Machining</span><i>→</i><span>CNC fabrication of replacement parts for mining, maritime, and transport machinery</span>
+        </div>
+        <div class="reframe-row">
+          <span>Modular Construction Materials</span><i>→</i><span>Pre-cast concrete elements, eco-insulation, and structural timber fabrication</span>
+        </div>
+      </div>
+    </div>
+    <div class="split-photo-pane">
+      <img src="../images/builders.png" alt="Industrial fabrication, welding, and energy infrastructure construction team" width="1200" height="800" loading="lazy" decoding="async">
+      <div class="split-photo-caption">
+        <span>STRATEGIC ANCHOR · ENERGY &amp; HEAVY FABRICATION</span>
+        <span>MODULAR INFRASTRUCTURE, POWER CORRIDORS &amp; MACHINING</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04: THE 22-SECTOR INDUSTRIAL ATLAS -->
+<section class="act act-cream" id="atlas">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>THE 22 STRATEGIC SECTORS</span><span>PAN-AFRICAN UNIVERSE</span></div>
@@ -129,13 +194,13 @@ ${css}
 
   <div class="tracks-v2" style="margin-top:48px">
     <!-- TRACK 01 UNIVERSE -->
-    <div class="track-world-v2 track-vocational" style="background:var(--navy-surface)">
+    <div class="track-world-v2 track-vocational" style="background:#fff;border:1px solid var(--darkline)">
       <div class="track-body">
         <div class="track-code" style="color:var(--rust)">TRACK 01 / VOCATIONAL</div>
-        <h3 style="color:#fff">Make &amp; Build Universe</h3>
-        <p style="color:#aebbc1">Physical production, fabrication, construction, agriculture, energy, and mobility infrastructure.</p>
+        <h3 style="color:var(--ink)">Make &amp; Build Universe</h3>
+        <p style="color:var(--ink-soft)">Physical production, fabrication, construction, agriculture, energy, and mobility infrastructure.</p>
         
-        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--navy-border);padding-top:16px">
+        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--darkline);padding-top:16px">
           <div class="reframe-row" style="font-size:13.5px"><span>01</span><i>·</i><span>Construction &amp; Built Environment</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>02</span><i>·</i><span>Manufacturing &amp; Fabrication</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>03</span><i>·</i><span>Automotive &amp; Mobility</span></div>
@@ -148,13 +213,13 @@ ${css}
     </div>
 
     <!-- TRACK 02 UNIVERSE -->
-    <div class="track-world-v2 track-technical" style="background:var(--navy-surface)">
+    <div class="track-world-v2 track-technical" style="background:#fff;border:1px solid var(--darkline)">
       <div class="track-body">
         <div class="track-code" style="color:#2a6f97">TRACK 02 / TECHNICAL</div>
-        <h3 style="color:#fff">Engineer &amp; Innovate Universe</h3>
-        <p style="color:#aebbc1">Digital systems, software IP, financial rails, medical tech, industrial robotics, and climate solutions.</p>
+        <h3 style="color:var(--ink)">Engineer &amp; Innovate Universe</h3>
+        <p style="color:var(--ink-soft)">Digital systems, software IP, financial rails, medical tech, industrial robotics, and climate solutions.</p>
         
-        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--navy-border);padding-top:16px">
+        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--darkline);padding-top:16px">
           <div class="reframe-row" style="font-size:13.5px"><span>01</span><i>·</i><span>Software &amp; Digital Technology</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>02</span><i>·</i><span>Fintech &amp; Financial Infrastructure</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>03</span><i>·</i><span>Health Technology &amp; Medical Industry</span></div>
@@ -168,13 +233,13 @@ ${css}
     </div>
 
     <!-- TRACK 03 UNIVERSE -->
-    <div class="track-world-v2 track-operational" style="background:var(--navy-surface)">
+    <div class="track-world-v2 track-operational" style="background:#fff;border:1px solid var(--darkline)">
       <div class="track-body">
         <div class="track-code" style="color:var(--green)">TRACK 03 / OPERATIONAL</div>
-        <h3 style="color:#fff">Organise &amp; Scale Universe</h3>
-        <p style="color:#aebbc1">Cross-border logistics, commercial distribution, real estate asset operations, and enterprise platforms.</p>
+        <h3 style="color:var(--ink)">Organise &amp; Scale Universe</h3>
+        <p style="color:var(--ink-soft)">Cross-border logistics, commercial distribution, real estate asset operations, and enterprise platforms.</p>
         
-        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--navy-border);padding-top:16px">
+        <div class="reframe-grid" style="margin-top:24px;border-top:1px solid var(--darkline);padding-top:16px">
           <div class="reframe-row" style="font-size:13.5px"><span>01</span><i>·</i><span>Logistics &amp; Supply Chain</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>02</span><i>·</i><span>Hospitality &amp; Tourism</span></div>
           <div class="reframe-row" style="font-size:13.5px"><span>03</span><i>·</i><span>Business Services</span></div>
@@ -188,8 +253,8 @@ ${css}
   </div>
 </section>
 
-<!-- SECTION 04: DYNAMIC BRANCH ARCHITECTURE -->
-<section class="act act-cream" id="branches">
+<!-- SECTION 05: DYNAMIC BRANCH ARCHITECTURE -->
+<section class="act act-dark" id="branches">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>OPERATING EVIDENCE</span><span>DYNAMIC BRANCH ARCHITECTURE</span></div>
@@ -199,10 +264,10 @@ ${css}
   </div>
 
   <div class="academy-tiers-grid" style="margin-top:40px">
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+    <div class="academy-tier-card" style="background:var(--navy-surface);border:1px solid var(--navy-border)">
       <span class="academy-tier-num">BRANCH STATUS: ACTIVE</span>
-      <h3 style="color:var(--ink)">Real Estate &amp; Built Environment</h3>
-      <p style="color:var(--ink-soft)">Active pioneer branch. Focus on modular building components, real estate operations, property management tech, and localized construction materials.</p>
+      <h3 style="color:#fff">Real Estate &amp; Built Environment</h3>
+      <p style="color:var(--white-muted)">Active pioneer branch. Focus on modular building components, real estate operations, property management tech, and localized construction materials.</p>
       <div class="academy-tier-list">
         <span>· Construction manufacturing &amp; pre-cast masonry</span>
         <span>· Commercial &amp; residential property management platforms</span>
@@ -210,10 +275,10 @@ ${css}
       </div>
     </div>
 
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
+    <div class="academy-tier-card" style="background:var(--navy-surface);border:1px solid var(--navy-border)">
       <span class="academy-tier-num" style="color:var(--rust)">BRANCH STATUS: LAUNCHING</span>
-      <h3 style="color:var(--ink)">Agritech &amp; Agro-Processing</h3>
-      <p style="color:var(--ink-soft)">Imminent deployment vertical. Addressing agricultural post-harvest loss, cold chain storage, localized food processing, and grain distribution corridors.</p>
+      <h3 style="color:#fff">Agritech &amp; Agro-Processing</h3>
+      <p style="color:var(--white-muted)">Imminent deployment vertical. Addressing agricultural post-harvest loss, cold chain storage, localized food processing, and grain distribution corridors.</p>
       <div class="academy-tier-list">
         <span>· Solar-powered decentralized cold storage</span>
         <span>· Value-added food processing &amp; grain milling equipment</span>
@@ -221,46 +286,32 @@ ${css}
       </div>
     </div>
 
-    <div class="academy-tier-card" style="background:#fff;border:1px solid var(--darkline)">
-      <span class="academy-tier-num" style="color:var(--ink-muted)">BRANCH STATUS: PLANNED</span>
-      <h3 style="color:var(--ink)">Healthtech, Edtech &amp; Fintech</h3>
-      <p style="color:var(--ink-soft)">Structured planning and challenge intelligence phase. Formal launch scheduled upon completion of Innovation Lab challenge structuring and partner syndication.</p>
+    <div class="academy-tier-card" style="background:var(--navy-surface);border:1px solid var(--navy-border)">
+      <span class="academy-tier-num" style="color:var(--white-dim)">BRANCH STATUS: PLANNED</span>
+      <h3 style="color:#fff">Healthtech, Energy &amp; Logistics</h3>
+      <p style="color:var(--white-muted)">Structured planning and challenge intelligence phase. Formal launch scheduled upon completion of Innovation Lab challenge structuring and partner syndication.</p>
       <div class="academy-tier-list">
         <span>· Diagnostic clinic infrastructure &amp; generic consumables</span>
-        <span>· Vocational apprenticeship software &amp; credentials</span>
-        <span>· Cross-border trade finance &amp; AfCFTA payment settlement</span>
+        <span>· Clean power microgrids for rural trade centres</span>
+        <span>· Cross-border trade logistics &amp; AfCFTA freight clearing</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 05: CLOSING MONUMENT -->
-<section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
-  <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/lagos-dawn.webp" alt="Lagos industrial port at dawn" width="1376" height="784" loading="lazy" decoding="async">
-  </div>
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-grid-lines" aria-hidden="true"></div>
-  <div class="hero-v2-main-grid">
-    <div class="hero-v2-copy">
+<!-- SECTION 06: TRANSITION -->
+<section class="act act-cream" style="border-top:1px solid var(--darkline)">
+  <div class="act-head" style="margin-bottom:32px">
+    <div>
       <div class="eyebrow-row"><span>FROM SECTOR TO VENTURE</span><span>AFRICA 2060</span></div>
-      <h2 class="display" style="font-size:clamp(44px,6vw,92px)">Build within <span class="serif">these sectors.</span></h2>
-      <div class="hero-v2-sub">
-        <p>Africa 2060 connects ambitious founders to verified industrial problems across these 22 verticals. Explore how the Innovation Lab structures challenges or partner with us to back a sector branch.</p>
-      </div>
-      <div class="hero-v2-actions" style="margin-top:36px">
-        <a class="solid-button" href="../innovation-lab/">Enter Innovation Lab <span>↗</span></a>
-        <a class="line-link" href="../founders/">Explore Founder Pathways <span>↗</span></a>
-        <a class="solid-button" href="../partners/" style="background:var(--gold);color:var(--navy)">Sponsor a Sector Branch <span>↗</span></a>
-      </div>
+      <h2 style="margin-top:34px">Turn sector problems into <span class="serif">venture briefs.</span></h2>
     </div>
-    <div class="hero-v2-number" aria-hidden="true">2060<span>SECTORS</span></div>
+    <p>Discover how the Africa 2060 Innovation Lab continuously scans these industries to uncover concrete problems and transform them into structured challenges for founder cohorts.</p>
   </div>
-  <div class="hero-meta-strip">
-    <span>HORIZON: 2026—2060</span>
-    <span>CATALOGED: 22 SECTORS</span>
-    <span>STATUS: ACTIVE ARCHITECTURE</span>
-    <span>PAN-AFRICAN TERRAIN</span>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <a class="solid-button" href="../innovation-lab/">Inspect the Innovation Lab <span>↗</span></a>
+    <a class="line-link" href="../founders/">Review Founder Tracks <span>↗</span></a>
+    <a class="solid-button" href="../partners/" style="background:var(--gold);color:var(--navy)">Partner on a Sector Branch <span>↗</span></a>
   </div>
 </section>
 
@@ -269,41 +320,52 @@ ${css}
 <footer class="footer">
   <div class="footer-top">
     <div>
-      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
-      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+      <div class="footer-brand"><img src="../images/mark.webp" alt="" width="32" height="32" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p class="footer-desc">An initiative of Zeenacle Network Group. Moving from workforce development to founder creation, company building and economic ownership across Africa by 2060.</p>
+      <div class="footer-coords"><span>HQ: LAGOS, NIGERIA</span><span>PAN-AFRICAN DEPLOYMENT</span><span>2026—2060</span></div>
     </div>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="../vision/">Vision</a>
-      <a href="../system/">System</a>
-      <a href="../founders/">Founders</a>
-      <a href="./">Sectors</a>
-      <a href="../innovation-lab/">Innovation Lab</a>
-      <a href="../impact/">Impact</a>
-      <a href="../insights/">Insights</a>
-      <a href="../partners/">Partners</a>
-      <a href="../contact/">Contact</a>
+    <div class="footer-col">
+      <div class="footer-col-title">Framework</div>
+      <ul class="footer-links">
+        <li><a href="../vision/">Strategic Doctrine</a></li>
+        <li><a href="../system/">Operating System</a></li>
+        <li><a href="../founders/">Founder Pathways</a></li>
+        <li><a href="./" aria-current="page">Sector Universe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Engines</div>
+      <ul class="footer-links">
+        <li><a href="../innovation-lab/">Innovation Lab</a></li>
+        <li><a href="../impact/">Impact Scorecard</a></li>
+        <li><a href="../insights/">Knowledge &amp; Foresight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Participation</div>
+      <ul class="footer-links">
+        <li><a href="../partners/">Partner Gateway</a></li>
+        <li><a href="../contact/">Secretariat</a></li>
+        <li><a href="#top">Back to Top ↑</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-meta">
-    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
-    <span>ZEENACLE NETWORK GROUP</span>
-    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  <div class="footer-bottom">
+    <div>© 2026 Africa 2060 Initiative. A Zeenacle Network Group operating framework. All rights reserved.</div>
+    <div class="footer-legal"><a href="../contact/">Secretariat Desk</a><span>·</span><a href="../partners/">Institutional Gateway</a></div>
   </div>
 </footer>
 
 <script>
-"use strict";
-
 function setupMenu() {
-  const menuToggle = document.querySelector('#menuToggle');
-  const mobileMenu = document.querySelector('#mobileMenu');
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (!menuToggle || !mobileMenu) return;
   menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    mobileMenu.hidden = !open;
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
+    const open = !mobileMenu.hidden;
+    mobileMenu.hidden = open;
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    document.body.classList.toggle('menu-open', !open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
@@ -313,7 +375,6 @@ function setupMenu() {
     });
   });
 }
-
 try {
   setupMenu();
 } catch (err) {
@@ -326,4 +387,3 @@ try {
 
 fs.writeFileSync('sectors/index.html', html, 'utf8');
 console.log('Successfully wrote re-architected sectors/index.html! Length:', html.length);
-

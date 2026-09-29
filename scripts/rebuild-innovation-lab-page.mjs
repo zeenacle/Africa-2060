@@ -28,7 +28,7 @@ const html = `<!doctype html>
 <style id="a2060-inline-css">
 ${css}
 </style>
-<link rel="preload" as="image" href="../images/ai-team.webp">
+<link rel="preload" as="image" href="../images/ai-builder.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Innovation Lab & Problem Intelligence — Africa 2060","description":"The Africa 2060 Innovation Lab: Continental problem intelligence, challenge structuring, and the problem-to-company pipeline."}</script>
 </head>
 <body data-route="innovation-lab">
@@ -64,7 +64,7 @@ ${css}
 <!-- HERO: MONUMENTAL INTELLIGENCE CENTRE -->
 <section class="hero-v2" aria-labelledby="lab-hero-title">
   <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/ai-team.webp" alt="African researchers and engineers collaborating in the Innovation Lab on problem data" width="1200" height="800" fetchpriority="high" decoding="async">
+    <img class="hero-v2-image" src="../images/ai-builder.png" alt="African applied AI researcher and engineer configuring challenge intelligence architectures" width="1200" height="800" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid-lines" aria-hidden="true"></div>
@@ -108,7 +108,7 @@ ${css}
         <h3 style="color:var(--ink)">Identify</h3>
         <p style="color:var(--ink-soft)">Continuous scanning of real African unmet needs across agricultural value chains, energy access, logistics bottlenecks, healthcare infrastructure, and urban utilities.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">SOURCE:</b> Field data, partner briefs &amp; supply chain deficits</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">SOURCE:</b> Field data, partner briefs &amp; supply chain deficits</div>
     </article>
 
     <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
@@ -117,7 +117,7 @@ ${css}
         <h3 style="color:var(--ink)">Validate</h3>
         <p style="color:var(--ink-soft)">Testing whether a problem is real, specific, and actionable. Verifying market depth, customer willingness to pay, unit cost boundaries, and regulatory viability.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">CRITERIA:</b> Solvable, cash-generating &amp; structurally frictioned</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">CRITERIA:</b> Solvable, cash-generating &amp; structurally frictioned</div>
     </article>
 
     <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
@@ -126,16 +126,16 @@ ${css}
         <h3 style="color:var(--ink)">Structure</h3>
         <p style="color:var(--ink-soft)">Converting validated problems into formal, actionable challenge briefs with context, operational constraints, target metrics, unit economics, and evaluation scorecards.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">ARTIFACT:</b> Validated Challenge Brief Ledger</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">ARTIFACT:</b> Validated Challenge Brief Ledger</div>
     </article>
 
     <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
       <div>
         <div class="stage-card-deep-top"><span style="color:var(--gold)">STAGE 04</span><span style="color:var(--ink-muted)">DEPLOYMENT</span></div>
         <h3 style="color:var(--ink)">Assign</h3>
-        <p style="color:var(--ink-soft)">Deploying structured challenge briefs to the appropriate Academy tier, track vertical, or multidisciplinary co-founding triad during Stage 04 of the operating system.</p>
+        <p style="color:var(--ink-soft)">Deploying structured challenge briefs to the appropriate Academy tier, track vertical, or multidisciplinary co-founding triad during Phase 3 of the formation model.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">RECIPIENT:</b> Academy Fellow Triads (Maker + Eng + Op)</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">RECIPIENT:</b> Academy Fellow Triads (Maker + Eng + Op)</div>
     </article>
 
     <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
@@ -144,7 +144,7 @@ ${css}
         <h3 style="color:var(--ink)">Review</h3>
         <p style="color:var(--ink-soft)">Rigorous assessment of working prototypes, field test pilot results, and commercial models alongside corporate partners and industrial operators.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">OUTCOME:</b> Vetted Company Formation Opportunities</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">OUTCOME:</b> Vetted Company Formation Opportunities</div>
     </article>
 
     <article class="stage-card-deep" style="background:#fff;border:1px solid var(--darkline);color:var(--ink)">
@@ -153,13 +153,13 @@ ${css}
         <h3 style="color:var(--ink)">Feed the System</h3>
         <p style="color:var(--ink-soft)">Returning operational performance intelligence and market data back to the Academy curriculum and vertical sector branch decisions, ensuring perpetual institutional renewal.</p>
       </div>
-      <div class="stage-card-deep-foot" style="border-top-color:var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">RENEWAL:</b> Living Curriculum &amp; Sector Upgrades</div>
+      <div class="stage-card-deep-meta" style="border-top:1px solid var(--darkline);color:var(--ink-muted)"><b style="color:var(--ink)">RENEWAL:</b> Living Curriculum &amp; Sector Upgrades</div>
     </article>
   </div>
 </section>
 
 <!-- SECTION 03: LAB COMPOSITION & SEVEN CORE FUNCTIONS -->
-<section class="act act-cream" id="functions" style="background:#fbf9f4;border-top:1px solid var(--darkline)">
+<section class="act act-dark" id="functions">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>LAB COMPOSITION &amp; MANDATE</span><span>CONTROL CENTRE</span></div>
@@ -170,35 +170,35 @@ ${css}
 
   <div class="split-editorial" style="margin-top:40px">
     <div class="split-photo-pane">
-      <img src="../images/partners-table.webp" alt="Experienced practitioners and retirees convening to evaluate challenge briefs" width="1200" height="800" loading="lazy" decoding="async">
+      <img src="../images/ai-team.png" alt="Collaborative applied intelligence team and researchers reviewing market telemetry" width="1200" height="800" loading="lazy" decoding="async">
       <div class="split-photo-caption">
-        <span>LAB COMPOSITION</span>
-        <span>EXPERTS, RETIREES &amp; RESEARCHERS</span>
+        <span>FIELD INTELLIGENCE &amp; APPLIED RADAR</span>
+        <span>RESEARCHERS, RETIREES, ENGINEERS &amp; COMMODITY SPECIALISTS</span>
       </div>
     </div>
     <div class="split-text-pane">
-      <h3 style="font-family:var(--display);font-size:24px;color:var(--ink);margin-bottom:12px">Who Constitutes the Lab</h3>
-      <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.6">The Lab draws upon professionals, experienced industry practitioners, retirees, researchers, entrepreneurs and other experts with ground-truth knowledge of real bottlenecks across African value chains.</p>
+      <h3 style="font-family:var(--display);font-size:24px;color:#fff;margin-bottom:12px">Who Constitutes the Lab</h3>
+      <p style="font-size:14.5px;color:var(--white-soft);line-height:1.6">The Lab draws upon professionals, experienced industry practitioners, retirees, researchers, entrepreneurs and other experts with ground-truth knowledge of real bottlenecks across African value chains.</p>
       <div class="giving-list" style="margin-top:24px">
-        <div class="giving-list-item"><b>01 IDENTIFY</b><span>Real-time problems and unmet needs across Africa.</span></div>
-        <div class="giving-list-item"><b>02 VALIDATE</b><span>Filter and structure problems before participant assignment.</span></div>
-        <div class="giving-list-item"><b>03 CONVERT</b><span>Turn problems into briefs with clear objectives, constraints and outputs.</span></div>
-        <div class="giving-list-item"><b>04 MATCH</b><span>Route briefs to appropriate track, sector, or cross-track team.</span></div>
-        <div class="giving-list-item"><b>05 SUPERVISE</b><span>Connect participants with specialist mentors and sector practitioners.</span></div>
-        <div class="giving-list-item"><b>06 REVIEW</b><span>Evaluate completed projects and identify solutions for venture formation.</span></div>
-        <div class="giving-list-item"><b>07 FEED BACK</b><span>Channel live operational intelligence directly into Academy curriculum.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">01 IDENTIFY</b><span style="color:var(--white-muted)">Real-time problems and unmet needs across Africa.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">02 VALIDATE</b><span style="color:var(--white-muted)">Filter and structure problems before participant assignment.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">03 CONVERT</b><span style="color:var(--white-muted)">Turn problems into briefs with clear objectives, constraints and outputs.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">04 MATCH</b><span style="color:var(--white-muted)">Route briefs to appropriate track, sector, or cross-track team.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">05 SUPERVISE</b><span style="color:var(--white-muted)">Connect participants with specialist mentors and sector practitioners.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">06 REVIEW</b><span style="color:var(--white-muted)">Evaluate completed projects and identify solutions for venture formation.</span></div>
+        <div class="giving-list-item" style="background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff"><b style="color:var(--gold)">07 FEED BACK</b><span style="color:var(--white-muted)">Channel live operational intelligence directly into Academy curriculum.</span></div>
       </div>
     </div>
   </div>
 
-  <div class="tracks-convergence" style="margin-top:40px;background:#fff;border:1px solid var(--darkline);color:var(--ink)">
-    <span style="color:var(--gold)">THE INNOVATION LOOP</span>
-    <h3 style="font-size:clamp(18px,2vw,24px);color:var(--ink)">IDENTIFY → VALIDATE → ASSIGN → BUILD → TEST → REVIEW → DEVELOP FURTHER</h3>
+  <div class="tracks-convergence" style="margin-top:40px;background:var(--navy-surface);border:1px solid var(--navy-border);color:#fff">
+    <span style="color:var(--gold)">THE PERPETUAL INNOVATION LOOP</span>
+    <h3 style="font-size:clamp(18px,2vw,24px);color:#fff">IDENTIFY → VALIDATE → ASSIGN → BUILD → TEST → REVIEW → DEVELOP FURTHER</h3>
   </div>
 </section>
 
 <!-- SECTION 04: THE PROBLEM-TO-COMPANY CORRIDOR -->
-<section class="act act-dark" id="corridor">
+<section class="act act-cream" id="corridor">
   <div class="act-head">
     <div>
       <div class="eyebrow-row"><span>END-TO-END CONVERSION</span><span>THE OPPORTUNITY CORRIDOR</span></div>
@@ -226,33 +226,19 @@ ${css}
   </div>
 </section>
 
-<!-- SECTION 04: CLOSING TRANSITION -->
-<section class="hero-v2 act-monument" id="closing" style="min-height:85vh;border-top:1px solid var(--navy-border)">
-  <div class="hero-backdrop">
-    <img class="hero-v2-image" src="../images/city-wide-2.webp" alt="African citywide infrastructure at twilight" width="1376" height="784" loading="lazy" decoding="async">
-  </div>
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-grid-lines" aria-hidden="true"></div>
-  <div class="hero-v2-main-grid">
-    <div class="hero-v2-copy">
+<!-- SECTION 05: TRANSITION -->
+<section class="act act-dark" style="border-top:1px solid var(--navy-border)">
+  <div class="act-head" style="margin-bottom:32px">
+    <div>
       <div class="eyebrow-row"><span>SUBMIT AN INSTITUTIONAL CHALLENGE</span><span>AFRICA 2060</span></div>
-      <h2 class="display" style="font-size:clamp(44px,6vw,92px)">Bring your challenge <span class="serif">to our founders.</span></h2>
-      <div class="hero-v2-sub">
-        <p>Are you an enterprise, municipal agency, or development institution facing a structural supply chain bottleneck? Partner with the Innovation Lab to sponsor challenge briefs for our cohorts.</p>
-      </div>
-      <div class="hero-v2-actions" style="margin-top:36px">
-        <a class="solid-button" href="../partners/">Submit Institutional Challenge <span>↗</span></a>
-        <a class="line-link" href="../system/">Inspect the Operating System <span>↗</span></a>
-        <a class="solid-button" href="../contact/" style="background:var(--gold);color:var(--navy)">Contact the Lab <span>↗</span></a>
-      </div>
+      <h2 style="margin-top:34px">Bring your operational bottleneck <span class="serif">to our founders.</span></h2>
     </div>
-    <div class="hero-v2-number" aria-hidden="true">2060<span>LAB</span></div>
+    <p>Are you an enterprise executive, supply-chain operator, or institutional agency facing an intractable African market problem? Partner with the Innovation Lab to commission a founder cohort challenge.</p>
   </div>
-  <div class="hero-meta-strip">
-    <span>HORIZON: 2026—2060</span>
-    <span>STATUS: OPERATIONAL RADAR</span>
-    <span>COHORTS: 54 MARKETS</span>
-    <span>ENDOWMENT BACKED</span>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <a class="solid-button" href="../partners/">Submit a Partner Brief <span>↗</span></a>
+    <a class="line-link" href="../impact/">Inspect System Scorecard <span>↗</span></a>
+    <a class="solid-button" href="../contact/" style="background:var(--gold);color:var(--navy)">Contact the Lab Desk <span>↗</span></a>
   </div>
 </section>
 
@@ -261,41 +247,52 @@ ${css}
 <footer class="footer">
   <div class="footer-top">
     <div>
-      <div class="wordmark"><img src="../images/mark.webp" alt="" width="34" height="34" decoding="async"><span>AFRICA</span><b>2060</b></div>
-      <p style="margin-top:14px;max-width:320px;font-size:13.5px;color:#8d9da8;line-height:1.6">The founder creation and company formation system designed to create 10,000,000 founders across Africa by 2060.</p>
+      <div class="footer-brand"><img src="../images/mark.webp" alt="" width="32" height="32" decoding="async"><span>AFRICA</span><b>2060</b></div>
+      <p class="footer-desc">An initiative of Zeenacle Network Group. Moving from workforce development to founder creation, company building and economic ownership across Africa by 2060.</p>
+      <div class="footer-coords"><span>HQ: LAGOS, NIGERIA</span><span>PAN-AFRICAN DEPLOYMENT</span><span>2026—2060</span></div>
     </div>
-    <div class="footer-links">
-      <a href="../">Home</a>
-      <a href="../vision/">Vision</a>
-      <a href="../system/">System</a>
-      <a href="../founders/">Founders</a>
-      <a href="../sectors/">Sectors</a>
-      <a href="./">Innovation Lab</a>
-      <a href="../impact/">Impact</a>
-      <a href="../insights/">Insights</a>
-      <a href="../partners/">Partners</a>
-      <a href="../contact/">Contact</a>
+    <div class="footer-col">
+      <div class="footer-col-title">Framework</div>
+      <ul class="footer-links">
+        <li><a href="../vision/">Strategic Doctrine</a></li>
+        <li><a href="../system/">Operating System</a></li>
+        <li><a href="../founders/">Founder Pathways</a></li>
+        <li><a href="../sectors/">Sector Universe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Engines</div>
+      <ul class="footer-links">
+        <li><a href="./" aria-current="page">Innovation Lab</a></li>
+        <li><a href="../impact/">Impact Scorecard</a></li>
+        <li><a href="../insights/">Knowledge &amp; Foresight</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Participation</div>
+      <ul class="footer-links">
+        <li><a href="../partners/">Partner Gateway</a></li>
+        <li><a href="../contact/">Secretariat</a></li>
+        <li><a href="#top">Back to Top ↑</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-meta">
-    <span>© 2026—2060 AFRICA 2060 INITIATIVE</span>
-    <span>ZEENACLE NETWORK GROUP</span>
-    <span>WORKING FRAMEWORK · SOURCE GROUNDED</span>
+  <div class="footer-bottom">
+    <div>© 2026 Africa 2060 Initiative. A Zeenacle Network Group operating framework. All rights reserved.</div>
+    <div class="footer-legal"><a href="../contact/">Secretariat Desk</a><span>·</span><a href="../partners/">Institutional Gateway</a></div>
   </div>
 </footer>
 
 <script>
-"use strict";
-
 function setupMenu() {
-  const menuToggle = document.querySelector('#menuToggle');
-  const mobileMenu = document.querySelector('#mobileMenu');
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
   if (!menuToggle || !mobileMenu) return;
   menuToggle.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    mobileMenu.hidden = !open;
-    menuToggle.setAttribute('aria-expanded', String(open));
-    document.body.classList.toggle('menu-open', open);
+    const open = !mobileMenu.hidden;
+    mobileMenu.hidden = open;
+    menuToggle.setAttribute('aria-expanded', String(!open));
+    document.body.classList.toggle('menu-open', !open);
   });
   mobileMenu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
@@ -305,7 +302,6 @@ function setupMenu() {
     });
   });
 }
-
 try {
   setupMenu();
 } catch (err) {
@@ -318,4 +314,3 @@ try {
 
 fs.writeFileSync('innovation-lab/index.html', html, 'utf8');
 console.log('Successfully wrote re-architected innovation-lab/index.html! Length:', html.length);
-
