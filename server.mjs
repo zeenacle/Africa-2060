@@ -1,3 +1,4 @@
+// Africa 2060 server entrypoint. Vercel Preview and Production are both supported.
 import crypto from "node:crypto";
 import fs from "node:fs";
 import http from "node:http";
