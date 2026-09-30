@@ -17,25 +17,22 @@ const MIME = {
   ".txt": "text/plain; charset=utf-8",
 };
 
-function safeFile(urlPath) {
+const cleanPath = (pathname) => {
   let decoded;
   try {
-    decoded = decodeURIComponent(urlPath);
+    decoded = decodeURIComponent(pathname);
   } catch {
     return null;
   }
-
   const normalized = path.normalize(decoded);
-  const rootPath = normalized.startsWith("/") ? normalized : "/" + normalized;
-  const target = path.resolve(ROOT, "." + rootPath);
+  const relative = normalized.startsWith("/") ? "." + normalized : "./" + normalized;
+  const target = path.resolve(ROOT, relative);
+  return target === ROOT || target.startsWith(ROOT + path.sep) ? target : null;
+};
 
-  if (target !== ROOT && !target.startsWith(ROOT + path.sep)) return null;
-  return target;
-}
-
-function servePreview(req, res) {
+function serveStatic(req, res) {
   const pathname = new URL(req.url || "/", "http://localhost").pathname;
-  const target = safeFile(pathname);
+  const target = cleanPath(pathname);
 
   if (!target) {
     res.writeHead(400, { "Content-Type": "text/plain; charset=utf-8" });
@@ -43,23 +40,23 @@ function servePreview(req, res) {
   }
 
   let file = target;
-  if (fs.existsSync(file) && fs.statSync(file).isDirectory())
+  if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
     file = path.join(file, "index.html");
+  }
 
   if (!fs.existsSync(file) || !fs.statSync(file).isFile()) {
-    if (!path.extname(pathname)) file = path.join(ROOT, "index.html");
-    else {
+    if (!path.extname(pathname)) {
+      file = path.join(ROOT, "index.html");
+    } else {
       res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
       return res.end("Not found.");
     }
   }
 
   const ext = path.extname(file).toLowerCase();
-  const type = MIME[ext] || "application/octet-stream";
   const stat = fs.statSync(file);
-
   res.writeHead(200, {
-    "Content-Type": type,
+    "Content-Type": MIME[ext] || "application/octet-stream",
     "Content-Length": stat.size,
     "Cache-Control": ext === ".html" ? "no-cache" : "public,max-age=3600",
     "X-Content-Type-Options": "nosniff",
@@ -69,18 +66,43 @@ function servePreview(req, res) {
   fs.createReadStream(file).pipe(res);
 }
 
+let backendReady = false;
+let backendLoadError = null;
+
 try {
   await import("./server.mjs");
+  backendReady = true;
 } catch (error) {
-  if (process.env.VERCEL_ENV !== "preview") throw error;
-
+  backendLoadError = error instanceof Error ? error : new Error(String(error));
   console.error(
     JSON.stringify({
-      level: "warn",
-      event: "preview_backend_bootstrap_failed",
-      error: error instanceof Error ? error.message : String(error),
+      level: "error",
+      event: "backend_bootstrap_failed",
+      error: backendLoadError.message,
+      vercelEnv: process.env.VERCEL_ENV || null,
     }),
   );
 
-  http.createServer(servePreview).listen(process.env.PORT || 3000);
+  // The public site must remain available when backend environment
+  // configuration is incomplete. API routes are served by server.mjs only
+  // when backend initialization succeeds.
+  http.createServer((req, res) => {
+    if (req.method === "GET" || req.method === "HEAD") return serveStatic(req, res);
+
+    res.writeHead(503, {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
+    });
+    res.end(
+      JSON.stringify({
+        ok: false,
+        message: "Backend services are not configured for this deployment.",
+      }),
+    );
+  }).listen(process.env.PORT || 3000);
+}
+
+if (backendReady) {
+  // server.mjs owns the actual listener.
 }
