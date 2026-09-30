@@ -73,7 +73,7 @@ export function loadConfig(env = process.env) {
     );
   }
   const adminToken = env.ADMIN_API_TOKEN || "";
-  if (nodeEnv === "production" && adminToken.length < 32) {
+  if (nodeEnv === "production" && !isVercelPreview && adminToken.length < 32) {
     throw new Error(
       "ADMIN_API_TOKEN must be at least 32 characters in production.",
     );
