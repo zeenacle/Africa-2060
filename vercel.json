@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "builds": [
+    { "src": "server.mjs", "use": "@vercel/node" },
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "styles.css", "use": "@vercel/static" },
+    { "src": "images/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server.mjs" },
+    { "src": "/vision/?$", "dest": "/vision/index.html" },
+    { "src": "/system/?$", "dest": "/system/index.html" },
+    { "src": "/founders/?$", "dest": "/founders/index.html" },
+    { "src": "/sectors/?$", "dest": "/sectors/index.html" },
+    { "src": "/innovation-lab/?$", "dest": "/innovation-lab/index.html" },
+    { "src": "/impact/?$", "dest": "/impact/index.html" },
+    { "src": "/insights/?$", "dest": "/insights/index.html" },
+    { "src": "/partners/?$", "dest": "/partners/index.html" },
+    { "src": "/contact/?$", "dest": "/contact/index.html" },
+    { "src": "/partner/?$", "status": 301, "headers": { "Location": "/partners/" } },
+    { "src": "/invest/?$", "status": 301, "headers": { "Location": "/partners/" } }
+  ],
+  "cleanUrls": false
+}
