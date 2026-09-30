@@ -39,13 +39,16 @@ const int = (value, fallback, min, max) => {
 
 export function loadConfig(env = process.env) {
   const nodeEnv = env.NODE_ENV || "development";
+  const vercelEnv = env.VERCEL_ENV || "";
+  const isVercelPreview = vercelEnv === "preview";
   const storageMode = (env.STORAGE_MODE || "local").toLowerCase();
   if (!["local", "supabase"].includes(storageMode))
     throw new Error("STORAGE_MODE must be local or supabase.");
   if (
     nodeEnv === "production" &&
     storageMode === "local" &&
-    !bool(env.ALLOW_LOCAL_STORAGE, false)
+    !bool(env.ALLOW_LOCAL_STORAGE, false) &&
+    !isVercelPreview
   ) {
     throw new Error(
       "Local storage is disabled in production. Configure STORAGE_MODE=supabase.",
@@ -62,6 +65,7 @@ export function loadConfig(env = process.env) {
   const requireEmail = bool(env.REQUIRE_EMAIL, false);
   if (
     requireEmail &&
+    !isVercelPreview &&
     (!env.RESEND_API_KEY || !env.RESEND_FROM || !env.AFRICA2060_INTERNAL_EMAIL)
   ) {
     throw new Error(
@@ -74,11 +78,13 @@ export function loadConfig(env = process.env) {
       "ADMIN_API_TOKEN must be at least 32 characters in production.",
     );
   }
-  if (nodeEnv === "production" && !env.PUBLIC_ORIGIN) {
+  if (nodeEnv === "production" && !isVercelPreview && !env.PUBLIC_ORIGIN) {
     throw new Error("PUBLIC_ORIGIN is required in production.");
   }
   return {
     nodeEnv,
+    vercelEnv,
+    isVercelPreview,
     port: int(env.PORT, 4173, 1, 65535),
     publicOrigin: (env.PUBLIC_ORIGIN || "").replace(/\/$/, ""),
     allowedOrigins: new Set(
