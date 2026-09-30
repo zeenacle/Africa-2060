@@ -5,7 +5,9 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.dirname(fileURLToPath(new URL("..", import.meta.url)));
 const DATA_DIR = process.env.DATA_DIR
   ? path.resolve(process.env.DATA_DIR)
-  : path.join(ROOT, "data");
+  : process.env.VERCEL_ENV === "preview"
+    ? path.join("/tmp", "africa2060-data")
+    : path.join(ROOT, "data");
 const SUBMISSIONS_FILE = path.join(DATA_DIR, "submissions.ndjson");
 const EMAIL_FILE = path.join(DATA_DIR, "email-delivery.ndjson");
 const EVENTS_FILE = path.join(DATA_DIR, "audit-events.ndjson");
