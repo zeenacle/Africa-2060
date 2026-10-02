@@ -3892,3 +3892,126 @@ button {
 .dark .supporting-copy {
   color: #b7c3c9;
 }
+
+
+/* ==========================================================================
+   MOBILE VISUAL QA — EDITORIAL RHYTHM + READABILITY
+   ========================================================================== */
+@media (max-width: 600px) {
+  /* Keep long-form sections from feeling like separate desktop panels. */
+  .act {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+  .act + .act {
+    padding-top: 54px;
+  }
+
+  .act-head {
+    margin-bottom: 30px;
+  }
+  .act-head h2 {
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  /* The homepage's Track → Sector → Sub-sector → Company Opportunity
+     explanation should read as a compact editorial ladder. */
+  .act-dark .reframe-grid {
+    margin-top: 24px;
+  }
+  .act-dark .reframe-row {
+    padding: 17px 0;
+    gap: 6px;
+  }
+  .act-dark .reframe-row span:first-child {
+    color: #9ba8af;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .act-dark .reframe-row span:last-child {
+    color: #d7dfe3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.55;
+    max-width: 38em;
+  }
+
+  .act-dark .reframe-row i {
+    display: none;
+  }
+
+  /* Never let a long inline editorial heading create a horizontal scroll. */
+  .act h2,
+  .act h3,
+  .hero-v2 h1,
+  .system-hero h1 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  /* Images should feel intentional on phones rather than like cropped
+     desktop assets. */
+  .split-photo-pane,
+  .track-photo-header,
+  .track-photo-box {
+    overflow: hidden;
+  }
+
+  .split-photo-pane img,
+  .track-photo-header img,
+  .track-photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Editorial links/buttons should not create awkward half-width controls. */
+  .act > div > .solid-button,
+  .act .split-text-pane > .solid-button {
+    min-height: 50px;
+  }
+
+  /* Keep tables/long technical rows usable without shrinking type below
+     comfortable reading size. */
+  .table-scroll,
+  .data-table-wrap,
+  .sector-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent form labels and helper copy from becoming visually stranded. */
+  .institution-form label,
+  .institution-form legend {
+    line-height: 1.45;
+  }
+
+  /* Preserve contrast on every dark explanatory paragraph. */
+  .act-dark p,
+  .act-dark li {
+    color: #b7c3c9;
+  }
+  .act-dark .act-head p {
+    color: #b7c3c9;
+  }
+}
+
+@media (max-width: 390px) {
+  .act {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .act-dark .reframe-row span:last-child {
+    font-size: 13.5px;
+  }
+
+  .act-head h2 {
+    font-size: 31px;
+  }
+}
