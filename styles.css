@@ -4015,3 +4015,272 @@ button {
     font-size: 31px;
   }
 }
+
+/* ==========================================================================
+   FINAL POLISH — MOBILE SHIFT SECTION + DESKTOP INSTITUTIONAL PASS
+   Focus: post-hero ownership spread, desktop proportion, editorial rhythm,
+   image framing, card density, and deterministic responsive behavior.
+   ========================================================================== */
+
+/* Post-hero ownership spread: the four conversion cards must never inherit
+   the homepage's generic six-column pipeline at desktop/tablet widths. */
+#shift .pipeline-flow {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 10px;
+}
+
+#shift .pipeline-node {
+  min-width: 0;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+#shift .pipeline-node strong {
+  line-height: 1.15;
+  letter-spacing: .02em;
+}
+
+/* Give the ownership photograph a controlled editorial frame rather than
+   letting the desktop minimum height dictate the mobile crop. */
+#shift .split-photo-pane {
+  min-width: 0;
+  aspect-ratio: 1.16 / 1;
+}
+
+#shift .split-photo-pane img {
+  object-position: 50% 42%;
+}
+
+#shift .split-photo-caption {
+  gap: 12px 20px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   DESKTOP SYSTEM PASS
+   ========================================================================== */
+@media (min-width: 1200px) {
+  :root {
+    --container-pad: clamp(56px, 5.2vw, 96px);
+  }
+
+  .act {
+    padding-top: clamp(112px, 8.2vw, 150px);
+    padding-bottom: clamp(112px, 8.2vw, 150px);
+  }
+
+  .act-head,
+  .split-editorial,
+  .pipeline-flow,
+  .academy-tiers-grid,
+  .flywheel-v2,
+  .tracks-v2,
+  .tracks-convergence,
+  .economy-v2,
+  .lab-v2 {
+    max-width: 1640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .act-head {
+    grid-template-columns: minmax(0, 1.28fr) minmax(340px, .72fr);
+    gap: clamp(54px, 6vw, 108px);
+    margin-bottom: clamp(64px, 6.5vw, 96px);
+  }
+
+  .act-head h2 {
+    max-width: 1040px;
+  }
+
+  .act-head p {
+    max-width: 560px;
+  }
+
+  .split-editorial {
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr);
+    gap: clamp(52px, 5.2vw, 88px);
+  }
+
+  .split-photo-pane {
+    min-height: clamp(500px, 39vw, 650px);
+  }
+
+  .split-text-pane {
+    padding: 6px 0;
+  }
+
+  #shift .pipeline-flow {
+    max-width: 1640px;
+  }
+
+  #shift .pipeline-node {
+    min-height: 106px;
+    padding: 22px 20px;
+  }
+
+  .pipeline-node strong {
+    font-size: 15px;
+  }
+
+  .hero-v2-main-grid,
+  .hero-meta-strip {
+    width: 100%;
+    max-width: 1640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-v2-copy {
+    max-width: 1000px;
+  }
+
+  .hero-v2 h1.display {
+    max-width: 1080px;
+  }
+
+  .hero-v2-sub {
+    max-width: 980px;
+  }
+
+  .hero-meta-strip {
+    margin-top: 54px;
+  }
+
+  .academy-tier-card {
+    min-width: 0;
+  }
+
+  .reframe-row {
+    gap: clamp(20px, 2vw, 32px);
+  }
+
+  .sector-cloud {
+    max-width: 820px;
+  }
+
+  .wheel {
+    width: min(34vw, 520px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .act-head h2 {
+    font-size: clamp(60px, 5.35vw, 92px);
+  }
+
+  .act-head p {
+    font-size: 17px;
+  }
+
+  .split-editorial {
+    gap: 96px;
+  }
+
+  #shift .pipeline-node {
+    padding: 24px 22px;
+  }
+
+  #shift .pipeline-node small {
+    font-size: 9.5px;
+  }
+
+  #shift .pipeline-node strong {
+    font-size: 16px;
+  }
+
+  .reframe-row {
+    font-size: 16px;
+    padding: 19px 0;
+  }
+
+  .hero-v2 {
+    padding-top: 190px;
+  }
+}
+
+/* ==========================================================================
+   MOBILE QA — POST-HERO OWNERSHIP SECTION
+   ========================================================================== */
+@media (max-width: 1024px) {
+  #shift .pipeline-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  #shift .split-photo-pane {
+    aspect-ratio: 1.25 / 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #shift .split-editorial {
+    gap: 28px;
+    margin-top: 26px;
+  }
+
+  #shift .split-photo-pane {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  #shift .split-photo-pane img {
+    object-position: 50% 40%;
+  }
+
+  #shift .split-photo-caption {
+    padding: 48px 16px 14px;
+    font-size: 8px;
+    line-height: 1.35;
+    letter-spacing: .14em;
+  }
+
+  #shift .pipeline-flow {
+    grid-template-columns: 1fr !important;
+    gap: 7px;
+    margin-top: 24px !important;
+  }
+
+  #shift .pipeline-node {
+    min-height: 78px;
+    padding: 16px 16px;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  #shift .pipeline-node small {
+    flex: 0 0 28px;
+    margin-bottom: 0;
+  }
+
+  #shift .pipeline-node strong {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  #shift .split-text-pane > div:last-child {
+    margin-top: 26px !important;
+  }
+
+  #shift .split-text-pane > div:last-child .solid-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  #shift .pipeline-node {
+    min-height: 72px;
+    padding: 14px;
+  }
+
+  #shift .pipeline-node strong {
+    font-size: 13px;
+  }
+}
