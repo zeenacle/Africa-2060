@@ -3842,3 +3842,53 @@ button {
     transform: none;
   }
 }
+
+
+/* ==========================================================================
+   DARK-SURFACE CONTRAST SAFEGUARDS
+   Keep --ink for light/cream surfaces. Never allow it to disappear on
+   institutional midnight surfaces.
+   ========================================================================== */
+.act-dark .reframe-row span:last-child,
+.dark .reframe-row span:last-child {
+  color: #d8e0e4;
+  font-weight: 600;
+}
+
+.act-dark .reframe-row span:first-child,
+.dark .reframe-row span:first-child {
+  color: #93a1aa;
+}
+
+.act-dark .reframe-row i,
+.dark .reframe-row i {
+  color: var(--gold);
+}
+
+.act-dark .institution-line strong,
+.dark .institution-line strong {
+  color: #eef2f3;
+}
+
+.act-dark .institution-line p,
+.dark .institution-line p {
+  color: #b7c3c9;
+}
+
+.act-dark .architecture-node strong,
+.dark .architecture-node strong {
+  color: #eef2f3;
+}
+
+.act-dark .architecture-node em,
+.dark .architecture-node em {
+  color: #b7c3c9;
+}
+
+/* Dark-surface explanatory copy should never inherit light-surface ink. */
+.act-dark .body-copy,
+.act-dark .supporting-copy,
+.dark .body-copy,
+.dark .supporting-copy {
+  color: #b7c3c9;
+}
