@@ -188,6 +188,12 @@ function escapeHtml(v) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
+function emailShell({ preheader, eyebrow, title, intro, body, footerNote = "" }) {
+  return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Africa 2060</title></head><body style="margin:0;background:#eef0ec;color:#172018;font-family:Arial,Helvetica,sans-serif;"><div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef0ec;"><tr><td align="center" style="padding:32px 16px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:680px;background:#fbfaf6;"><tr><td style="padding:0;"><div style="height:6px;background:#c59a48;"></div><div style="padding:28px 34px 22px;background:#07131f;"><div style="font-size:12px;letter-spacing:3px;font-weight:700;color:#eee8dc;">AFRICA <span style="color:#c59a48;">2060</span></div><div style="margin-top:8px;font-size:10px;letter-spacing:2px;color:#aeb9bf;">FOUNDER CREATION · COMPANY FORMATION · ECONOMIC OWNERSHIP</div></div><div style="padding:34px;"><div style="font-size:10px;letter-spacing:2.2px;font-weight:700;color:#a06f2b;">${escapeHtml(eyebrow)}</div><h1 style="margin:12px 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:30px;line-height:1.18;font-weight:600;color:#172018;">${escapeHtml(title)}</h1><div style="height:1px;background:#d8d0c0;margin:0 0 24px;"></div><p style="margin:0 0 18px;font-size:16px;line-height:1.7;color:#39443d;">${intro}</p>${body}<div style="height:1px;background:#d8d0c0;margin:30px 0 20px;"></div><p style="margin:0;font-size:12px;line-height:1.6;color:#6d766f;">${footerNote || "Africa 2060 Initiative · A Zeenacle Network Group operating framework"}</p></div><div style="padding:20px 34px;background:#07131f;"><div style="font-size:10px;letter-spacing:1.8px;color:#aeb9bf;">BUILD THE COMPANIES THAT BUILD AFRICA.</div><div style="margin-top:8px;font-size:11px;color:#7f8d95;">Africa 2060 · 2026—2060</div></div></td></tr></table></td></tr></table></body></html>`;
+}
+function fieldRow(label, value) {
+  return `<tr><td style="padding:9px 0;font-size:10px;letter-spacing:1.2px;font-weight:700;color:#8a7350;text-transform:uppercase;vertical-align:top;width:34%;">${escapeHtml(label)}</td><td style="padding:9px 0;font-size:14px;line-height:1.5;color:#27332c;">${escapeHtml(value || "—")}</td></tr>`;
+}
 function acknowledgement(type, s) {
   const label =
     type === "investment"
@@ -195,26 +201,53 @@ function acknowledgement(type, s) {
       : type === "partner"
         ? "Partnership enquiry"
         : "General enquiry";
+  const action =
+    type === "investment"
+      ? "Our team will review the information provided and determine the appropriate next step for the investment conversation."
+      : type === "partner"
+        ? "Our team will review your organisation, proposed contribution and area of interest and determine the appropriate next step."
+        : "Our team will review your message and route it to the appropriate desk where necessary.";
+  const body = `<p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">Thank you for contacting Africa 2060. Your ${escapeHtml(label.toLowerCase())} has been received and securely recorded by the Secretariat.</p><p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">${escapeHtml(action)}</p><div style="margin:24px 0;padding:18px 20px;background:#f2eee5;border-left:3px solid #c59a48;"><div style="font-size:10px;letter-spacing:1.6px;font-weight:700;color:#8a7350;">SUBMISSION REFERENCE</div><div style="margin-top:7px;font-family:monospace;font-size:13px;color:#172018;">${escapeHtml(s.id)}</div></div><p style="margin:0;font-size:13px;line-height:1.65;color:#6d766f;">This email confirms receipt only. It does not constitute an investment commitment, partnership acceptance, allocation, return, meeting commitment or response deadline.</p>`;
   return {
-    subject: `Africa 2060 — ${label} received`,
-    html: `<p>Dear ${escapeHtml(s.data.name)},</p><p>We have received your enquiry and recorded it for consideration.</p><p>Submission reference: <strong>${escapeHtml(s.id)}</strong></p><p>This acknowledgement confirms receipt only; it does not constitute an investment commitment, partnership acceptance, allocation, return, meeting commitment or response deadline.</p><p>Africa 2060</p>`,
+    subject: `Africa 2060 — ${label} received | ${s.id}`,
+    html: emailShell({
+      preheader: `Your ${label.toLowerCase()} has been received by Africa 2060.`,
+      eyebrow: "SUBMISSION CONFIRMED",
+      title: "Thank you. Your enquiry is with us.",
+      intro: `Dear ${escapeHtml(s.data.name)},`,
+      body,
+    }),
   };
 }
 function internalHtml(type, s) {
   const d = s.data;
   const title =
     type === "investment"
-      ? "Investment enquiry received"
+      ? "New investment enquiry"
       : type === "partner"
-        ? "Partner enquiry received"
-        : "General contact enquiry received";
+        ? "New partnership enquiry"
+        : "New general enquiry";
+  const eyebrow =
+    type === "investment"
+      ? "INVESTMENT DESK · NEW INTAKE"
+      : type === "partner"
+        ? "PARTNERSHIP DESK · NEW INTAKE"
+        : "SECRETARIAT · NEW INTAKE";
   const extra =
     type === "investment"
-      ? `<p><strong>Area / Sector:</strong> ${escapeHtml(d.interest || "—")}</p><p><strong>Investment Interest:</strong> ${escapeHtml(d.investment_interest || "—")}</p>`
+      ? fieldRow("Area / Sector", d.interest) + fieldRow("Investment Interest", d.investment_interest)
       : type === "partner"
-        ? `<p><strong>Partner Type:</strong> ${escapeHtml(d.partner_type)}</p><p><strong>Area of Interest:</strong> ${escapeHtml(d.interest || "—")}</p><p><strong>Contribution Area:</strong> ${escapeHtml(d.contribution.join(", ") || "—")}</p>`
-        : `<p><strong>Subject:</strong> ${escapeHtml(d.subject || "—")}</p>`;
-  return `<h2>${title}</h2><p><strong>Submission ID:</strong> ${escapeHtml(s.id)}</p><p><strong>Name:</strong> ${escapeHtml(d.name)}</p><p><strong>Organisation:</strong> ${escapeHtml(d.organisation || "—")}</p><p><strong>Email:</strong> ${escapeHtml(d.email)}</p><p><strong>Country:</strong> ${escapeHtml(d.country || "—")}</p>${extra}<p><strong>Message:</strong></p><p>${escapeHtml(d.message).replaceAll("\n", "<br>")}</p><p><strong>Received:</strong> ${escapeHtml(s.createdAt)}</p>`;
+        ? fieldRow("Partner Type", d.partner_type) + fieldRow("Area of Interest", d.interest) + fieldRow("Contribution Areas", d.contribution.join(", "))
+        : fieldRow("Subject", d.subject);
+  const body = `<div style="margin:0 0 24px;padding:18px 20px;background:#f2eee5;border-left:3px solid #c59a48;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${fieldRow("Submission ID", s.id)}${fieldRow("Received", s.createdAt)}${fieldRow("Name", d.name)}${fieldRow("Organisation", d.organisation)}${fieldRow("Email", d.email)}${fieldRow("Country", d.country)}${extra}</table></div><div style="font-size:10px;letter-spacing:1.6px;font-weight:700;color:#8a7350;margin-bottom:8px;">MESSAGE</div><div style="padding:18px 20px;background:#ffffff;border:1px solid #ddd7ca;font-size:15px;line-height:1.7;color:#27332c;white-space:normal;">${escapeHtml(d.message).replaceAll("\n", "<br>")}</div>`;
+  return emailShell({
+    preheader: `${title} — submission ${s.id}`,
+    eyebrow,
+    title,
+    intro: "A new institutional enquiry has been received through the Africa 2060 website. The details below are the submitted intake record.",
+    body,
+    footerNote: "Reply directly to this email to respond to the enquirer. Submission records remain subject to the Initiative’s internal handling and retention controls.",
+  });
 }
 async function sendEmail(to, subject, html, replyTo) {
   if (!RESEND_API_KEY || !RESEND_FROM) return { status: "not_configured" };
