@@ -203,17 +203,17 @@ function acknowledgement(type, s) {
         : "General enquiry";
   const action =
     type === "investment"
-      ? "Our team will review the information provided and determine the appropriate next step for the investment conversation."
+      ? "Our team will review the information provided and determine the appropriate next step for your enquiry."
       : type === "partner"
         ? "Our team will review your organisation, proposed contribution and area of interest and determine the appropriate next step."
-        : "Our team will review your message and route it to the appropriate desk where necessary.";
-  const body = `<p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">Thank you for contacting Africa 2060. Your ${escapeHtml(label.toLowerCase())} has been received and securely recorded by the Secretariat.</p><p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">${escapeHtml(action)}</p><div style="margin:24px 0;padding:18px 20px;background:#f2eee5;border-left:3px solid #c59a48;"><div style="font-size:10px;letter-spacing:1.6px;font-weight:700;color:#8a7350;">SUBMISSION REFERENCE</div><div style="margin-top:7px;font-family:monospace;font-size:13px;color:#172018;">${escapeHtml(s.id)}</div></div><p style="margin:0;font-size:13px;line-height:1.65;color:#6d766f;">This email confirms receipt only. It does not constitute an investment commitment, partnership acceptance, allocation, return, meeting commitment or response deadline.</p>`;
+        : "Our team will review your message and respond as appropriate.";
+  const body = `<p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">Thank you for contacting Africa 2060. We have received your message and appreciate your interest in our work.</p><p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#39443d;">${escapeHtml(action)}</p><div style="margin:24px 0;padding:18px 20px;background:#f2eee5;border-left:3px solid #c59a48;"><div style="font-size:10px;letter-spacing:1.6px;font-weight:700;color:#8a7350;">REFERENCE NUMBER</div><div style="margin-top:7px;font-family:monospace;font-size:13px;color:#172018;">${escapeHtml(s.id)}</div></div><p style="margin:0;font-size:13px;line-height:1.65;color:#6d766f;">Please keep this reference number for your records. This email confirms that we received your enquiry; it is not a confirmation of an investment, partnership, meeting, allocation or other commitment.</p>`;
   return {
-    subject: `Africa 2060 — ${label} received | ${s.id}`,
+    subject: `Africa 2060 — ${label} received`,
     html: emailShell({
       preheader: `Your ${label.toLowerCase()} has been received by Africa 2060.`,
       eyebrow: "SUBMISSION CONFIRMED",
-      title: "Thank you. Your enquiry is with us.",
+      title: "Thank you for reaching out.",
       intro: `Dear ${escapeHtml(s.data.name)},`,
       body,
     }),
@@ -226,13 +226,13 @@ function internalHtml(type, s) {
       ? "New investment enquiry"
       : type === "partner"
         ? "New partnership enquiry"
-        : "New general enquiry";
+        : "New enquiry";
   const eyebrow =
     type === "investment"
-      ? "INVESTMENT DESK · NEW INTAKE"
+      ? "NEW INVESTMENT ENQUIRY"
       : type === "partner"
-        ? "PARTNERSHIP DESK · NEW INTAKE"
-        : "SECRETARIAT · NEW INTAKE";
+        ? "NEW PARTNERSHIP ENQUIRY"
+        : "NEW ENQUIRY";
   const extra =
     type === "investment"
       ? fieldRow("Area / Sector", d.interest) + fieldRow("Investment Interest", d.investment_interest)
@@ -244,9 +244,9 @@ function internalHtml(type, s) {
     preheader: `${title} — submission ${s.id}`,
     eyebrow,
     title,
-    intro: "A new institutional enquiry has been received through the Africa 2060 website. The details below are the submitted intake record.",
+    intro: "A new enquiry has been received through the Africa 2060 website. The information below was provided by the enquirer for your review.",
     body,
-    footerNote: "Reply directly to this email to respond to the enquirer. Submission records remain subject to the Initiative’s internal handling and retention controls.",
+    footerNote: "You can reply directly to this email to continue the conversation with the enquirer.",
   });
 }
 async function sendEmail(to, subject, html, replyTo) {
@@ -382,7 +382,7 @@ async function processEmails(type, s) {
   out.internal = await deliver(
     "internal",
     INTERNAL_EMAIL,
-    `Africa 2060 — ${type === "investment" ? "Investment" : type === "partner" ? "Partner" : "Contact"} enquiry ${s.id}`,
+    `New ${type === "investment" ? "investment" : type === "partner" ? "partnership" : "enquiry"} — ${s.data.organisation || s.data.name}`,
     internalHtml(type, s),
     s.data.email,
   );
